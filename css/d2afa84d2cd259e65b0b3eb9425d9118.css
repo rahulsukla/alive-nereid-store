@@ -1,0 +1,7406 @@
+/* Eric Meyer's CSS Tools: Reset CSS (Modified by Hieu Nguyen)
+-------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+/* Clearfix
+-------------------------------------------------------------*/
+* html .clearfix {
+	height: 1%; /* IE5-6 */
+}
+
+.clearfix {
+	display: inline-block; /* IE7xhtml*/
+}
+
+html[xmlns] .clearfix { /* O */
+	display: block;  
+}
+
+.clearfix:after { /* FF, O, etc. */
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearer      { display: block; clear: both; font-size: 0; line-height: 0; height: 0; overflow: hidden; }
+
+/* Mis.
+-------------------------------------------------------------*/
+
+/* Forms */
+form          { display: inline; }
+fieldset      { border: 0; }
+legend        { display: none; }
+
+/* Content */
+p             { margin: 0 0 10px; }
+strong        { font-weight: bold; }
+address       { font-style: normal; line-height: 1.35; }
+cite          { font-style: normal; }
+q,
+blockquote    { quotes:none; }
+q:before,
+q:after       { content:''; }
+small         { font-size: 1em; }
+big           { font-size: 2em; }
+/* Tools */
+.hidden       { display:block !important; border:0 !important; margin:0 !important; padding:0 !important; font-size:0 !important; line-height:0 !important; width:0 !important; height:0 !important; overflow:hidden !important; }
+.nobr         { white-space: nowrap !important; }
+.wrap         { white-space: normal !important; }
+.a-left       { text-align: left !important; }
+.a-center     { text-align: center !important; }
+.a-right      { text-align: right !important; }
+.v-top        { vertical-align: top; }
+.v-middle     { vertical-align: middle; }
+.f-left,
+.left         { float: left !important; padding-top:8px; }
+.f-right,
+.right        { float: right !important; }
+.f-none       { float: none !important; }
+.f-fix        { float: left; width: 100%; }
+.no-display   { display: none; }
+.no-margin    { margin: 0 !important; }
+.no-padding   { padding: 0 !important; }
+.no-bg        { background: none !important; }
+
+/* Lists */
+ul,ol         { list-style:none; }
+
+/* remember to highlight inserts somehow! */
+ins           { text-decoration: none; }
+
+del           { text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table         { border: 0; border-spacing: 0; empty-cells: show; }
+caption,th,td { vertical-align: top; text-align: left; font-weight: normal; }
+
+/*Various Clears---*/
+.clearer:after,
+.header-container:after,
+.header-container .top-container:after,
+.header:after,
+.header .quick-access:after,
+#nav:after,
+.main:after,
+.footer:after,
+.footer-container .bottom-container:after,
+.col-main:after,
+.col2-set:after,
+.col3-set:after,
+.col3-layout .product-options-bottom .price-box:after,
+.col4-set:after,
+.search-autocomplete li:after,
+.block .block-content:after,
+.block .actions:after,
+.block li.item:after,
+.block-poll li:after,
+.block-layered-nav .currently li:after,
+.page-title:after,
+.products-grid:after,
+.products-list li.item:after,
+.box-account .box-head:after,
+.dashboard .box .box-title:after,
+.box-reviews li.item:after,
+.box-tags li.item:after,
+.pager:after,
+.sorter:after,
+.ratings:after,
+.add-to-box:after,
+.add-to-cart:after,
+.product-essential:after,
+.product-collateral:after,
+.product-view .product-img-box .more-views ul:after,
+.product-view .box-tags .form-add:after,
+.product-view .product-shop .short-description:after,
+.product-view .box-description:after,
+.product-options .options-list li:after,
+.product-options-bottom:after,
+.product-review:after,
+.cart:after,
+.cart-collaterals:after,
+.cart .crosssell li.item:after,
+.opc .step-title:after,
+.checkout-progress:after,
+.multiple-checkout .place-order:after,
+.group-select li:after,
+.form-list li:after,
+.form-list .field:after,
+.buttons-set:after,
+.page-print .print-head:after,
+.advanced-search-summary:after,
+.gift-messages-form .item:after,
+.send-friend .form-list li p:after {
+	display: block;
+	content: ".";
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	height: 0;
+	overflow: hidden;
+}
+/* MAIN LAYOUT DIVS
+--------------------------------------------------------- */
+#ja-wrapper {}
+
+.wrap { clear: both; min-width: 960px; width: 100%; }
+
+.main { width: 960px; margin: 0 auto; }
+
+.main .inner { margin: 0 10px; }
+/* HEADER
+--------------------------------------------------------- */
+#ja-header {}
+
+/* CONTAINER
+--------------------------------------------------------- */
+#ja-container { padding: 1px 0; }
+#ja-mainbody { float: left; width: 75%; }
+
+/*main content---*/
+#ja-main { clear: both; display: block; float: right; width: 75%; }
+#ja-current-content { min-height: 400px; }
+/*columns---*/
+#ja-col1 { float: left; width: 25%; }
+#ja-col2 { float: right; width: 25%; margin-top: 120px; }
+
+/* FOOTER
+--------------------------------------------------------- */
+#ja-footerwrap {}
+
+/* EXTENSIBLE LAYOUT
+--------------------------------------------------------- */
+/*1 Column---*/
+.ja-lo-1col #ja-current-content { margin: 0; }
+.ja-lo-1col #ja-mainbody,.ja-lo-1col #ja-main { float: none; width: 100%; }
+
+/*2 Columns Right---*/
+.ja-lo-2colsr #ja-main { float: none; width: 100%; }
+.ja-lo-2colsr #ja-current-content { margin-left: 0; }
+
+/*2 Columns Left---*/
+.ja-lo-2colsl #ja-mainbody { float: none; width: 100%; }
+.ja-lo-2colsl #ja-main { }
+.ja-lo-2colsl #ja-current-content { margin-right: 0; }
+.ja-lo-2colsl #ja-col1, .ja-lo-2colsl #ja-main {/* margin-top:60px */}
+
+/* IN PAGE LAYOUTS
+--------------------------------------------------------- */
+.page {}
+.page-print { padding: 25px 30px; text-align: left; }
+.page-empty { padding: 20px; text-align: left; }
+.page-popup { padding: 25px 30px; text-align: left; }
+.main-container { }
+.main {}
+
+/* Base Columns */
+.col-left { float: left; width: 195px; padding: 0; }
+.col-main { float: left; width: 685px; padding: 0; }
+.col-right { float: right; width: 195px; padding: 0; }
+
+/* 1 Column Layout */
+.col1-layout .col-main { float: none; width: auto; }
+
+/* 2 Columns Layout */
+.col2-left-layout .col-main { float: right; }
+.col2-right-layout .col-main {}
+
+/* 3 Columns Layout */
+.col3-layout .col-main { width: 475px; margin-left: 17px; }
+.col3-layout .col-wrapper { float: left; width: 687px; }
+.col3-layout .col-wrapper .col-main { float: right; }
+
+/* Content Columns */
+.col2-set .col-1 { float: left; width: 48.5%; }
+.col2-set .col-2 { float: right; width: 48.5%; }
+.col2-set .col-narrow { width: 32%; }
+.col2-set .col-wide { width: 65%; }
+
+.col3-set .col-1 { float: left; width: 32%; }
+.col3-set .col-2 { float: left; width: 32%; margin-left: 2%; }
+.col3-set .col-3 { float: right; width: 32%; }
+
+.col4-set .col-1 { float: left; width: 25%; }
+.col4-set .col-2 { float: left; width: 25%;  }
+.col4-set .col-3 { float: left; width: 25%; }
+.col4-set .col-4 { float: right; width: 25%; }
+
+.col5-set .col-1 { float: left; width: 20%; }
+.col5-set .col-2 { float: left; width: 20%; }
+.col5-set .col-3 { float: left; width: 20%; }
+.col5-set .col-4 { float: left; width: 20%; }
+.col5-set .col-5 { float: left; width: 20%; }
+.col5-set .col-wide { width: 40%; }
+
+/*Table Columns---*/
+table .col-1, table .col-2, table .col-3, table .col-4 { float: none !important; margin: 0 !important; }
+.col3-set td.spacer { width: 3%; }
+.col4-set td.spacer { width: 4%; }
+/*
+ * ------------------------------------------------------------------------
+ * JM Neros Theme
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+body {
+	background: #fff;
+	color: #000;
+	font: 12px/1.5 'Source Sans Pro', sans-serif;
+}
+
+body#bd {
+	color:  #333;
+}
+
+body#bd.sales-order-print {
+	background: #fff;
+}
+
+body.fs1 {font-size: 12px;}
+body.fs2 {font-size: 13px;}
+body.fs3 {font-size: 14px;}
+body.fs4 {font-size: 15px;}
+body.fs5 {font-size: 16px;}
+body.fs6 {font-size: 17px;}
+
+p, pre, blockquote, h1, h2, h3, h4, h5, h6 {
+	margin: 10px 0;
+	padding: 0;
+}
+
+/* COMMON ELEMENTS
+-------------------------------------------------------------*/
+/*Normal link---*/
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: #8cbf26;
+	text-decoration: none;
+}
+
+a img {
+	border: 0; 
+}
+
+/* draw any selected text on background */
+::-moz-selection { color: #fff;  background: #F09609; }
+::selection      { color: #fff;  background: #F09609; }
+
+/* Heading */
+h1 {font-size: 180%;}
+h2 {font-size: 150%;}
+h3 {font-size: 125%;}
+h4 {font-size: 110%;}
+h5 {font-size: 100%;}
+h6 {font-size: 92%; text-transform: uppercase;}
+
+
+/*Title text---*/
+h1, h2, h3, h4, h5, h6, .head, .page-title {
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	line-height: 1.3;
+	color: #111;
+}
+
+/*Small text---*/
+small, #ja-footer,
+.category-products .add-to,
+.ratings, .ratings-list td.label,
+.widget-btn, .validation-advice, .required,
+.toolbar .pager,.toolbar .sorter {}
+
+/*Form---*/
+input.input-text, select, textarea {
+	border: 1px solid #666;
+	color: #333;
+	vertical-align: middle;
+}
+
+option, optgroup {
+}
+
+optgroup { font-weight: bold; }
+
+textarea {
+	overflow: auto;
+	
+}
+
+select {
+	padding: 1px 2px;
+	
+}
+
+input.input-text, textarea {
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  
+  background: #fff;
+  border:1px solid #ddd;
+}
+
+input.radio {
+	margin-right: 3px;
+}
+
+input.checkbox {
+	margin-right: 3px;
+	/*float: left;*/
+	vertical-align:middle;
+}
+
+input#subscription {
+	margin-top: 1px;
+}
+
+.input-text:focus, select:focus, textarea:focus {
+	background: #fff;
+	border: 1px solid #1ba1e2;
+	color:#333;
+}
+
+#payment_method {
+	margin-right: 5px;
+	vertical-align: middle;
+	float:left;
+	padding:4px 2px
+}
+
+/*Fieldset--*/
+fielddset {}
+
+fieldset legend {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/*Tables--*/
+
+/*Others--*/
+address {
+	font-style: normal;
+}
+
+p.f-left {
+	margin: 0;
+	padding-top:15px;
+}
+
+/* HEADER
+--------------------------------------------------------- */
+#ja-header {
+  background-color: #000;
+  position: relative;
+  z-index: 12;
+  top: 0;
+  
+}
+
+#ja-header .main .inner {
+	line-height: normal;
+	position: relative;
+	z-index: 1000;
+	padding: 40px 0 0;
+}
+
+/*Logo---*/
+h1#logo, div#logo-text {
+	margin: -5px 0 30px;
+	margin-left:-5px;
+	padding: 0;
+}
+
+h1#logo a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 250%;
+	width: 313px;
+	height: 75px;
+	text-indent: -99999px;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+h1#logo a span {
+	position: absolute;
+	top: -1000px;
+}
+
+div#logo-text {
+	outline: none;
+}
+
+div#logo-text h1 {
+	font-size: 250%;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+}
+
+div#logo-text h1 a {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.site-slogan {
+	color: #999;
+	margin: 0 0 -2px 10px;
+	padding: 0;
+	letter-spacing: 1px;
+}
+
+/*Quick Access---*/
+.quick-access {
+	color: #fff;
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: right;
+}
+
+	
+.quick-access p {
+	margin: 0 10px 0 0;
+	display: inline-block;
+	font-weight: bold;
+}
+.quick-access .block-account { display:none; }
+
+.shop-access .logoutlinks { display: none}
+
+.shop-access li {
+	display: inline;
+	padding-left: 3px;
+	padding-right: 7px;
+}
+
+.quick-access li.first {
+	padding-left: 0;
+}
+
+.quick-access li.last {
+	background: none;
+	padding-right: 0;
+}
+
+.shop-access {
+	display: inline-block;
+}
+
+.shop-access a {
+  color: #fff;
+}
+
+.shop-access a:hover,
+.shop-access a:active,
+.shop-access a:focus {
+	color: #8cbf26;
+	text-decoration: none;
+}
+
+.form-language {
+	float: right;
+}
+
+.form-language label {
+	padding-right: 5px;
+}
+
+.form-language #select-language {
+	padding: 0;
+}
+
+.form-language .flag option {
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	padding-left: 20px;
+}
+
+/*Mini search---*/
+#ja-search {
+	position: absolute;
+	
+	bottom: 40px;
+	right:0;
+	
+
+	z-index: 1000;
+	width: 262px;
+}
+
+#ja-search form {
+	float: right;
+	text-align: right;
+}
+
+#ja-search legend {
+	display: none;
+}
+
+#ja-search .input-text {
+  background: #E7E4E4;
+  width: 240px;
+  border: 1px solid #222;
+  vertical-align: middle;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 40px 0 10px;
+}
+
+#ja-search .input-text:focus {
+  background: #efefef;  
+}
+
+#ja-search label { display: none; }
+
+#ja-search button.button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_search.png) no-repeat center center;
+  padding: 0;
+  height: 38px;
+  width: 38px;
+  display: block;
+  border: 0;
+}
+
+#ja-search button.button span {
+  display: none;
+}
+
+.search-autocomplete {
+	z-index: 999;
+}
+
+.search-autocomplete ul {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-top: 0;
+}
+
+.search-autocomplete li {
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+	padding: 2px 8px;
+	list-style: none;
+	text-align: left;
+}
+
+.search-autocomplete li .amount {
+	float: right;
+	font-weight: bold;
+}
+
+.search-autocomplete li.odd {}
+
+.search-autocomplete li.selected {
+	background: #FEF9EF;
+}
+
+.menu-toggle { display: none}
+/* MAIN NAVIGATION
+--------------------------------------------------------- */
+#ja-mainnav {
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/mainnav-bg.png);
+  width: 100%;
+}
+
+#ja-mainnav-sticky-wrapper {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}
+
+
+/* CONTAINER
+--------------------------------------------------------- */
+#ja-container {
+  z-index: 10;
+  position: relative;
+  background: #fff;
+}
+
+/*main content---*/
+#ja-content {}
+
+#ja-current-content {}
+#ja-current-content .billing-agreements button { padding:4px 10px}
+
+#ja-current-content .block .block-title strong { font-size: 30px; font-weight: normal; }
+
+#ja-main {}
+
+#ja-mainbody { margin-top: 100px; margin-bottom: 50px; }
+
+.hasmasshead #ja-mainbody,
+.cms-home #ja-mainbody { margin-top: 50px; }
+
+/*columns---*/
+#ja-col1 { margin-bottom: 50px}
+
+#ja-col1 .block { margin-right: 20px; margin-left: 10px; padding: 0px; }
+#ja-col2 .block { margin-right: 10px; margin-left: 20px; padding: 0px; }
+#ja-col1 .block p,
+#ja-col2 .block p { margin:0 0 10px 0; }
+
+#ja-col1 .block .block-title,
+#ja-col2 .block .block-title {}
+#ja-col1 .block .block-title strong,
+#ja-col2 .block .block-title strong { font-size: 16px; font-weight: 600; }
+#ja-col1 .block .block-content,
+#ja-col2 .block .block-content { padding: 0px }
+
+#ja-col1 .block .block-content,
+#ja-col2 .block .block-content { border-bottom: 1px solid #ddd; padding-bottom:20px; margin-bottom:20px; }
+#ja-col1 .block-banner .block-content,
+#ja-col2 .block-banner .block-content { border-bottom: none; padding-top:10px; padding-bottom:0; }
+#ja-col1 .block-layered-nav .block-content { padding-bottom:10px; }
+
+#ja-col1 .block .actions button.button,
+#ja-col2 .block .actions button.button { float:left; }
+
+/*breadcrums---*/
+#ja-pathway {
+  line-height: normal;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+  margin: 20px 0 30px;
+  padding: 10px 0;
+}
+
+.ja-lo-2colsl #ja-pathway,
+.ja-lo-3cols #ja-pathway,
+.ja-lo-2colsr #ja-pathway {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.catalog-category-view #ja-pathway { border-bottom: 0; margin-bottom: 0; }
+
+#ja-pathway ul {}
+
+#ja-pathway ul li {
+	display: inline;
+	padding-right:5px
+}
+#ja-pathway ul li a { color:#1ba1e2; font-weight: bold; }
+
+/* Mass */
+#ja-mass-top {
+  background: #efefef;
+}
+
+#ja-mass-top-sticky-wrapper {
+  top: 0;
+  position: relative;
+  z-index: 9;
+  width: 100%;
+}
+
+/*.ja-mass .main {padding: 20px 0; }*/
+
+.ja-mass .main .inner {
+	/*margin: 0 9px;*/
+}
+
+#ja-mass-top1 {
+  background: #efefef;
+  position: relative;
+  z-index: 11;
+}
+
+#ja-mass-bottom {
+  background: #efefef;
+  position: relative;
+  z-index: 10;
+}
+
+#ja-mass-bottom .main { padding: 0; }
+
+.content-mass-bottom { z-index: 999; height: 228px; margin: 0; padding: 32px 0 20px 0px ;   background-position: right bottom; background-repeat: no-repeat;  }
+.content-mass-bottom .title-massbottom { padding-top: 25px; font-size: 36px; color: #111; font-weight: 200; display: block; }
+.content-mass-bottom .title-massbottom .text-color { color: #1ba1e2; font-weight: 700; }
+.content-mass-bottom .sub-title-massbottom { font-size: 12px; color: #999; }
+.content-mass-bottom td  { padding-left:12px; padding-right:12px; max-width:100%;  }
+.content-mass-bottom td img {  max-width:100%; }
+
+/* Spotlight */
+.ja-spotlight .col-1,
+.ja-spotlight .col-2,
+.ja-spotlight .col-3,
+.ja-spotlight .col-4 { font-size:13px }
+
+.ja-spotlight .block { margin: 0; border: 0; background: none !important ; color:#999}
+
+.ja-spotlight .block .block-title {
+  background: none;
+  padding: 0;
+  border-bottom: 0;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.ja-spotlight .block .block-title strong { font-size: 18px; font-weight: normal; color: #fff; }
+
+.ja-spotlight .block .block-content { padding: 10px 0; }
+
+.ja-spotlight .block p {
+  margin-top: 0;
+}
+
+.ja-spotlight .block p a {
+  color: #fff;
+}
+
+/* Top Spotlight */
+#ja-topsl { padding: 10px 0; }
+
+/* Bottom Spotlight */
+#ja-botsl { 
+	padding: 40px 0 10px 0;
+	background:#050505; 
+	border-top: 10px solid #1ba1e2;
+	position: relative;
+	z-index: 10;
+}
+
+
+#ja-botsl .block-list ol li { background: none !important; border: none !important; padding: 5px 0; color:#999; font:normal 13px "Segoe UI"}
+#ja-botsl .block-list ol li a {color:#999}
+#ja-botsl .block-list ol li a:hover {color:#8cbf26}
+
+#ja-botsl .ja-spotlight .col-wide { }
+
+.tel-number {background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_social.png) no-repeat -4px -127px; padding-left:32px; height:25px; padding-top:5px; color:#fff; margin:0px}
+.fax-number {background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_social.png) no-repeat -4px -159px; padding-left:32px; height:25px; padding-top:5px; color:#fff; margin:0px}
+
+.socail-footer { background:#111; padding:10px; float:left; width:920px;}
+.socail-footer .left-content {  text-align:left; color:#666; float:left; padding-top:7px}
+.socail-footer .right-content {text-align:right; float:right}
+.socail-footer .right-content a { float:left; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_social.png) no-repeat; width:30px; height:30px;cursor:pointer; margin-right:5px;}
+.socail-footer .right-content a.facebook { background-position: 0px 0px}
+.socail-footer .right-content a.facebook:hover { background-position: -34px 0px}
+
+.socail-footer .right-content a.twitter {background-position:0px -30px}
+.socail-footer .right-content a.twitter:hover {background-position:-34px -30px}
+
+.socail-footer .right-content a.google {background-position:0px -61px}
+.socail-footer .right-content a.google:hover {background-position:-34px -61px}
+
+.socail-footer .right-content a.linkedin {background-position: 0px -91px; margin-right:0px !important}
+.socail-footer .right-content a.linkedin:hover {background-position: -34px -91px;}
+
+.socail-footer .right-content a, .socail-footer .right-content a span { color:transparent !important; }
+
+/* FOOTER
+--------------------------------------------------------- */
+#ja-footer {
+	position: relative;
+	z-index: 10;
+	background:#050505;
+}
+
+#ja-footer .main .inner {
+	color: #666;
+	padding: 20px 0;
+}
+
+#ja-footer a {
+	color: #666;
+	text-decoration: none;
+}
+#ja-footer a:hover { color:#8cbf26}
+
+#ja-footer a:hover, #ja-footer a:active, #ja-footer a:focus {
+	text-decoration: none;
+	
+}
+
+#ja-footer ul {
+	float: right;
+	margin: 0;
+}
+#ja-footer ul.links { margin-top: 25px; }
+
+#ja-footer li {
+	display: block;
+	float: left;
+	padding: 0 10px 0 0;
+	margin: 0 10px 0 0;
+	/*background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/sep-vdot.gif) no-repeat right center;*/
+}
+
+#ja-footer li.last {
+	background: none;
+	padding-right:0;
+	margin-right:0
+	
+}
+
+#ja-footer li a {}
+
+#ja-footer li a.link-feed {
+	line-height: normal;
+}
+
+#ja-footer .jm-info { margin-bottom: 10px; }
+
+#ja-footer .jm-legal { margin-top: -30px; font-size:12px }
+
+#ja-footer ul.menu-footer { width:100%}
+#ja-footer ul.menu-footer li { width: 14%; padding: 20px 2%; }
+
+
+
+/*===============================================================
+-----------------------[MAGENTO'S ELEMENTS]----------------------
+=================================================================*/
+
+/* MESSAGES
+----------------------------------------------------------------*/
+.success {color: #8cbf26;}
+.error	{color: #e51400;}
+.notice	{color: #1ba1e2;}
+
+.success, .error {
+	font-weight: bold;
+}
+
+.messages {
+	overflow: hidden;
+	width: 100%;
+}
+
+.error-msg, .success-msg, .notice-msg, .note-msg {
+	background-position: 10px 6px !important;
+	background-repeat: no-repeat !important;
+	background-color:#eee;
+	font-size: 110% !important;
+	font-weight:600;
+	margin: 0 0 15px!important;
+	padding: 5px 10px 5px 32px !important;
+}
+
+.error-msg li, .success-msg li, .notice-msg li {
+	background: none;
+}
+
+.error-msg {
+	background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/msg_error.gif);
+	border-color: #e51400;
+	color: #e51400;
+}
+
+.success-msg {
+	background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/msg_success.gif);
+	border-color: #1BA1E2;
+	color: #1BA1E2;
+}
+
+.notice-msg, .note-msg {
+	background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/msg_notice.gif);
+	border-color: #1ba1e2;
+	color: #1ba1e2;
+}
+
+.out-of-stock {
+	color: #ffffff;
+}
+
+/* FORMS
+----------------------------------------------------------------*/
+input.qty {
+	width: 2.5em !important;
+}
+
+.fieldset label, .form-list label, .sp-methods label {
+	font-weight: bold;
+}
+
+.buttons-set,
+.button-set {/*Container for form buttons*/
+	clear: both;
+	margin-top: 20px;
+	text-align: right;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.buttons-set .back-link {
+	float: left;
+	margin: 0;
+}
+
+.buttons-set .button {
+	float: right;
+	margin-left: 20px;
+}
+
+.buttons-set #add_recipient_button {
+	margin: 0;
+}
+
+.buttons-set p.required {
+	margin-bottom: 5px;
+}
+
+button.button, button {
+	background: #1ba1e2;
+	border: 1px solid #1ba1e2;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	overflow: visible;
+	padding: 8px 10px;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+	display: block;
+}
+
+button.button span, .btn-cart span,.form-button {
+	white-space: nowrap;
+}
+
+button.button:hover,
+button.button:focus,
+button:hover,
+button:focus {
+	background: #8cbf26;
+	border: 1px solid #8cbf26;
+}
+
+.btn-continue {
+	margin-right: 5px;
+}
+
+/*Form lists---*/
+.form-list { margin: 0; }
+
+.form-list li { margin: 0; padding: 5px 0; }
+
+.form-list li .input-box .input-text,
+.form-list li .input-box textarea { width: 250px; }
+
+.form-list li .input-box select   { width: 256px; }
+
+.form-list li.additional-row {}
+
+.form-list li.additional-row > p { margin: 15px 0 0; float: right; }
+
+.form-list li.additional-row .btn-remove {}
+
+.form-list div.input-box { padding: 5px 0; }
+
+.form-list .control div.input-box { padding: 0; display: inline; }
+
+.form-list .control div.input-box input.checkbox {
+	margin-top: 0;
+	margin-bottom: 0;
+	/*vertical-align: middle;*/
+}
+
+.fieldset {
+	border: 1px solid #ddd;
+	margin: 25px 0 15px;
+	padding: 15px;
+}
+
+.fieldset .legend {
+	background: #fff;
+	float: left;
+	font-size: 125%;
+	font-weight: bold;
+	margin: -25px 0 0;
+	padding: 0 8px;
+}
+
+.fieldset li { padding: 5px 0; }
+
+.fieldset li .field { float: left; width: 275px; }
+
+.fieldset li .input-text, .fieldset li select, .fieldset li textarea  { width: 525px; }
+
+.fieldset li .input-box .input-text, .fieldset li .input-box textarea { width: 250px; }
+
+.fieldset li .input-box select                                        { width: 256px; }
+
+/*Form Messages---*/
+.validation-advice, .required { margin: 0; }
+
+.validation-advice {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/validation_advice_bg.gif) no-repeat 2px 1px;
+	clear: both;
+	font-weight: bold;
+	line-height: 1.25em;
+	margin-top: 3px;
+	min-height: 15px;
+	padding-left: 17px;
+}
+
+.validation-failed {
+	background: #FCEDED !important;
+	border: 1px dashed #e51400 !important;
+}
+
+/*Expiration date and cvv number validation fix---*/
+.v-fix { float: left; }
+
+.v-fix .validation-advice {
+	display: block;
+	margin-right: -12em;
+	position: relative;
+	width: 12em;
+}
+
+label.required { font-weight: 600; color: #111; }
+
+label.required em {
+	color: #e51400;
+	margin-right: 3px;
+}
+
+p.required {
+	margin: 0;
+	text-align: right;
+	color: #e51400;
+}
+
+.form-list li .input-box .v-fix .month,
+.form-list li .input-box .v-fix .year { width: 125px; }
+
+/* HEADINGS
+----------------------------------------------------------------*/
+.head, .inner-head, .box-title ,.box-head{
+	line-height: 1.25em;
+	text-align: right;
+}
+
+.head h1, .inner-head h1
+.head h2, .inner-head h2,
+.head h3, .inner-head h3,
+.head h4, .inner-head h4,
+.head h5, .inner-head h5,
+.box-title h3,
+.box-head h2{
+	float: left;
+	margin: 0;
+	text-align: left;
+}
+
+.head a, .inner-head a,.box-title a,.box-head a {
+	font-size: 100%;
+	font-weight: 600;
+	color: #1ba1e2;
+}
+
+.head a:hover, .inner-head a:hover,.box-title a:hover,.box-head a:hover {
+  color: #8cbf26;
+}
+
+.info-box .box-title {
+	text-align: left;
+}
+
+/*Page heading---*/
+.page-title {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	
+}
+
+.page-title h1 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.page-title h4 {
+	font-size: 150% !important;
+	margin: 0;
+}
+
+.page-title a {
+	font-weight: bold;
+}
+
+.page-title ul
+.page-title li {
+	background: none;
+	margin: 0;
+	line-height: normal;
+}
+
+.title-buttons {
+	/*line-height: 35px;*/
+	overflow: hidden;
+	text-align: right;
+}
+
+.title-buttons h1 {
+	float: left; /* heading level with buttons */
+}
+
+.title-buttons ul {
+	float: right;
+}
+
+.title-buttons ul li {
+	float: left;
+	display: block;
+	padding-left: 10px;
+}
+
+.title-buttons .paypal-logo {
+	margin: 0;
+	padding: 0;
+	float: left;
+	line-height: 20px;
+}
+
+.title-buttons .paypal-logo a {
+	float: left;
+	padding-right: 10px;
+}
+
+.checkout-types li p.paypal-logo .paypal-or {
+	display: none;
+}
+
+/*Category list heading---*/
+.category-head {
+	margin-bottom: 10px;
+}
+
+.category-head h2 {
+	color: #333;
+	font-size: 200%;
+	margin: 0;
+}
+
+.box-header {
+	background: #efefef none repeat scroll 0%;
+	font-size: 1.05em;
+	font-weight: bold;
+	margin: 10px 0;
+	padding: 2px 8px;
+	text-align: left;
+}
+
+.category-head .link-feed {
+	float: right;
+	margin-top: 5px;
+	position: relative;
+}
+
+/* TABLES
+----------------------------------------------------------------*/
+td.label {
+	font-weight: bold;
+}
+
+/*Data Table---*/
+.data-table {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+
+.data-table tr td {
+	background: #fff;
+}
+
+.data-table .odd td {
+	background: #fff;
+}
+
+.data-table .even td {
+	background: #fff !important;
+}
+
+.data-table td.last, 
+.data-table th.last,
+.data-table th:last-child {	}
+
+.data-table tr.last td,
+.data-table tr.last th { font-size:14px}
+
+.data-table th {
+	white-space: nowrap;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #333;
+
+}
+
+.data-table tbody th {
+  font-weight: 600;
+}
+
+.data-table th.wrap {
+	white-space: normal;
+}
+
+.data-table th a,
+.data-table th a:hover {
+	color: #fff;
+}
+
+.data-table td,
+.data-table th {
+	padding: 10px;
+}
+
+.data-table thead tr th,
+.data-table thead tr td {
+	background: #fff;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #333;
+}
+
+.data-table tfoot tr.first td {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.data-table tfoot tr td {
+	/*background: #efefef;*/
+}
+
+.data-table tfoot td {
+	border-bottom: 0;
+	border-right: 1px solid #ddd;
+}
+
+.data-table tbody td {
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+#wishlist-table thead th { padding:10px 20px}
+
+/*Bundle Products---*/
+.data-table tbody.odd tr td{
+	background: #F7F7F7 !important;
+}
+
+.data-table tbody.even tr td {
+	background: #fff !important;
+}
+
+.data-table tbody.odd tr td,
+.data-table tbody.even tr td {
+	border-bottom: 0;
+}
+
+.data-table tbody.odd tr.border td,
+.data-table tbody.even tr.border td {
+	border-bottom: 1px solid #ddd;
+}
+
+.data-table tbody td h4.title,
+.data-table tbody td h5.title {
+	color: #333;
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.data-table tbody td .option-label {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.data-table tbody td .option-value {
+	padding-left: 10px;
+}
+
+.data-table .product-name {
+	font-size: 100%;
+	margin: 0;
+}
+
+.box-table select {
+	width: 100%;
+}
+
+.nested-data-table th, .nested-data-table td {
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+
+.generic-table td {
+	padding: 0 8px;
+}
+
+.generic-table td.first {
+	padding-left: 0;
+	white-space: nowrap;
+}
+
+.shipping-tracking .button-set {
+	border: 0;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+/* LISTS
+----------------------------------------------------------------*/
+.disc {
+	margin: 10px 0;
+}
+
+.disc li {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/bullet.gif) no-repeat left 9px;
+	padding-left: 8px;
+}
+
+li.odd {}
+li.even {}
+li.last {}
+
+/* Bare List */ /* Unstyled list */
+.bare-list {
+	margin: 5px 0;
+}
+
+.bare-list li {
+	margin: 3px 0;
+}
+
+/* Pager magento 1.4*/
+.toolbar {background: #efefef; margin:0 10px ;padding: 3px;}
+.pager {
+	background: #efefef;
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+.pager .view-mode { float:left; margin:0 10px }
+
+.pager .view-mode a{ cursor: pointer; }
+
+.pager .view-mode .grid {
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/view-mode_01.png) no-repeat 5px -13px;
+  width: 15px;
+  height: 15px;
+  color: transparent;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.pager .view-mode .grid:hover, .pager .view-mode strong.grid {
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/view-mode_01.png) no-repeat 5px 4px;
+}
+
+.pager .view-mode .list {
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/view-mode_01.png) no-repeat 0 -45px;
+  width: 15px;
+  height: 15px;
+  color: transparent;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.pager .view-mode .list:hover, .pager .view-mode strong.list {
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/view-mode_01.png) no-repeat 0 -28px;
+}
+
+.pager .amount { float: left; }
+.pager .limiter { float: right; }
+.pager .limiter label { vertical-align: middle; }
+.pager .limiter select { padding: 0; margin: 0 10px 1px; vertical-align: middle; }
+.pager .pages { margin: 0 140px; }
+.pager .pages ol { display: inline; }
+.pager .pages li { display: inline; margin: 0 2px; }
+.pager .pages .current {}
+.amount a { font-weight: bold; color: #1ba1e2; }
+.amount a:hover { color: #8CBF26;}
+.summary .subtotal { border-bottom:1px solid #ddd; font-weight: bold; padding-bottom:10px}
+.summary .subtotal .price { text-align:right; float:right}
+
+/* Sorter */
+.sorter {
+	background: #fff;
+	border: 0;
+	overflow: hidden;
+	padding: 10px 0;
+	
+}
+
+.sorter .amount { float: left; }
+.sorter .sort-by { float:right; }
+.sorter .sort-by label { vertical-align:middle; }
+.sorter .sort-by select { padding: 0; margin: 0 10px 1px; vertical-align: middle; }
+.sorter .link-feed {}
+
+.sorter p,
+.pager p,
+.sorter div,
+.pager div {
+	margin: 0 10px;
+	text-align: center;
+}
+
+
+
+/* Toolbar */
+.toolbar .pager {
+	margin: 0;
+}
+
+.toolbar .sorter {
+	background: #fff;
+}
+
+.toolbar-bottom {
+	clear: both;
+	padding-bottom:60px
+}
+
+/*RATINGS
+----------------------------------------------------------------*/
+.ratings {
+	line-height: 15px;
+	margin: 20px 0 10px;
+	overflow: hidden;
+}
+
+.ratings .amount { display: none; }
+
+.ratings strong {
+	float: left;
+	margin-right: 5px;
+}
+
+.rating-box {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_blank_star.png) repeat-x;
+	float: left;
+	height: 18px;
+	margin-right: 10px;
+	position: relative;
+	width:110px;
+	clear: right;
+}
+
+.rating-box .rating {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_full_star.png) repeat-x;
+	height: 18px;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.ratings .rating-links { display: none; }
+
+.ratings-list {
+	margin: 5px 0;
+}
+
+.ratings-list td {
+	padding: 3px 0;
+	vertical-align: middle;
+}
+
+.ratings-list td.label {
+	font-weight: bold;
+	padding-right: 8px;
+}
+
+.ratings-table { margin: 15px 0; }
+
+.ratings-table th,
+.ratings-table td { padding-right: 10px; vertical-align: middle; }
+
+.ratings-table .rating-box {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_blank_star_small.png);
+  height: 14px;
+  width: 85px;
+}
+
+.ratings-table .rating-box .rating {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_full_star_small.png);
+  height: 14px;
+}
+
+/*PRICES
+----------------------------------------------------------------*/
+.price {
+	white-space: nowrap !important;
+}
+
+.price-box {}
+
+.price-box .price {
+	color: #333;
+	font-weight: 600;
+}
+
+/*Regular price---*/
+.regular-price {
+	color: #333;
+}
+
+.regular-price .price {
+	color: #FF006F;
+	font-size: 34px;
+	font-weight: 600;
+}
+
+.jm-tab-content {
+  width: 100% !important;
+}
+
+.jm-tabswrap .product-information .regular-price .price {
+	color: #FF006F;
+	font-size: 38px;
+	font-weight: 600;
+}
+
+.jm-tabswrap .product-information .actions {
+  padding: 0;
+}
+
+/*Old price---*/
+.old-price { float:left; margin-right:10px; margin-top:4px}
+
+.old-price .price-label {
+	display:none
+	/*color: #999;
+	white-space: nowrap;*/
+}
+
+.old-price .price {
+  color: #8e8e8e;
+  font-weight: normal;
+  text-decoration: line-through;
+  font-size: 20px;
+}
+
+/*Special price---*/
+.special-price {
+	margin: 0;
+	
+}
+
+.special-price .price-label {
+  display: none;
+}
+
+.special-price .price {
+	color: #000;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+/*Minimal price (as low as)---*/
+.minimal-price {
+	margin: 0;
+}
+
+.minimal-price .price-label {
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+a.minimal-price-link {
+	display: block;
+	padding-top:5px;
+}
+
+a.minimal-price-link .label {}
+
+a.minimal-price-link .price {
+	color: #1ba1e2;
+	font-weight: normal;
+}
+
+/*Excluding tax---*/
+.price-excluding-tax {
+	color: #999;
+	display: block;
+}
+
+.price-excluding-tax .label {
+	color: #999;
+	white-space: nowrap;
+}
+
+.price-excluding-tax .price {
+	color: #1ba1e2;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+/*Including tax---*/
+.price-including-tax {
+	color: #999;
+	display: block;
+}
+
+.price-including-tax .label {
+	color: #999;
+	white-space: nowrap;
+}
+
+.price-including-tax .price {
+	color: #1ba1e2;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+/*Excl tax (for order tables)---*/
+.price-excl-tax {}
+
+.price-excl-tax .label {
+	display: block;
+	white-space: nowrap;
+}
+
+.price-excl-tax .price {}
+
+/*Incl tax (for order tables)---*/
+.price-incl-tax {
+	display: block;
+}
+
+.price-incl-tax .label {
+	display: block;
+	white-space: nowrap;
+}
+
+.price-incl-tax .price {
+	display: block;
+	font-weight: 600;
+}
+
+/*Price range---*/
+.price-from {
+	margin: 0;
+}
+
+.price-from .price-label {
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.price-to {
+	margin: 0;
+}
+
+.price-to .price-label {
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+/*Price notice next to the options---*/
+.price-notice {
+	color: #999;
+	padding-left: 10px;
+}
+
+.price-notice .price {
+	color: #333;
+	font-weight: 600;
+}
+
+.price-as-configured {
+	margin: 0;
+}
+
+.price-as-configured .price-label {
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.price-box-bundle {
+	padding: 0 0 10px 0;
+}
+
+.price-box-bundle .price-box {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.price-box-bundle .price {
+	color: #666;
+}
+
+.product-pricing-grouped li {
+	color: #333;
+	padding: 2px 0;
+}
+
+.product-pricing-grouped li .price {
+	font-weight: 600;
+}
+
+/*Product Pricing---*/
+.product-pricing {
+	background: #F7F7F7;
+	border: 1px solid #ddd;
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.product-pricing li {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/bg_tierico1.gif) no-repeat 0 9px;
+	padding: 2px 0 2px 8px;
+}
+
+.product-pricing .benefit {
+	color: #333;
+	font-weight: 600;
+}
+
+.product-pricing .price {
+	color: #333;
+	font-weight: 600;
+}
+
+/*Currency Switcher---*/
+.currency-switcher {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/currency_switcher_bg.gif) no-repeat;
+	font-size: 1.05em;
+	height: 53px;
+	padding: 7px 12px 10px 12px;
+}
+
+.currency-switcher h4 {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_world.gif) no-repeat 0 2px;
+	color: #fff;
+	min-height: 21px;
+	padding-left: 22px;
+	text-transform: none;
+}
+
+.currency-switcher select {
+	width: 98%;
+}
+
+/* MIS.
+----------------------------------------------------------------*/
+.product-shop { float: right; }
+
+/*Generic Box---*/
+.generic-box,
+.order-info-box {
+	background: #fff;
+	border: 1px solid #ddd;
+	margin-bottom: 15px;
+	padding: 10px 15px;
+}
+
+.generic-box h4,
+.order-info-box h2 {
+	margin: 0 0 5px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	font-size: 100%;
+	text-align: left;
+}
+
+/*Generic Product Grid---*/
+.generic-product-grid {
+	width: 100%;
+}
+
+.generic-product-grid td {
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.generic-product-grid tr.last td {
+	border-bottom: 0;
+}
+
+.generic-product-grid td.last {
+	border-right: 0;
+}
+
+.generic-product-grid .product-image {
+	text-align: center;
+}
+
+.generic-product-grid td.empty-product {
+	border-right: 0;
+}
+
+.generic-product-grid .ratings .pipe {
+	display: none;
+}
+
+/*Add To---*/
+.add-to-links {
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.add-to-links a {
+  color: #666;
+  font-weight: normal;
+  background: no-repeat left center;
+  line-height: 22px;
+  padding-left: 32px;
+  display: inline-block;
+}
+
+.add-to-links a.link-wishlist {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_wishlist.gif);
+}
+
+.add-to-links a.link-compare {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_compare.gif);
+}
+
+.add-to-links a:hover,
+.add-to-links a:focus {
+  color: #8cbf26;
+  text-decoration: none;
+}
+
+.add-to-links .pipe,
+.add-to-links .separator {
+	display: none;
+}
+
+
+
+.add-to-cart {
+  padding: 30px 0 0;
+	overflow: hidden;
+  border-top: 1px solid #ddd;
+}
+
+.add-to-cart label {
+	float: left;
+}
+
+.add-to-cart .qty {
+	float: left;
+	margin: 0 5px;
+	padding: 5px;
+}
+
+.add-to-cart .button {
+	float: right;
+}
+
+.add-to-box { }
+
+.add-to-box .or {
+	color: #666;
+	float: left;
+	font-weight: bold;
+	padding: 15px 10px;
+}
+
+.add-to-box .add-to-links {
+	margin: 7px 0 0 0;
+	float: left;
+	text-align: left;
+}
+
+.add-to-cart .paypal-logo {
+	clear: both;
+	margin: 0;
+	text-align: right;
+	padding-bottom: 0;
+}
+
+/*Tool Tips---*/
+.tool-tip {
+	background: #FEF9EF;
+	border: 1px solid #ddd;
+	position: absolute;
+	padding: 10px;
+}
+
+.tool-tip .btn-close {
+	text-align: right;
+}
+
+.tool-tip .inline-content {
+	padding: 8px;
+}
+
+.tool-tip .block-content {
+	padding: 15px 20px;
+}
+
+.truncated {
+	cursor: help;
+}
+
+.truncated a.dots {
+	cursor: help;
+	text-decoration: none !important;
+}
+
+.truncated a.details {
+	border-bottom: 1px dotted #1ba1e2 ;
+	cursor: help;
+	text-decoration: none !important;
+}
+
+.truncated .truncated_full_value {
+	position: relative;
+	z-index: 999;
+}
+
+.truncated .truncated_full_value dl {
+	background: #FEF9EF;
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	position: absolute;
+	top: -99999em;
+	width: 250px;
+	z-index: 999;
+}
+
+.truncated .truncated_full_value dl dt {
+	margin-top: 0;
+}
+
+.truncated .show dl {
+	left: 50%;
+	top: -20px;
+}
+
+#ja-col1 .truncated .show dl {
+	left: 35px;
+	top: 10px;
+}
+
+#ja-col2 .truncated .show dl {
+	left: -147px;
+	top: 20px;
+}
+
+/*Link highlights---*/
+.link-wishlist { white-space: nowrap; }
+
+.link-remove {}
+
+.link-cart  {}
+
+.btn-remove  {
+	display: block;
+	width: 11px;
+	height: 11px;
+	font-size: 0;
+	line-height: 0;
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/btn_remove.gif) 0 0 no-repeat;
+	text-indent: -999em;
+	overflow: hidden;
+}
+
+.btn-remove2 {
+	display: block;
+	width: 16px;
+	height: 16px;
+	font-size: 0;
+	line-height: 0;
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/btn_trash.gif) 0 0 no-repeat;
+	text-indent: -999em;
+	overflow: hidden;
+}
+
+.btn-edit {
+	display: block;
+	width: 11px;
+	height: 11px;
+	font-size: 0;
+	line-height: 0;
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/btn_edit.gif) 0 0 no-repeat;
+	text-indent: -999em;
+	overflow: hidden;
+}
+
+.link-print {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_printer.gif) no-repeat left center;
+	padding-left: 23px;
+	color: #666;
+	line-height: 24px;
+}
+
+.link-feed {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_feed.png) no-repeat left center;
+	padding-left: 18px;
+	line-height: 24px;
+}
+
+/*===============================================================
+---------------------------[BOX STYLE]---------------------------
+=================================================================*/
+
+/*GENERAL BOX STYLE
+----------------------------------------------------------------*/
+.block {
+	background: #fff;
+	
+}
+
+.block-banner {
+	border: none;
+	background: none;
+}
+
+.box-hilite,
+.block-hilite { /*hilite state*/
+	background: #3F3F3F;
+	color: #ddd;
+	border: 1px solid #3F3F3F;
+}
+
+/*Block Head---*/
+.block .block-title {
+  margin-bottom: 10px;
+}
+
+.block-hilite .block-title { /*hilite state*/
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/grad_d3.gif) repeat-x bottom #666;
+	border-bottom: 1px solid #333;
+}
+
+.block-hilite .block-title * { /*hilite state*/
+	color: #fff;
+}
+
+.block .block-title strong,
+.block .block-title h3,
+.block .block-title h4 {
+  font-size: 16px;
+  color: #111;
+}
+
+.block .block-subtitle {}
+
+.block .block-title h3 {
+	color: #999;
+	font-size: 100%;
+	background: none;
+	border: 0;
+	padding: 5px 0 0;
+}
+
+/*reset*/
+.block h3, .block h4, .block h5 {
+	margin: 0;
+}
+
+.block .block-title br {
+	display: none;
+}
+
+/*Box Content---*/
+.block .block-content {
+	padding: 10px;
+}
+
+.block-banner .block-content {
+	padding: 0;
+}
+
+.block .btn-remove,
+.block .btn-edit { float: right; margin: 5px 0 2px 0px; }
+
+.block input.checkbox { margin: 2px 5px 4px 0; }
+
+/*Box Action---*/
+.block .actions {
+  padding: 5px 0px;
+  overflow: auto;
+  clear: both;
+}
+
+.block .actions a {
+  float: right;
+  padding-top:10px
+}
+
+.block .actions button.button {}
+
+/*Box List---*/
+.block ol {
+	margin: 0;
+}
+
+.block ol li {
+	
+	margin: 0;
+	padding: 2px 0;
+}
+
+.block ol li.last {
+	border-bottom: 0;
+}
+
+.block ol li:last-child {
+	border-bottom: 0;
+	padding-bottom:0;
+}
+
+/*MAGENTO'S BOX STYLE
+----------------------------------------------------------------*/
+.block .product-image {
+	float: left;
+	width: 32%;
+}
+
+.block .product-details {
+	float: right;
+	width: 65%;
+}
+
+.block .product-checkbox {
+	float: left;
+	padding-right: 4px;
+}
+
+.block .product-name {
+	margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.product-information h2.product-name { font-size: 19px; }
+#cart-sidebar li { padding-bottom:20px}
+#cart-sidebar  .product-image { float: right; }
+#cart-sidebar  .product-details { float: left; }
+#cart-sidebar .product-details .btn-remove, #cart-sidebar .product-details .btn-edit, .col-left .block-cart .paypal-logo { display: none; }
+.block-cart .actions button { margin-top:20px}
+
+.box-info p, .box-info address { line-height:24px}
+
+/*Product Tags---*/
+.block-tags li {
+	display: inline;
+}
+
+/*Newsletter---*/
+.block-subscribe { width: 100%; }
+.block-subscribe div.input-box { float: left; width: 100%; }
+
+.block-subscribe label {
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#newsletter {
+  background: #333;
+  border-color: #333;
+  margin-top: 0;
+  float: left;
+  width: 82%;
+  padding:9px 10px;
+  padding:10px 10px 11px 10px\0/;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+#newsletter {
+padding:8px 10px;}}
+
+
+#newsletter-validate-detail .input-text:focus {
+  background: #efefef !important; 
+  border-color:#efefef; 
+} 
+
+#newsletter-validate-detail button.button {
+  background: #1ba1e2;
+  color: #fff;
+  float: right;
+  width: 18%;
+  margin-top:0;
+}
+
+#newsletter-validate-detail .button:hover { background: #8cbf26; }
+
+/*Mini Cart---*/
+.block-cart .actions .paypal-logo a {
+	float: none;
+	background: none;
+	padding: 0;
+}
+
+.block-cart .block-subtitle {	
+	border-top: 1px solid #ddd;
+	margin-top: 10px;
+}
+
+.block-cart .mini-products-list .truncated { display: none; }
+.block-cart .mini-products-list .product-name { margin:0 0 10px 0px; font-size: 14px; font-weight: bold; }
+.block-cart .mini-products-list .price { color: #000; }
+.block-cart .mini-products-list .product-details { font-size: 14px; }
+
+/*Mini Wishlist---*/
+
+/*Compare Products, Orders---*/
+.block-compare .block-content { padding: 0; }
+
+.block-compare .empty { margin: 0 }
+
+.block-compare .actions { margin: 0; }
+
+.block-compare ol { padding: 0; }
+
+/*Mini Product View---*/
+
+/*Poll---*/
+.block-poll .votes {
+    float: right;
+    margin-left: 10px;
+}
+
+.block-poll .answer {
+    font-weight: bold;
+}
+
+/*Relate Products----*/
+.block-related .block-content {}
+
+.block-related p {}
+
+.block-related ol li { position: relative; border-bottom: 0; }
+
+.block-related .product-image {
+  float: left;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 15px;
+  width: auto;
+  text-align: center;
+}
+
+.block-related .product-details { width: 100%; }
+
+.block-related .regular-price .price { font-size: 100%; }
+
+.block-related .ratings { margin: 10px 0; }
+
+.block-related .rating-box {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_blank_star_small.png);
+  height: 14px;
+  width: 85px;
+}
+
+.block-related .rating-box .rating {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_full_star_small.png);
+  height: 14px;
+}
+
+/* Block Paypal */
+.paypal-logo {
+	padding: 10px 0;
+	margin: 0;
+	text-align: center;
+}
+
+.paypal-logo a {
+	display: block;
+}
+
+.paypal-logo .paypal-or { display: none; }
+
+/*Layered Navigation---*/
+.block-layered-nav .block-subtitle {
+	font-size: 13px;
+}
+
+.block-layered-nav .currently { padding: 10px; background: #efefef; }
+
+.block-layered-nav .currently .block-subtitle { margin: 0; }
+
+.block-layered-nav .currently .actions { margin: 0; }
+
+.block-layered-nav ol { margin-bottom: 10px; }
+.block-layered-nav .currently .block-subtitle { display: none; }
+.block-layered-nav .currently ol { margin: 10px 0; }
+.block-layered-nav .currently ol li:first-child { padding-top: 0; }
+.block-layered-nav .currently .value { color: #1BA1E2; }
+
+.block-layered-nav ol.narrowed-category {
+	padding: 10px;
+	margin: 0 !important;
+	background: #FEF9EF;
+}
+.block-layered-nav dd li:last-child { border-bottom:0 !important}
+
+.block-layered-nav ol.narrowed-category li {
+	padding: 0 !important;
+	border-bottom: none;
+}
+
+.block-layered-nav .narrowed-category li .label {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/narrow_by_li_by.gif) no-repeat 0 3px;
+	font-weight: bold;
+	padding-left: 20px;
+	text-transform: uppercase;
+}
+
+.block-layered-nav .widget-btn {
+	float: right;
+	margin: 3px 0 0 5px;
+}
+
+#narrow-by-list { }
+
+#narrow-by-list dt {
+	color: #333;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+#narrow-by-list dd {}
+
+#narrow-by-list dd li {
+	border-bottom:none;
+	padding: 2px 0;
+}
+
+#narrow-by-list dd.last {
+	background: none;
+}
+
+/* My Orders */
+
+.block-reorder .block-content{ padding: 0; }
+
+.block-reorder ol { padding: 10px; }
+.customer-account-index .block-reorder ol,
+.contacts-index-index .block-reorder ol { padding: 0; }
+.contacts-index-index #ja-col2 { margin-top:165px }
+#recently-viewed-items, #recently-viewed-items p { padding:0; margin:0 !important }
+#recently-viewed-items .block-title { margin-bottom:0; }
+#recently-viewed-items .product-name { font-weight:normal}
+
+.block-reorder .block-subtitle { margin: 0; }
+
+.block-reorder p.product-name { }
+
+.block-reorder .actions { margin: 0; }
+
+/* Block List */
+
+.block-list ol li {
+	/*padding-left: 12px;
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/arrow.gif) no-repeat 2px 14px;*/
+	
+}
+
+/*===============================================================
+--------------------[MAGENTO'S SHOP PAGES]--------------------
+=================================================================*/
+
+/*CATALOG LISTING
+----------------------------------------------------------------*/
+.category-products { margin: 0 -10px}
+
+.category-products h2 {
+	font-size: 140%;
+	margin: 0 0 10px;
+}
+
+.category-products .price-box {
+	display: block;
+}
+
+/*List Type---*/
+.products-list .item {
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
+	overflow: hidden;
+	clear: both;
+}
+
+.products-list .item.last {
+	border-bottom-width: 0;
+}
+
+.products-list .product-image {
+	float: left;
+	/*width: 180px;*/
+	text-align: center;
+}
+
+.products-list .product-shop {
+	width: 380px;
+}
+
+.products-list .product-shop .description {}
+
+.products-list .product-shop .price-box {
+	float: left;
+	text-align: left;
+	white-space: nowrap;
+	padding: 0 20px 0 0;
+}
+
+.products-list .add-to {
+	margin-bottom: 0;
+}
+
+.products-list .product-shop p.add-to a {margin-right: 10px;}
+.products-list .product-shop .desc { clear: both; margin-bottom: 20px; }
+
+#ja-current-content ol.products-list { margin:0 10px}
+#ja-current-content ol.products-list .item { padding:30px 0 30px 0}
+#ja-current-content ol.products-list  .product-shop { width:450px}
+
+#ja-current-content ol.products-list .product-image { padding:10px; text-align: center; background: #f5f5f5; position: relative; }
+#ja-current-content ol.products-list .item:hover .product-image { border: 3px solid #8cbf26; padding: 7px; }
+#ja-current-content ol.products-list .item:hover .product-name a { color: #8cbf26; }
+#ja-current-content ol.products-list .item:hover button { background-color: #8cbf26; border-color: #8cbf26; }
+#ja-current-content .Hot-item .product-image:hover .Hot-label,  
+#ja-current-content .Sale-item .product-image:hover .Sale-label { right: -3px ; bottom: -3px;  }
+#ja-current-content ol.products-list  .products-list .product-shop .desc { padding-bottom:20px}
+
+.Hot-item, .Sale-item { position: relative; }
+.Sale-item .Sale-label, .Hot-item .Hot-label { position: absolute; right: 0px; bottom: 0px; padding: 10px; color: #fff; font-weight: bold; }
+.Hot-item:hover { border-color:#e51400; }
+.Sale-item:hover { border-color: #00aba9; }
+.Sale-item .Sale-label { background: #00aba9; }
+.Hot-item .Hot-label { background: #e51400; }
+
+.jm-tab-subcontent .add-to-links { display:none; }
+
+.jm-tab-subcontent .special-price .price { font-size: 24px; font-weight: bold; }
+.jm-tab-subcontent .old-price .price { font-size:20px; font-weight: bold; }
+
+.category-products .products-grid { margin: 30px 0; }
+.bestsellers .category-products .products-grid { margin: 20px 0; }
+.bestsellers .category-products .products-grid.last { margin-bottom: 0; }
+.bestsellers .category-products .products-grid:first-child { margin-top: 0; }
+.category-products .products-grid .product-image { padding: 10px; text-align: center; background: #f5f5f5; position: relative; }
+.category-products .products-grid .product-image:hover { border: 3px solid #8cbf26; padding:7px; }
+
+.category-products .products-grid li.item { padding: 0; }
+.products-grid .add-to-links,
+.products-list .add-to-links { display: none; margin-bottom: 0; }
+.products-grid .add-to-links li,
+.products-list .add-to-links li { margin-bottom: 10px; }
+
+.category-products .separator1 {
+  display: block;
+  height: 1px;
+  margin: 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.category-products .last + .separator1 { display: none; }
+
+/*Bestsellers---*/
+.bestsellers .products-grid .item-inner .product-image { float: left; margin: 0 10px 0 0; background: none; position: static; }
+.bestsellers .products-grid .item-inner:hover .product-image { border: none; padding: 10px; }
+
+.bestsellers .products-grid li.item .Hot-item, 
+.bestsellers .products-grid li.item .Sale-item { 
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 5px 25px 5px 5px;
+}
+
+.bestsellers .products-grid li.item .item-inner:hover  {padding: 3px 23px 3px 3px; border: 3px solid #8cbf26; position: relative;   }
+.bestsellers .products-grid li.item .Hot-item:hover { border-color: #e51400; }
+.bestsellers .products-grid li.item .Sale-item:hover { border-color: #00aba9; }
+.bestsellers .products-grid li.item .Hot-item:hover .Hot-label,
+.bestsellers .products-grid li.item .Sale-item:hover .Sale-label { right:-2px !important; bottom:-2px !important}
+
+.bestsellers .products-grid li.item .item-inner { min-height: 121px; }
+.bestsellers .products-grid .actions { display: none; }
+.bestsellers { margin-bottom: 60px; }
+.bestsellers .product-information h2.product-name { font-weight: bold; font-size: 16px; margin-top: 10px; width: 270px;}
+.bestsellers .product-information .regular-price .price { color: #333; font-size: 24px; font-weight: 400; }
+
+.bestsellers .products-grid li.item .item-inner {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 5px 25px 5px 5px;
+}
+
+.bestsellers .rating-box {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_blank_star_small.png);
+  height: 14px;
+  width: 85px;
+}
+
+.bestsellers .rating-box .rating {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_full_star_small.png);
+  height: 14px;
+}
+
+.bestsellers .old-price .price,  .bestsellers .special-price .price { font-size:14px; font-weight:600}
+
+.bestsellers .old-price {  margin-top:0px}
+
+/*Grid Type---*/
+.listing-type-grid {}
+
+.products-grid .product-name, /*product name*/
+.products-grid .product-image, /*product name*/
+.products-grid .ratings /*product rating*/ {
+	margin: 0 0 10px;
+}
+
+.products-grid .pdescription { margin:0 0 5px 0;}
+
+.products-grid .price-box {margin: 0 0 20px; }
+
+.products-grid .add-to-links {}
+
+.products-grid { width: 100%; }
+
+.products-grid.last { border-bottom: 0; }
+
+.products-grid li.item {
+	float: left;
+	overflow: hidden;
+	width: 33%;
+	margin: 0;
+	padding: 0 0 20px;
+}
+
+.products-grid.last li.item {
+	padding-bottom: 0;
+}
+
+.products-grid li.item .item-inner {
+  margin: 0 10px;
+}
+
+.catalogsearch-advanced-result .products-grid li.item { width: 25%; }
+
+.products-grid ol.odd  {}
+
+.products-grid li.last { background: none; margin-right:0 !important }
+.products-grid li.first { margin-left: 0 !important}
+
+.products-grid .product-image {
+  vertical-align: bottom;
+  display: block;
+  float: none;
+  width: auto;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  line-height: 1;
+}
+
+.products-grid .item-inner:hover .product-image { border: 3px solid #8cbf26; padding: 7px; }
+
+.products-grid .Hot-item:hover .product-image .Hot-label,  
+.products-grid .Sale-item:hover .product-image .Sale-label { right: -3px; bottom: -3px; }
+
+.products-grid .Hot-item:hover .product-image { border-color: #e51400; }
+
+.products-grid .Sale-item:hover .product-image { border-color: #00aba9; }
+
+.products-grid .item-inner:hover .product-name a { color: #8cbf26; }
+
+.products-grid .Hot-item:hover .product-name a { color: #e51400; }
+
+.products-grid .Sale-item:hover .product-name a { color: #00aba9; }
+
+.products-grid .item-inner:hover button { background-color: #8cbf26; border-color: #8cbf26; }
+
+.products-grid .Hot-item:hover button { background-color: #e51400; border-color: #e51400; }
+
+.products-grid .Sale-item:hover button { background-color: #00aba9; border-color: #00aba9; }
+
+.products-grid .rating-box {
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+.products-grid .ratings a {
+	text-align: center;
+}
+
+.products-grid .rating-links {
+	margin: 5px 0 0;
+}
+
+.products-grid .pipe {
+	display: none;
+}
+
+.ja-dot { display: none; visibility: hidden; }
+
+/*PRODUCT DETAIL
+----------------------------------------------------------------*/
+.product-info-box {}
+
+.product-essential, .product-collateral {
+	clear: both;
+}
+
+.product-essential {
+	margin: 0px 0 20px 0;
+	overflow: hidden;
+} 
+
+.product-img-box {
+	width: 265px;
+	float: left;
+}
+
+.product-img-box .rating-links {
+	margin-top: 10px;
+	clear: both;
+	float: none;
+}
+
+.product-essential .product-shop {
+	width: 450px;
+}
+
+#product-view-tabs {
+	float: left;
+	width: 75%;
+}
+
+.product-collateral {
+	background: #fff;
+	margin: 0 10px 0 0;
+}
+
+.product-view #ja-col2 {
+  margin-top: 0;
+}
+
+.product-view #ja-col2 .block {
+  margin-right: 0;
+  background: #efefef;
+  padding: 20px;
+}
+
+.product-view #ja-col2 .block .block-content {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+#addTagForm button { padding:4px 10px}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #addTagForm button  {  padding:6px 10px }
+} 
+
+
+/*PRODUCT TABS */
+
+ul.ja-tab-navigator {
+	border-bottom: 3px solid #ddd;
+	height: 30px;
+}
+
+ul.ja-tab-navigator li {
+	float: left;
+}
+
+ul.ja-tab-navigator li.first {}
+
+.ja-tab-content {
+	padding: 10px 0;
+}
+
+ul.ja-tab-navigator li a {
+	font-size: 16px;
+	margin: 0;
+	padding: 0 10px;
+	border: none;
+	text-transform: capitalize;
+	font-weight: 600;
+	color: #111;
+}
+
+ul.ja-tab-navigator li.first a {
+  padding-left: 0;
+}
+
+ul.ja-tab-navigator li a:hover,
+ul.ja-tab-navigator li a:focus,
+ul.ja-tab-navigator li a:active{
+	text-decoration: none;
+	color: #8cbf26;
+}
+
+ul.ja-tab-navigator li.active a,
+ul.ja-tab-navigator li.active a {
+	text-decoration: none;
+	color: #1ba1e2;
+}
+
+.ja-tabitem-producttags h5 {
+	margin-top: 0;
+}
+
+
+
+/*Product Images---*/
+.product-view .product-img-box { float: left; width: 460px; }
+.col3-layout .product-view .product-img-box { float: none; margin: 0 auto; }
+.product-view .product-img-box .product-image { margin: 0 0 20px; }
+.product-view .product-img-box .product-image-zoom { position: relative; width: 460px; height: 460px; overflow: hidden; z-index: 9; }
+.product-view .product-img-box .product-image-zoom img { position: absolute; left: 0; top: 0; cursor: move; }
+.product-view .product-img-box .zoom-notice { display: none; }
+.product-view .product-img-box .zoom { position: relative; z-index: 9; height: 18px; margin: 0 auto 30px; padding: 0 32px; background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/slider_bg.gif) 50% 50% no-repeat; cursor: pointer; }
+.product-view .product-img-box .zoom.disabled { -moz-opacity: .3; -webkit-opacity: .3; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; /*IE8*/ opacity: .3; }
+.product-view .product-img-box .zoom #track { position: relative; height: 18px; }
+.product-view .product-img-box .zoom #handle { position: absolute; left: 0; top: 0; width: 60px; height: 16px; background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/magnifier_handle.gif) 0 0 no-repeat; }
+.product-view .product-img-box .zoom .btn-zoom-out { position: absolute; left: 2px; top: 0; }
+.product-view .product-img-box .zoom .btn-zoom-in { position: absolute; right: 2px; top: 0; }
+.product-view .product-img-box .more-views h2 { display: none; }
+.product-view .product-img-box .more-views ul { }
+.product-view .product-img-box .more-views li { float: left; margin: 0 0 20px 20px; ;}
+.product-view .product-img-box .more-views li a { float: left; width: 110px; height: 110px; padding: 10px; overflow: hidden; background-color: #efefef; text-align: center; }
+
+.product-image-popup { margin: 0 auto; }
+.product-image-popup .buttons-set { float: right; clear: none; border: 0; margin: 0; padding: 0; }
+.product-image-popup .nav { font-weight: bold; margin: 0 100px; text-align: center; }
+.product-image-popup .image { display: block; margin: 10px 0; }
+.product-image-popup .image-label { font-size: 13px; font-weight: bold; margin: 0 0 10px; color: #2f2f2f; }
+
+/*Product Info---*/
+.product-essential .product-shop h1 {
+	font-size: 24px;
+	margin-top: 0;
+	text-transform: none;
+}
+
+.product-essential .ratings,
+.product-essential .email-friend,
+.product-essential .no-rating { margin: 30px 0; }
+
+.product-essential .email-friend a {
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_email.png) no-repeat left center;
+  padding-left: 32px;
+  line-height: 22px;
+  display: block;
+  color: #666;
+}
+
+.product-essential .email-friend a:hover,
+.product-essential .email-friend a:focus,
+.product-essential .email-friend a:active {
+  color: #8cbf26;
+}
+
+.product-essential .availability { margin: 10px 0; }
+
+.product-essential .availability.in-stock { display: none; }
+
+.product-essential .price-box { margin: 15px 0 0; font-size: 110%; border-top: 1px solid #ddd; padding: 15px 0; line-height: 1; }
+
+.product-essential td .price-box { margin: 0; font-size: 100%; }
+
+.product-essential h4 { font-size: 92%; color: #999; margin: 15px 0 2px; text-transform: uppercase; }
+
+.product-essential .add-to-holder { margin: 10px 0; }
+
+.product-essential .add-to-box {}
+
+.product-essential .add-to-links { border-top: 1px solid #ddd; margin: 30px 0 0; padding: 15px 0; }
+
+.product-essential .add-to-links li { display: inline-block; }
+
+.product-essential .add-to-links a { margin-right: 30px; }
+
+.product-essential .short-description { border-top: 1px solid #ddd; }
+
+.product-essential .short-description > h2 { font-size: 14px; margin: 25px 0 10px;  }
+
+/*Product Options---*/
+.product-options-wrap {
+  float: right;
+  width: 450px;
+}
+
+.product-options {
+	background: #efefef;
+	margin: 20px 0 0;
+	padding: 10px 15px;
+}
+
+.product-options dt {
+	padding: 0;
+	margin: 0 0 5px;
+}
+
+.product-options dt label {
+	color: #333;
+	font-weight: bold;
+}
+
+.product-options dt .qty-holder {
+	float: right;
+	margin-right: 15px;
+}
+
+.product-options dt .qty-holder label {
+	vertical-align: middle;
+}
+
+.product-options dt .qty-disabled {
+	background: none;
+	border: 0;
+	color: #333;
+	padding: 3px;
+}
+
+.product-options dd {
+	margin: 0 0 15px;
+	padding: 0;
+}
+
+.product-options dl.last dd.last {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+
+.product-options dd input.input-text {
+	width: 99%;
+}
+
+.product-options dd textarea {
+	height: 8em;
+	width: 99%;
+}
+
+.product-options dd select {
+	width: 99%;
+}
+
+.product-options dd .multiselect option {
+	border-bottom: 1px dotted #ddd;
+	padding: 2px 4px;
+}
+
+.product-options ul.options-list {
+	margin-right: 5px;
+}
+
+.product-options ul.options-list li {
+	line-height: 1.5;
+	padding: 2px 0;
+}
+
+.product-options ul.options-list input.radio {
+	float: left;
+	margin-top: 3px;
+}
+
+.product-options ul.options-list input.checkbox {
+	float: left;
+	margin-top: 3px;
+}
+
+.product-options ul.options-list .label {
+	display: block;
+	margin-left: 18px;
+}
+
+.product-options ul.options-list label {
+	font-weight: normal;
+}
+
+.product-options ul.validation-failed {
+	padding: 0 7px;
+}
+
+.product-options p.required {}
+
+.product-options-bottom {
+	padding: 15px 0;
+}
+
+.product-options-bottom .product-pricing {
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0 0 10px;
+}
+
+.product-options-bottom .product-pricing li {
+	background: 0;
+	padding: 2px 0;
+}
+
+.product-options-bottom .product-pricing .price,
+.product-options-bottom .product-pricing .benefit {
+}
+
+.product-options-bottom .price-box {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.product-options-bottom .price-label {
+	float: left;
+	padding-right: 5px;
+}
+
+.product-options-bottom .price-tax {
+	float: left;
+}
+
+.product-shop .product-options-bottom .price-box {}
+
+.product-shop .product-options-bottom .price-label {
+	float: none;
+	padding-right: 0;
+}
+
+.product-shop .product-options-bottom .price-tax {
+	float: none;
+}
+
+.product-options-bottom .add-to-links {
+	clear: both;
+	display: block;
+}
+
+.product-options-bottom .add-to-links li {
+	display: inline;
+}
+
+.product-options-bottom .add-to-links li .separator {}
+
+.product-shop .product-options-bottom .add-to-cart-box {
+	clear: both;
+	float: left;
+	margin-top: 10px; 
+}
+
+.item-options dt {
+	font-weight: bold;
+}
+
+.item-options dd {
+	padding-left: 12px;
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/arrow.gif) no-repeat 5px 7px;
+}
+
+/*Product Collateral---*/
+.product-collateral .box-collateral {
+	margin-bottom: 20px;
+}
+
+.product-collateral .head {
+	margin-bottom: 5px;
+}
+
+.product-collateral .box-collateral > h2 { display: none; }
+
+.product-collateral .box-collateral h2 {
+	margin: 20px 0;
+}
+
+.product-collateral .box-collateral h3 {
+	font-size: 110%;
+	margin: 20px 0 0;
+}
+
+.product-collateral .box-collateral h4 {
+	font-size: 92%;
+	margin: 20px 0 0;
+}
+
+.product-collateral .box-collateral h5 {
+	color: #333;
+	margin: 10px 0 5px;
+}
+
+/*Product Description*/
+.product-collateral .box-description {}
+
+/*Additional Information*/
+.product-collateral .box-additional table {}
+
+.product-collateral .box-additional .label {
+	font-weight: bold;
+	white-space: nowrap;
+	background: #EDF7FC;
+	width: 25%;
+}
+
+.product-collateral .box-additional .odd {
+	background: #fff;
+}
+
+.product-collateral .box-additional .data {
+	border-right: 0;
+	background: #fff;
+}
+
+.product-collateral .box-additional td {}
+
+/*related product*/
+.product-collateral .box-up-sell .products-grid { float: none; margin-top: 30px; }
+
+.product-collateral .box-up-sell .products-grid td {
+	width: 25%;
+	vertical-align: top;
+	border: none;
+	padding: 15px 10px 12px;
+	background: #fff;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.product-view .box-up-sell .products-grid td.empty {
+	background: #f7f7f7;
+	border-right: 0;
+}
+
+.product-view .box-up-sell .products-grid tr.last td {
+	border-bottom: 0;
+}
+
+.product-view .box-up-sell .products-grid td.last {
+	border-right: 0;
+}
+
+.product-collateral .box-up-sell .products-grid .product-image, 
+.product-collateral .box-up-sell .products-grid .product-name, 
+.product-collateral .box-up-sell .products-grid .price-box, 
+.product-collateral .box-up-sell .products-grid .ratings {
+	margin: 0 0 10px;
+	display: block;
+	text-align: left;
+}
+
+/*reviews*/
+.product-reviews-form {
+  margin: 50px 0;
+  padding-top: 30px;
+  border-top: 3px solid #ddd;
+}
+
+.product-reviews-form h2 {
+  font-size: 16px;
+}
+
+.product-reviews-form h3 {
+  font-size: 100%;
+}
+
+.product-reviews-form h4 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+#customer-reviews {
+	margin-bottom: 0;
+}
+
+#customer-reviews dl {
+	clear: both;
+	padding-top: 15px;
+}
+
+#customer-reviews dd {
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+}
+
+#customer-reviews dd:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#customer-reviews dd p {
+	clear: both;
+}
+
+#review-form {
+	padding-bottom: 10px;
+}
+
+#review-form table {
+  margin: 8px 0;
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+#review-form td,
+#review-form th {
+	text-align: center;
+	padding: 10px;
+}
+
+#review-form td.label {
+	text-align: left;
+	width: 100px;
+}
+
+#review-form .form-add {
+	padding-left: 0;
+	background: none;
+}
+
+#review-form input.input-text,#review-form  textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+#review-form .buttons-set .button {
+	float: left;
+	margin-left: 0;
+}
+
+/* Product Tags */
+.box-tags .form-add {
+	display: block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.box-tags .form-add label {
+	width: 100%;
+	color: #333;
+	margin: 10px 0 5px;
+	display: block;
+}
+
+.box-tags .form-add .input-box,
+.box-tags .form-add fieldset {
+	float: left;
+	margin-right: 5px;
+}
+
+.box-tags .form-add .input-box .input-text {
+	width: 200px;
+}
+
+.box-tags .form-add .button {
+	margin-left: 5px;
+}
+
+.tags-list,
+.product-tags {}
+
+.tags-list li,
+.product-tags li {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/sep-vdot.gif) no-repeat 100% 4px;
+	display: inline;
+	padding: 0 8px 0 4px;
+}
+
+.tags-list li.first,
+.product-tags li.first {
+	padding-left: 0;
+}
+
+.tags-list li.last,
+.product-tags li.last {
+	background: none;
+}
+
+/*Gift Messages----*/
+.giftmessages .gift-header {
+	color: #1ba1e2;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.giftmessages .input-checkbox {
+	padding-bottom: 15px;
+}
+
+.giftmessages textarea {
+	height: 100px;
+}
+
+.giftmessages .input-checkbox input {
+	margin-right: 5px;
+}
+
+.giftmessages .input-checkbox label {
+	color: #999;
+	font-weight: normal;
+}
+
+.giftmessages .gift-box {
+	background: #FEF9EF;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	padding: 22px 16px 22px 22px;
+}
+
+.giftmessages .gift-box .scroll-box {
+	height: 260px;
+	overflow: auto;
+}
+
+.giftmessages .product-image {
+	border: 1px solid #ddd;
+}
+
+.giftmessages .giftmessage-product-info {
+	padding-left: 10px;
+}
+
+.giftmessages .numeration {
+	color: #999;
+	font-weight: bold;
+}
+
+.giftmessages .gift-box label {
+	color: #999;
+}
+
+.giftmessages .fieldset li .input-box {
+	float: left;
+	width: 260px;
+}
+
+.giftmessages .fieldset li .input-text, .fieldset li select, .fieldset li textarea {
+	width: 495px;
+}
+
+.giftmessages .fieldset li .input-box .input-text, .fieldset li .input-box textarea {
+	width: 235px;
+}
+
+.giftmessages .fieldset li .input-box select {
+	width: 256px;
+}
+
+/* upsell */
+#upsell-product-table .ratings .rating-links {
+	clear: both;
+	float: none;
+	padding-top: 5px;
+}
+
+/* Product Review Detail */
+.product-review .product-img-box {
+	width: 170px;
+}
+
+/*CHECKOUT
+----------------------------------------------------------------*/ 
+.form-list li .input-box select.address-select {
+	/*width: 630px;*/
+}
+
+.sp-methods dd {
+	/*margin-bottom: 10px;*/
+}
+
+.sp-methods dt {
+	padding: 5px 0;
+	color: #333;
+	font-weight: bold;
+}
+
+.sp-methods dd {
+	padding: 0 25px;
+}
+
+.sp-methods select.month {
+	margin-right: 10px;
+	width: 146px !important;
+}
+
+.sp-methods select.year {
+	width: 100px !important;
+}
+
+.sp-methods input.cvv {
+	width: 3em !important;
+}
+
+.sp-methods .cvv-what-is-this {
+	margin-left: 10px;
+}
+
+.checkout-types .paypal-logo {
+	margin: 0;
+	padding: 0;
+	
+}
+
+#checkout_multishipping_form .title-buttons button { float:right}
+#checkout_multishipping_form h1 { font-size:18px; font-weight:700}
+#checkout_multishipping_form h2 { font-size:16px; font-weight:600}
+
+#crosssell-products-list .add-to-links a.link-wishlist {
+ margin-bottom:5px;
+}
+
+/*Shopping Cart---*/
+.cart-table { margin-bottom: 0; }
+
+.cart-table tbody td { vertical-align: middle; }
+
+.cart-table th .tax-flag { display: block; font-size: 92%; font-weight: normal; }
+
+.cart-table tr.error { background: #FCEDED !important; }
+
+.cart-table .product-name{ font-size: 100%; }
+
+.cart-table .continue-shopping { float: left; }
+
+.cart-table-item-message {
+	font-size: 92%;
+	margin-bottom: 5px;
+	margin-top: 6px;
+}
+.cart-price .price { font-size: 14px; font-weight: bold; }
+
+.btn-update { float: left; }
+.btn-continue { float: right; }
+.btn-empty { float: right; }
+
+#shopping-cart-table .btn-update, 
+#shopping-cart-table .btn-continue, 
+#shopping-cart-table .btn-empty {
+  background: none;
+  border: 0;
+  color: #1BA1E2;
+}
+
+#shopping-cart-table th, #shopping-cart-table td { padding:10px 15px}
+#shopping-cart-table .item-options dd { background:url("http://www.vapealive.com/skin/frontend/default/jm_neros/images/arrow.gif") no-repeat 5px 5px; padding-left: 17px}
+
+#shopping-cart-table .btn-update:hover, 
+#shopping-cart-table .btn-continue:hover, 
+#shopping-cart-table .btn-empty:hover {
+  color: #8cbf26;
+}
+
+#co-shipping-method-form .sp-methods { margin-top:30px}
+#checkout-shipping-method-load .sp-methods { margin-top:0px !important}
+
+#shopping-cart-table th { text-transform:uppercase; font-size:14px; font-weight:600}
+
+td.attributes-col {}
+
+td.attributes-col ul { margin: 5px 0; }
+
+td.attributes-col dt { margin-top: .5em; }
+
+td.attributes-col dd ul { list-style: disc; margin: 0 0 5px 0; }
+
+td.attributes-col dd ul li { margin-left: 15px; }
+
+td.attributes-col h4.title { margin: 0; overflow: hidden; padding: 0; width: 100%; }
+
+td.attributes-col h4.title a { font-weight: bold; }
+
+.cart-collaterals .totals {
+	border: none;
+	float: right;
+	margin-top: 25px;
+	width: 25%;
+	padding: 0;
+	background:#efefef;
+}
+
+.cart-collaterals .totals table {
+	width: 100%;
+	font-size:14px;
+}
+
+.cart-collaterals .totals td {
+	padding:15px;
+	border-bottom:1px solid #fff;
+}
+
+
+.cart-collaterals .totals tr.last td {}
+
+.cart-collaterals .totals tfoot td {
+ 
+  border-bottom: 1px solid #fff;
+  padding: 15px;
+  color: #111;
+  line-height:24px;
+}
+
+.cart-collaterals .totals tfoot td .price {
+  color: #111;
+  font-size:20px;
+  font-weight:600;
+ }
+
+.cart-collaterals .totals ul.checkout-types { padding: 0; margin: 0px 15px; }
+
+.cart-collaterals .totals ul.checkout-types li {
+	clear: both;
+	margin: 0;
+	padding:15px 10px;
+	background: none;
+	text-align: center;
+	margin:0 -15px;
+	border-bottom:1px solid #fff;
+}
+.cart-collaterals .totals ul.checkout-types li:last-child { border-bottom:none}
+
+.cart-collaterals .totals ul.checkout-types .button { float: none; display: inline-block; }
+
+.cart-collaterals .totals ul.checkout-types li big { font-weight: bold; }
+
+#shopping-cart-table .input-text { padding:5px; text-align:center; }
+
+/*Tax details---*/
+.tax-total {
+	cursor: pointer;
+}
+
+.tax-total td {}
+
+.tax-total .tax-collapse {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/bg_collapse.gif) 0 4px no-repeat;
+	cursor: pointer;
+	float: right;
+	padding-left: 20px;
+	text-align: right;
+}
+
+.show-details .tax-collapse {
+	background-position: 0 -53px;
+}
+
+.show-details td {
+	border-top: 1px dashed #ddd;
+}
+
+.tax-details td {
+	color: #999;
+}
+
+.tax-details-first td {
+	border-top: 1px dashed #ddd;
+}
+
+/*Collaterals---*/
+.cart .cart-collaterals .col2-set {
+	margin: 25px 0;
+	float: left;
+	width: 73%;
+}
+
+.cart .discount,
+.cart .shipping {
+	background: #fff;
+	border: 1px solid #ddd;
+	margin-bottom: 15px;
+	padding: 0 15px 35px 15px;
+}
+
+#coupon_code {
+	width: 250px;
+}
+
+.cart .discount .buttons-set { text-align: left; }
+
+.cart .discount .button,
+.cart .shipping .button{
+	margin-right: 5px;
+	margin-left: 0;
+	float: left;
+}
+
+.cart .discount h2, 
+.cart .shipping h2,
+.cart .crosssell h2 {
+	padding: 8px 0;
+	text-indent: 15px;
+	margin: 0 -15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.cart .discount h2,
+.cart .shipping h2 {
+	font-size: 16px;
+    font-weight: 600;
+}
+
+
+.cart .discount .discount-form label {
+	display: block;
+	margin: 10px 0;
+}
+
+.cart .shipping-estimate .input-text {
+	width: 214px;
+}
+
+.cart .shipping-estimate select {
+	width: 220px;
+}
+
+.cart .crosssell {
+	border: 1px solid #ddd;
+	padding:0 15px 15px;
+}
+
+.cart .crosssell h2 {
+	font-size: 16px;
+	font-weight:600
+}
+
+.cart .crosssell ul {
+	
+}
+
+.cart .crosssell .add-to-links {
+	margin: 0;
+}
+
+.cart .crosssell .add-to-links li {
+  border: none;
+  padding: 0;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.cart .crosssell .add-to-links li .separator{ display: none; }
+
+.cart .crosssell li {
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0 20px;
+	overflow: hidden;
+}
+.cart .crosssell li.last { border-bottom: none; }
+
+.cart .crosssell .product-image {
+	float: left;
+	width: 75px;
+}
+
+.cart .crosssell .product-details {
+	width: 210px;
+	float: right;
+}
+
+.cart .crosssell .product-details h5 {
+	font-size: 110%;
+	margin: 0 0 5px;
+}
+
+.cart .crosssell .product-details .button {
+	margin: 15px 0;
+}
+
+.cart .crosssell .product-details small {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/arrow.gif) no-repeat left center;
+	padding-left: 8px;
+}
+
+.grand_total {
+	background: #ddd;
+	border: 1px solid #ddd;
+	font-size: 1.3em !important;
+	font-weight: bold;
+	margin-top: 15px;
+	text-align: right;
+	width: auto;
+}
+
+tr.grand_total td, p.grand_total {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+/*One-Page checkout---*/
+.opc {}
+
+.opc li.section {
+	position: relative;
+	overflow: hidden;
+}
+
+.opc li.allow h2 {
+	color:#111;
+	
+	
+}
+
+.opc .fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.opc .fieldset li {
+	padding-left: 0;
+}
+
+.opc .step {
+	background: #fff;
+	padding:10px 0;
+	margin: 0;
+}
+
+.opc .step-title {
+	border-bottom:1px solid #ddd;
+	padding:15px 0px;
+	overflow: hidden;
+}
+
+.opc .last .step-title {
+	border-bottom: 1px solid #ddd;
+}
+
+.opc .tool-tip {
+	right: 8px;
+}
+
+.opc .step-title a {
+	display: none; /* Hide Edit button in step header */
+}
+
+.opc h2 {
+	color: #111;
+	font-size: 24px;
+	margin: 0;
+	float: left;
+	font-weight:200;
+	padding-top:4px;
+}
+
+.opc h4 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	text-transform: none;
+}
+
+.opc h4.title {
+	border-bottom: 0;
+	text-transform: none;
+}
+
+.opc .number {
+	background: #999;
+	padding: 0 4px;
+	color: #ddd;
+	float: left;
+	margin-right: 10px;
+}
+
+.opc .content {
+	padding: 10px 20px;
+}
+
+.opc label.label {
+	color: #333;
+	font-size: 110%;
+}
+
+.form-list li.wide .input-box input.input-text,
+.form-list li.wide .input-box textarea {
+	width: 525px;
+}
+
+
+.opc .form-list li.fields .field {
+	float: left;
+	width: 275px;
+}
+
+#billing-address .form-list li.wide .input-box .input-text, 
+#shipping-address .form-list li.wide .input-box .input-text {
+	width: 250px;
+}
+
+/*Allow box*/
+.opc .allow .step-title {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_accept.gif) no-repeat 98% center #fff;
+	cursor: pointer;
+	border-bottom:1px solid #ddd;
+}
+
+.opc .allow h3 {
+}
+
+/*Active box*/
+.opc .active .step-title {
+	cursor: default;
+	border-bottom:none;
+}
+
+.opc .active .step-title h2 {
+	color:#111;
+	font-size:24px;
+	font-weight:200;
+}
+
+.opc .number {
+	background:#fff url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/number_checkout.png) no-repeat 0 0 ;
+	color: #aaa;
+	float:left; width:25px; height:37px; line-height:37px; text-align:center;font-size:16px; font-weight:600; }
+
+.opc .active .step {
+	background: #f5f5f5;
+	display: block;
+	padding:20px;
+}
+
+.opc .alloq .step-title a {
+	display: block; /* Display Edit button in active selection */
+}
+
+.opc dd .form-list {
+	margin: 0;
+}
+
+.opc dd .form-list ul {
+	margin: 5px 0 15px 25px;
+}
+
+.opc .checkmo-mailing-address {
+	padding-left: 20px;
+}
+
+/*Checkout Step Review*/
+#checkout-step-review {
+	/*border-bottom: 1px solid #ddd;*/
+}
+
+.checkout-onepage-index #ja-mainbody { margin-bottom:60px }
+
+/*Checkout Progress---*/
+/*Side Box*/
+.block-progress { background:#1BA1E2; padding:20px !important; color:#fff; }
+.block-progress .block-content { border-bottom:none !important}
+.block-progress dl {
+	margin:0px;
+	margin:0px;
+}
+
+.block-progress dt .number {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/number_checkout.png) no-repeat 0 -77px ;
+	color: #fff;
+	float:left; width:20px; height:20px; line-height:20px; text-align:center; font-size:11px; font-weight:600; margin-right:3px; }
+	
+.block-progress .block-title strong { color:#fff; }
+
+.block-progress dt {
+	padding: 10px 0 ;
+}
+
+.block-progress dt:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.block-progress dt.complete { }
+
+.block-progress h4 {
+	color: #666;
+	margin: 0;
+	font-size: 100%;
+}
+
+.block-progress .complete h4 {
+}
+
+.block-progress h4 a {
+	text-transform: none;
+}
+
+.block-progress dd.complete {
+	padding-bottom:20px;
+}
+
+.block-progress dd.complete table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.block-progress dd.complete table td,
+.block-progress dd.complete table th {
+	word-wrap: break-word;
+}
+
+.opc .box-no-padding {
+	background: #FEF9EF;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	padding: 15px 0px;
+}
+
+.opc .box-no-padding .inner-box {
+	padding: 0px 20px;
+}
+
+#opc-login .button-set {
+	border-top: 0;
+}
+
+#opc-review .box {
+	padding: 0;
+}
+
+#opc-review .content {
+	border: 0;
+	padding: 0 15px;
+}
+
+#opc-review .content input {
+	margin-top: 5px;
+}
+
+.opc-please-wait {
+	padding-right: 7px;
+}
+
+.opc a.back {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_opc_back.gif) no-repeat;
+	line-height: 13px;
+	padding-left: 16px;
+}
+
+.opc .button-set {
+	margin: 0;
+}
+
+/*Table*/
+.checkout-progress {
+	margin: 0 auto 20px;
+	width: 100%;
+	background: #999;
+	overflow: hidden;
+}
+
+.checkout-progress li {
+	color: #ddd;
+	float: left;
+	font-weight: bold;
+	width: 20%;
+	padding: 2px 0;
+	text-indent: 15px;
+	background: none;
+}
+
+.checkout-progress li.active {
+	color: #fff;
+	background: #1BA1E2;
+}
+
+.checkout-progress li.last {
+	/*background: none;*/
+}
+
+#checkout-progress-wrapper { margin-top: 55px; margin-bottom: 20px; }
+#checkout-progress-wrapper .opc-block-progress .block-content {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/*Multiple Addresses checkout---*/
+.multi-address-checkout-description {
+	margin-bottom: 25px;
+	margin-top: -15px;
+}
+
+.multiple-checkout{}
+
+.multiple-checkout .col2-set,
+.info-set {
+	margin: 20px 0 10px;
+	clear: both;
+	border: 1px solid #ddd;
+}
+
+#shipping_method_form .col2-set .content,
+.info-set .content {
+	padding: 10px 15px;
+}
+
+.multiple-checkout .col2-set .legend,
+.info-set .legend {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	padding: 5px 15px;
+	margin: 0;
+	font-size: 110%;
+}
+
+.multiple-checkout .col2-set .count-head-alt {
+	margin-top: 10px;
+	border-top: 1px solid #ddd;
+}
+
+.multiple-checkout .col2-set .box-title,
+.info-set .box-title,
+.multiple-checkout .col-wide > h3 {
+	border-bottom: 1px solid #ddd;
+	padding: 0 0 5px;
+	margin: 0 0 10px;
+	background: none;
+	text-align: left;
+}
+
+.multiple-checkout .col-wide > h3 {
+	font-size: 110%;
+}
+
+.multiple-checkout .col2-set .box-title h2,
+.multiple-checkout .col2-set .box-title h3,
+.info-set .box-title h3 {
+	margin: 0;
+	padding: 0;
+	float: none;
+	font-size: 110%;
+}
+
+.multiple-checkout .col2-set .box-title a {}
+
+.multiple-checkout .col2-set .form-list {
+	margin: 0;
+}
+
+.multiple-checkout .col2-set .form-list ul {
+	margin: 5px 0 15px;
+}
+
+.multiple-checkout .col2-set .col-1,
+.info-set.col2-set .col-1 {
+	width: 32%;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.multiple-checkout .col2-set .col-2,
+.info-set.col2-set .col-2 {
+	width: 63%;
+	margin-top: 10px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+.multiple-checkout .place-order .grand-total {
+	float: right;
+	
+	overflow: hidden;
+}
+
+.multiple-checkout .place-order .grand-total .inner {
+	float: left;
+	
+	padding: 14px 0 0 0;
+}
+
+.multiple-checkout .place-order .grand-total .inner div { display: inline; vertical-align: top; }
+
+.multiple-checkout .place-order .grand-total big {
+	display: inline;
+	margin-right: 12px;
+	line-height: 1;
+}
+
+.multiple-checkout .place-order .grand-total .button { float: none; vertical-align: middle; }
+
+.info-set .box .actions {
+	background: none;
+}
+
+.shipment-count {
+	background: #1ba1e2;
+	color: #fff;
+	font-size: 92%;
+	line-height: normal;
+	padding: 2px 5px;
+}
+
+#shipping_method_form .col2-set .tool-tip {
+	left: -23px;
+}
+
+#shipping_method_form .col2-set .checkmo-mailing-address {
+	display: block;
+	padding-left: 20px;
+}
+
+.box-sp-methods {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 10px;
+	position: relative;
+	margin-top: 10px;
+}
+
+.box-sp-methods .pointer {
+	position: absolute;
+	right: -40px;
+	top: -20px;
+}
+
+.place-order-box {
+	float: right;
+	line-height: normal;
+}
+
+.place-order-box .grand-total {
+	font-size: 200%;
+}
+
+.place-order-box .grand-total .price {
+	color: #1ba1e2;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.place-order-box input {
+	margin: 0 0 0 15px;
+	vertical-align: bottom;
+}
+
+/* Checkout Agreements */
+.checkout-agreements li {
+	margin: 30px 0;
+}
+
+.checkout-agreements .agreement-content {
+	background: #FEF9EF;
+	border: 1px solid #ddd;
+	height: 10em;
+	overflow: auto;
+	padding: 10px;
+}
+
+.checkout-agreements .agree {
+	margin: 0;
+	padding: 10px 0 10px 11px;
+}
+
+.opc .checkout-agreements {
+	border: 1px solid #ddd;
+	border-width: 0 1px;
+	padding: 5px 20px;
+}
+
+.opc .checkout-agreements li {
+	margin: 20px 0 0;
+}
+
+.opc .checkout-agreements .agreement-content {
+	background-color: #fff;
+	border-color: #ddd;
+	padding: 5px;
+}
+
+.opc .checkout-agreements .agree {
+	padding-left: 6px;
+}
+
+/*CUSTOMER
+----------------------------------------------------------------*/ 
+/*Login---*/ 
+#login-form .col-1, #login-form .col-2 {
+	border: 1px solid #ddd;
+}
+
+#login-form .content {
+	padding: 0 20px;
+}
+
+#login-form h2 {
+	font-size:16px;
+	font-weight:600;
+	border-bottom: 1px solid #ddd;
+	margin: 0 -20px;
+	padding: 8px 0;
+	text-indent: 20px;
+}
+
+#login-form .new-users h2 {
+	
+}
+
+#login-form .registered-users h2 {
+	
+}
+
+#login-form .buttons-set {
+	margin: 0;
+	padding: 20px 20px 20px;
+	
+}
+
+#login-form .content {
+	min-height: 270px;
+}
+.account-create { margin-bottom:60px}
+
+/*Customer Name---*/
+.customer-name-prefix .name-prefix {
+	width: 60px !important;
+}
+
+.customer-name-prefix .name-prefix input {
+	width: 45px !important;
+}
+
+.customer-name-prefix .name-prefix select {
+	width: 51px !important;
+}
+
+.customer-name-prefix .name-firstname {
+	width: 215px !important;
+}
+
+.customer-name-prefix .name-firstname input {
+	width: 190px !important;
+}
+
+.customer-name-middlename .name-firstname {
+	width: 215px !important;
+}
+
+.customer-name-middlename .name-firstname input {
+	width: 200px !important;
+}
+
+.customer-name-middlename .name-middlename {
+	width: 60px !important;
+}
+
+.customer-name-middlename .name-middlename input {
+	width: 35px !important;
+}
+
+.customer-name-suffix .name-lastname {
+	width: 205px !important;
+}
+
+.customer-name-suffix .name-lastname input {
+	width: 190px !important;
+}
+
+.customer-name-suffix .name-suffix {
+	width: 50px !important;
+}
+
+.customer-name-suffix .name-suffix input {
+	width: 45px !important;
+}
+
+.customer-name-suffix .name-suffix select {
+	width: 51px !important;
+}
+
+.customer-name-prefix-middlename .name-prefix {
+	width: 60px !important;
+}
+
+.customer-name-prefix-middlename .name-prefix input {
+	width: 45px !important;
+}
+
+.customer-name-prefix-middlename .name-prefix select {
+	width: 51px !important;
+}
+
+.customer-name-prefix-middlename .name-firstname {
+	width: 215px !important;
+}
+
+.customer-name-prefix-middlename .name-firstname input {
+	width: 190px !important;
+}
+
+.customer-name-prefix-middlename .name-middlename {
+	width: 50px !important;
+}
+
+.customer-name-prefix-middlename .name-middlename input {
+	width: 35px !important;
+}
+
+.customer-name-prefix-middlename .name-lastname {
+	width: 200px !important;
+}
+
+.customer-name-prefix-middlename .name-lastname input {
+	width: 200px !important;
+}
+
+.customer-name-prefix-suffix .name-prefix {
+	width: 60px !important;
+}
+
+.customer-name-prefix-suffix .name-prefix input {
+	width: 45px !important;
+}
+
+.customer-name-prefix-suffix .name-prefix select {
+	width: 51px !important;
+}
+
+.customer-name-prefix-suffix .name-firstname {
+	width: 215px !important;
+}
+
+.customer-name-prefix-suffix .name-firstname input {
+	width: 190px !important;
+}
+
+.customer-name-prefix-suffix .name-lastname {
+	width: 205px !important;
+}
+
+.customer-name-prefix-suffix .name-lastname input {
+	width: 190px !important;
+}
+
+.customer-name-prefix-suffix .name-suffix {
+	width: 50px !important;
+}
+
+.customer-name-prefix-suffix .name-suffix input {
+	width: 45px !important;
+}
+
+.customer-name-prefix-suffix .name-suffix select {
+	width: 51px !important;
+}
+
+.customer-name-middlename-suffix .name-firstname {
+	width: 215px !important;
+}
+
+.customer-name-middlename-suffix .name-firstname input {
+	width: 200px !important;
+}
+
+.customer-name-middlename-suffix .name-middlename {
+	width: 60px !important;
+}
+
+.customer-name-middlename-suffix .name-middlename input {
+	width: 35px !important;
+}
+
+.customer-name-middlename-suffix .name-lastname {
+	width: 205px !important;
+}
+
+.customer-name-middlename-suffix .name-lastname input {
+	width: 190px !important;
+}
+
+.customer-name-middlename-suffix .name-suffix {
+	width: 50px !important;
+}
+
+.customer-name-middlename-suffix .name-suffix input {
+	width: 45px !important;
+}
+
+.customer-name-middlename-suffix .name-suffix select {
+	width: 51px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-prefix {
+	width: 60px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-prefix input {
+	width: 45px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-prefix select {
+	width: 51px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-firstname {
+	width: 155px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-firstname input {
+	width: 140px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-middlename {
+	width: 60px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-middlename input {
+	width: 35px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-lastname {
+	width: 205px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-lastname input {
+	width: 190px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-suffix {
+	width: 50px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-suffix input {
+	width: 45px !important;
+}
+
+.customer-name-prefix-middlename-suffix .name-suffix select {
+	width: 51px !important;
+}
+
+.customer-dob .input-box {
+	float: left;
+	width: 60px !important;
+}
+
+.customer-dob input {
+	width: 50px !important;
+}
+
+.customer-dob label.label-dob {
+	color: #999;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+/*My Account navigation---*/
+.account-login { margin-bottom:60px}
+.block-account {}
+
+.block-account .block-title {
+	
+	margin: 0;
+	padding:10px 0;
+}
+
+.block-account .block-title strong {
+	
+}
+
+.block-account .block-content {
+	padding: 0;
+}
+
+.block-account ul {
+	
+}
+
+.block-account li a, .block-account li.current {
+	padding: 2px 0;
+}
+
+.block-account li strong {
+	font-weight: normal;
+}
+
+.block-account li a {
+	/*border-bottom: 1px solid #ddd;*/
+	display: block;
+}
+
+.block-account li a {
+	color: #666;
+	text-decoration: none;
+}
+
+.block-account li a:hover {
+	color: #8CBF26;
+}
+
+.block-account li a:active,
+.block-account li a:focus {
+	color: #8cbf26;
+}
+
+.block-account li.current {
+	/*border-bottom: 1px solid #ddd;*/
+	color: #1ba1e2;
+	/*font-weight: bold;*/
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/arrow_d1.gif) no-repeat 98% center;
+}
+
+.block-account li.current a {
+	padding: 0;
+}
+
+.block-account li.last, .block-account li.last a {
+	border-bottom: 0;
+}
+
+/*Dashboard---*/
+.box-account {
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+.box-account .col2-set {
+	margin: 0 15px 10px;
+}
+
+.box-account .box-head {
+	border-bottom: 1px solid #ddd;
+	margin: 0 0 10px;
+	padding: 8px 15px;
+	background:#EFEFEF;
+	overflow: hidden;
+}
+
+.box-account .box {
+	background: none;
+	border: none;
+}
+
+.box-account .box .box-title {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+.box-account h5,
+.box-account .box .box-title h3,
+.box-account h4 {
+	font-size: 100%;
+	font-weight: 600;
+}
+
+.box-account h6 {
+	text-transform: uppercase;
+}
+
+.account-main .box-account li {
+	padding: 5px 0;
+}
+
+.box-account ol li {
+	margin: 15px 0 0;
+}
+
+.box-account .product-name {
+	font-size: 100%;
+	margin: 0;
+}
+
+.box-account ol#my_recent_tags,
+.box-account ol#my_recent_reviews { padding: 0 15px 15px 15px; }
+
+.box-account ol#my_recent_reviews li,
+.box-account ol#my_recent_tags li { padding:0px 0 5px 0; }
+
+.box-account ol#my_recent_reviews .product-name,  
+.box-account ol#my_recent_tags .product-name { padding-bottom:10px; }
+.box-account ol#my_recent_tags .tags li { padding:0}
+
+.box-account ol .number {
+	background: #1ba1e2;
+	color: #fff;
+	float: left;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 1em;
+	margin-top: 3px;
+	padding: 1px 3px;
+}
+
+.box-account ol .details {
+	margin-left: 20px;
+}
+
+.box-account ol.recent-reviews small {
+	float: left;
+	font-weight: bold;
+	margin-right: 3px;
+	font-size: 100%;
+}
+
+.box-account .product-images {
+	width: 65px;
+}
+
+.box-account .product-images img {
+	border: 1px solid #ddd;
+}
+
+.box-account .product-details {
+	margin: 0 0 10px 70px;
+}
+
+.box-account .tags {
+	overflow: hidden;
+}
+
+.box-account .tags ul,
+.box-account .tags strong {
+	display: inline;
+	float: left;
+}
+
+.box-account .tags ul li {
+	margin: 0 0 0 5px;
+	float: left;
+}
+
+.box-account .content {
+	padding: 0;
+}
+
+.box-account .ratings {
+	margin: 0;
+}
+
+.account-side .actions {
+	border-top: 1px solid #ddd;
+	padding-top: 4px;
+}
+
+.my-account .box {
+	border: none;
+}
+
+.my-account .order-info-box {
+	
+}
+
+.account-side .actions .form-button {
+	float: right;
+}
+
+.my-account .title-buttons button { float:right}
+
+.edit-password {
+	
+	display: block;
+	height: 20px;
+	
+}
+
+.dashboard-welcome {
+	font-size: 1.1em;
+	margin-bottom: 1.5em;
+	margin-right: 8em;
+}
+
+.box-account .box-head h2,
+.account-box .head h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.box-recent .box-head {
+	margin: 0;
+}
+
+.ad-orders .head h4,
+.box-recent .box-head h2 {
+}
+
+.box-info .box-head h2 {
+	
+}
+
+.ad-tags .head h4,
+.box-tags .box-head h2  {
+
+}
+
+.ad-reviews .head h4,
+
+.box-reviews .box-head h2 {
+	
+}
+
+.box-reviews .rating-box,
+#my-reviews-table .rating-box,
+#my-tags-table .rating-box, 
+#crosssell-products-list .rating-box {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_blank_star_small.png);
+  height: 14px;
+  width: 85px;
+}
+
+.box-reviews .rating-box .rating,
+#my-reviews-table .rating-box .rating,
+#my-tags-table .rating-box .rating,
+#crosssell-products-list .rating-box .rating {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_full_star_small.png);
+  height: 14px;
+}
+
+.my-account h2, .my-account h3, #crosssell-products-list h3 { font-size: 14px; font-weight: bold; }
+#cart-sidebar-reorder input.checkbox { float: left; margin-top:3px}
+
+/*Account Addressbook---*/
+.primary-address-list h4, .address-list h4 {
+	font-size: 125%;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.primary-address-list li {
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+.primary-address-list li .head {
+	margin: 0;
+}
+
+.primary-address-list li h5 {
+	margin: 0 0 5px -10px;
+	text-indent: 10px;
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/arrow_d2.gif) no-repeat 2px center; 
+}
+
+.address-list li {
+	margin-bottom: 1em;
+}
+
+.address-list .actions {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+/*Account Order History---*/
+.box-account #my-orders-table {
+	border: 0;	
+}
+
+#my-orders-table tfoot td, 
+#checkout-review-table tfoot td {
+	background: #fff;
+}
+
+#my-orders-table tfoot tr.last td,
+#checkout-review-table tfoot tr.last td {
+	font-weight: bold;
+	font-size: 110%;
+	border-top: 1px solid #ddd;
+}
+
+/*Compare Products---*/
+.compare-products {
+	margin: 30px 0 50px 0;
+}
+
+.compare-products table {
+	border: 0;
+	width: auto;
+}
+
+.compare-products td {
+	text-align: left;
+	width: 170px;
+	vertical-align: top;
+}
+
+.compare-products tbody tr.first td {
+	border-top: 1px solid #ddd;
+}
+
+.compare-products tbody td.last {
+	border-right: 1px solid #ddd;
+}
+
+.compare-products tbody.attribute-cart td {
+	background: #FEF9EF !important;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+.compare-products tbody td.label {
+	background: #EDF7FC !important;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	text-align: left;
+	width: auto;
+}
+
+.compare-products tbody.attribute-cart td.label {
+	background: #FEF9EF !important;
+}
+
+.compare-products tbody.remove-buttons tr {
+	background: #fff;
+}
+
+.compare-products tbody.remove-buttons td {
+	border: 0 !important;
+	font-size: 0;
+	line-height: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.compare-products tbody.remove-buttons td img {
+	float: right;
+}
+
+.compare-products tr.last td {
+	border-bottom: 1px solid #ddd !important;
+}
+
+/*Reviews---*/
+.my-review-detail .product-image {
+	float: left;
+	width: 135px;
+}
+
+.my-review-detail .product-image p {
+	margin-bottom: 0;
+}
+
+.my-review-detail .product-image p img {
+	vertical-align: top;
+}
+
+.my-review-detail .details {
+	float: right;
+	width: 538px;
+}
+
+.my-review-detail .ratings-list {
+	margin-bottom: .8em;
+}
+
+.my-review-detail .ratings {
+	line-height: 1.5;
+}
+
+.my-review-detail .ratings .rating-box {
+	float: none;
+	margin-bottom: 3px;
+}
+
+.my-review-detail .ratings .pipe {
+	display: none;
+}
+
+.my-review-detail .ratings a {
+	display: block;
+}
+
+/*Tags ---*/
+.my-tag-edit a.btn-remove {
+	padding: 0;
+	margin: 3px 5px 0 0;
+	border: 0;
+	float: left;
+}
+
+#my-tags-table td { vertical-align: middle; }
+
+/*Gift Messages---*/
+.giftmessage {
+	padding: 10px 0 0 0;
+}
+
+.giftmessage-preview-link {
+	background-position: right 5px;
+	background-repeat: no-repeat;
+	font-size: 11px;
+	padding-right: 7px;
+}
+
+.giftmessage-row {
+	background: #FEF9EF;
+}
+
+.giftmessage-content {
+	float: left;
+}
+
+.giftmessage-close {
+	float: right;
+}
+
+.expand {
+	background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/gift-message-expand.gif);
+}
+
+.collapse {
+	background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/gift-message-collapse.gif);
+}
+
+/*Wishlist---*/
+#wishlist-table td {
+	vertical-align: middle;
+}
+
+#wishlist-table a.link-cart, #wishlist-table a.btn-remove {
+	display: block;
+}
+
+#wishlist-table textarea {
+	width: 95%;
+	height: 175px;
+	margin:10px;
+}
+
+#wishlist-table .product-name,
+#wishlist-table .price-box {
+	margin: 10px;
+	font-size: 100%;
+}
+
+#wishlist-table .cart-cell { text-align:center; margin:10px}
+#wishlist-table .cart-cell .input-text { padding:5px}
+
+/*===============================================================
+--------------------[MAGENTO'S VARIOUS PAGES]--------------------
+=================================================================*/
+
+/*ADVANCED SEARCH
+----------------------------------------------------------------*/ 
+
+.advanced-search li {
+	margin-bottom: 5px;
+}
+
+.advanced-search li label {
+	float: left;
+	width: 120px;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.advanced-search .input-text {
+	width: 250px;
+}
+
+.advanced-search select {
+	padding: 2px;
+	width: 256px;
+}
+
+.advanced-search .field-row {
+	display: inline;
+	width: 250px;
+}
+
+.advanced-search .input-range .input-text {
+	width: 70px;
+}
+
+.advanced-search .input-range select {
+	padding: 1px;
+	width: 90px;
+}
+
+.advanced-search-nothing-found {
+	color: #e51400;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.advanced-search-found-amount {
+	margin-bottom: 15px;
+}
+
+.advanced-search-summary-box {
+	background: #FEF9EF;
+	border: 1px solid #ddd;
+	margin: 0 0 15px;
+	padding: 10px 15px;
+}
+
+.advanced-search-summary-tip {
+	clear: both;
+	font-weight: bold;
+}
+
+.advanced-search-summary-box ul {
+	float: left;
+	list-style: none;
+	width: 50%;
+}
+
+.advanced-search-summary-box ul li {
+	color: #333;
+	font-weight: bold;
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/arrow_d2.gif) no-repeat left 6px;
+	padding-left: 8px;
+}
+
+.advanced-search-summary-box ul li span.translate-inline {
+	background: 0 !important; /* Inline translation fix */
+}
+
+
+.catalogsearch-result-index .products-grid { margin: 20px 0 }
+
+/*RETURNS PAGE
+----------------------------------------------------------------*/ 
+#oar_widget_orders_and_returns_form .input-box {
+	padding: 5px 0;
+}
+
+/*PRINT
+----------------------------------------------------------------*/
+.page-print .order-date {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.page-print .print-head {
+    margin: 0 0 15px;
+}
+
+.page-print .print-head .logo {
+    float: left;
+}
+
+.page-print .print-head address {
+    float: left;
+    margin-left: 15px;
+}
+
+.page-print h1 {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.page-print h2, .page-print h3 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.page-print .col2-set h2,.page-print .col2-set h3 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.page-print h2.h2 {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+table.print .giftmessage-preview-link {
+	display: none !important;
+}
+
+table.print .price-excl-tax {
+	white-space: nowrap;
+}
+
+table.print .price-incl-tax {
+	white-space: nowrap;
+}
+
+table.print .price-excl-tax .label,
+table.print .price-excl-tax .price,
+table.print .price-incl-tax .label,
+table.print .price-incl-tax .price {
+	display: inline;
+}
+
+/*POP UP
+----------------------------------------------------------------*/
+.page-popup {
+	background: #fff;
+	color: #333;
+	padding: 25px 30px;
+	text-align: left;
+}
+
+.page-popup .print-head {
+	margin: 0 0 20px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+
+.page-popup .print-head img {
+	float: left;
+}
+
+.page-popup .print-head address {
+	float: left;
+	margin-left: 15px;
+}
+
+.product-gallery-nav {
+	padding: 0 5px;
+}
+
+.page-popup .print-head {
+	margin: 0 0 20px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+
+/*DEFAULT HOME
+----------------------------------------------------------------*/
+.home-callout {
+	margin: 0 0 15px;
+	text-align: center;
+}
+
+.home-callout img {}
+
+.home-spot {
+	float: right;
+	width: 530px;
+}
+
+.std dl dt { font-weight: bold; }
+.std dl dd { margin: 0 0 10px; }
+
+.std a {
+  color: #1ba1e2;
+}
+
+/*Best Selling---*/
+.best-selling {}
+
+.best-selling h3 {
+	background: #efefef;
+	border-bottom: 1px solid #ddd;
+	padding: 5px 10px;
+	line-height: normal;
+	font-size: 110%;
+}
+
+.best-selling table {
+	border: 0;
+}
+
+.best-selling tr.odd {}
+
+.best-selling tr.even {}
+
+.best-selling td {
+	width: 50%;
+	padding: 8px 10px;
+}
+
+.best-selling .product-img {
+	float: left;
+}
+
+.best-selling .product-description {
+	margin-left: 107px;
+}
+
+.best-selling a.product-name {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+/*Recently---*/
+.recently h3 {
+	background: #efefef;
+	border-bottom: 1px solid #ddd;
+	padding: 5px 10px;
+	line-height: normal;
+	font-size: 110%;
+}
+
+.recently .product-image {
+	border: 1px solid #ddd;
+}
+
+.recently a.product-name {
+	font-weight: bold;
+}
+
+.recently .add-to {
+	margin-top: 5px;
+	font-size: 11px;
+}
+
+table.recently-list {
+	width: 100%;
+}
+
+table.recently-list td {
+	width: 20%;
+}
+
+/* Site Map */
+.page-sitemap .links {
+	margin: 0 8px -31px 0;
+	text-align: right;
+	position: relative;
+	overflow: hidden;
+}
+
+.page-sitemap .links li {
+	line-height: 30px;
+} 
+
+.page-sitemap .sitemap {
+	margin: 12px;
+	clear:both;
+	float:left;
+	width:100%;
+}
+
+.page-sitemap .sitemap li { float:left; width:25%; padding:2px 0}
+
+.page-sitemap .pager {
+	overflow: hidden;
+	border: none;
+	padding: 5px 10px;
+	width: 98%;
+}
+
+.page-sitemap .pager .pages { position:relative; z-index:999}
+
+
+/* Mass head */
+.jm-masshead {
+  padding: 80px 0 20px;
+  height: 110px;
+  
+}
+
+.jm-masshead .main {
+  padding: 0;
+}
+
+.jm-masshead h3.ja-masshead-title {
+  margin: 0;
+  color:  #fff;
+  font-size: 60px;
+  font-weight: 500;
+  font-family:  Times New Roman, "Times", serif;
+  padding-top:14px;
+  opacity:0.7
+}
+
+/* Error page */
+#jm-error {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/error.png) no-repeat left 85px;
+	padding: 60px 0 120px 410px;
+	margin: 0 auto;
+}
+
+#jm-error .page-head-alt h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 25px;   
+}
+
+#jm-error .page-head-alt + dl {
+  margin-bottom: 50px;
+}
+
+/*==============================================================*/
+
+/*Mis---*/
+.ja-tools { float: right; padding: 3px 0 0 0; }
+.ja-tools ul { float: left; padding-right: 10px; }
+.ja-usertools-color { padding-top: 1px; }
+.ja-tools li { display: inline; }
+.ja-tools li img { cursor: default; }
+
+.block-lastest-product { margin-bottom:0 !important}
+.block-lastest-product .block-title { position:absolute; }
+.jm-tabs-title-top  ul.jm-tabs-title { margin: 0; padding: 0; position: relative !important;float:right; text-align:right }
+
+#mero-sticky-wrapper{ position: relative; float: left; width: 100%; }
+.add-to-cart-alt input.qty { margin-bottom: 20px; }
+.add-to-cart-alt button.button { margin: 0 auto 10px; display: inline-block; float: none; }
+.product-name a {
+  color: #000;
+}
+
+.product-name a:hover,
+.product-name a:focus,
+.product-name a:active {
+  color: #8cbf26;
+}
+/* jmoverlay */
+#jmoverlay {
+  background: none repeat scroll 0 0 #000000;
+  height: 100% !important;
+  left: 0;
+  min-height: 100% !important;
+  opacity: 0.05;
+  position: fixed !important;
+  top: 0;
+  width: 100% !important;
+  z-index: 999;
+}
+.header-nav-container {
+	border: 1px solid #4F4F4F;
+	border-bottom: none;
+}
+
+#nav {}
+
+/************** ALL LEVELS  *************/ /* Style consistent throughout all nav levels */
+#nav li {
+	position: relative;
+	text-align: left;
+}
+
+#nav li.over {
+	z-index: 999;
+}
+
+#nav a, #nav a:hover, #nav a:active, #nav a:focus {
+	display: block;
+	text-decoration: none;
+}
+
+#nav span {
+	display: block;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+#nav li ul span {
+	white-space: normal;
+}
+
+/************ 0 LEVEL  ***************/
+#nav li {
+	float: left;
+	border-right: 1px solid #4F4F4F;
+}
+
+#nav li.over a, #nav a:hover, #nav a:active, #nav a:focus, #nav a.over {
+	color: #FFFFFF;
+	border-color: #2F2F2F;
+	background: #333333;
+}
+
+#nav li.active a {
+	color: #FFFFFF;
+	background: #111;
+}
+
+#nav a {
+	float: left;
+	text-decoration: none;
+	padding: 8px 15px 7px;
+	color: #CCCCCC;
+	border: 1px solid #3F3F3F;
+	border-bottom: none;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/************ 1ST LEVEL ************/
+#nav ul li,
+#nav ul li.active {
+	float: none;
+	margin: 0;
+}
+
+/*#nav ul li.over { background:#d5e4eb url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/nav_divider.gif) repeat-x 0 100%; }*/
+
+#nav ul li.last {
+	padding-bottom: 0;
+}
+
+#nav ul a,
+#nav ul a:hover, #nav ul a.over {
+	float: none;
+	padding: 0;
+	background: none;
+	font-size: 12px;
+}
+
+#nav ul li a {
+	font-weight: normal !important;
+}
+
+#nav li.over li.parent > a {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/arrow_d2.gif) no-repeat 14em center;
+}
+
+/************ 2ND LEVEL ************/
+#nav ul {
+	position: absolute;
+	width: 15em;
+	top: 33px;
+	left: -10000px;
+	border: 1px solid #4F4F4F;
+	background: #333333;
+}
+
+#nav ul li {
+	border-bottom: 1px solid #4F4F4F;
+	border-right: none;
+	background: none;
+}
+
+/* Show menu */
+#nav li.over > ul { left:0; }
+#nav li.over > ul li.over > ul { left:150px; }
+#nav li.over ul ul { left:-10000px; }
+
+#nav ul li a,  #nav li.active li a {
+	border: none;
+	margin: 0;
+	color: #CCCCCC;
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/blank.png);
+	font-weight: normal;
+	font-size: 12px;
+}
+
+#nav ul li a:hover, #nav ul li a:active, #nav ul li a:focus, #nav ul li a.over {
+	background: #111;
+	color: #FFFFFF;
+}
+
+#nav ul span, #nav ul li.last li span {
+	padding: 6px 15px;
+}
+
+/************ 3RD+ LEVEL ************/
+#nav ul ul { top: 5px; }
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:99999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:visible;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background:#000;}
+
+#colorbox{}
+    #cboxTopLeft{width:14px; height:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) 0 0 no-repeat;}
+    #cboxTopCenter{height:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/border.gif) top left repeat-x;}
+    #cboxTopRight{width:14px; height:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) -36px 0 no-repeat;}
+    #cboxBottomLeft{width:14px; height:43px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) 0 -32px no-repeat;}
+    #cboxBottomCenter{height:43px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/border.gif) bottom left repeat-x;}
+    #cboxBottomRight{width:14px; height:43px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) -36px -32px no-repeat;}
+    #cboxMiddleLeft{width:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) -175px 0 repeat-y;}
+    #cboxMiddleRight{width:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) -211px 0 repeat-y;}
+    #cboxContent{background:#fff;}
+        #cboxLoadedContent{margin-bottom:0;}
+        #cboxLoadingOverlay{background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/loading_background.png) center center no-repeat;}
+        #cboxLoadingGraphic{background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/loading.gif) center center no-repeat;}
+        #cboxTitle{position:absolute; bottom:-25px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C;}
+        #cboxCurrent{position:absolute; bottom:-25px; left:58px; font-weight:bold; color:#7C7C7C;}
+        
+        #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{position:absolute; bottom:-29px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) 0px 0px no-repeat; width:23px; height:23px; text-indent:-9999px;}
+        #cboxPrevious{left:0px; background-position: -51px -25px;}
+        #cboxPrevious.hover{background-position:-51px 0px;}
+        #cboxNext{left:27px; background-position:-75px -25px;}
+        #cboxNext.hover{background-position:-75px 0px;}
+        #cboxClose{right:0; background-position:-100px -25px;}
+        #cboxClose.hover{background-position:-100px 0px;}
+        
+        .cboxSlideshow_on #cboxSlideshow{background-position:-125px 0px; right:27px;}
+        .cboxSlideshow_on #cboxSlideshow.hover{background-position:-150px 0px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-150px -25px; right:27px;}
+        .cboxSlideshow_off #cboxSlideshow.hover{background-position:-125px 0px;}
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/* Widgets =============================================================================== */
+.widget { display:inline; }
+.widget .widget-title { clear:both; padding:15px 0 0; margin:0 0 7px; }
+.widget .widget-title h2 { font-size:15px; font-weight:bold; color:#e25203; }
+
+.widget .mini-products-images-list .product-image { display:block; width:76px; height:76px; border:1px solid #a9a9a9; margin:0 auto; }
+.widget .mini-products-images-list li.item { float:left; width:77px; height:77px; }
+
+/* Widget: Catalog New Proructs List */
+.widget-new-products { display:block; }
+.col-main .widget-new-products { margin:7px 0; }
+.widget-new-products .products-grid .product-image,
+.widget-new-products .products-list .product-image { width:85px; height:85px; }
+.widget-new-products .products-list .product-shop { margin-left:100px; }
+.sidebar .widget-new-products .block { font-size:11px; line-height:1.25; }
+.sidebar .widget-new-products .block-title strong { background:url(http://www.vapealive.com/skin/frontend/base/default/images/widgets/i_widget-new.gif) 0 1px no-repeat; padding-left:21px; color:#dc5033; }
+
+/* Widget: Recently Viewed Proructs */
+.widget-viewed { display:block; }
+.col-main .widget-viewed { margin:7px 0; }
+.widget-viewed .products-grid .product-image,
+.widget-viewed .products-list .product-image { width:85px; height:85px; }
+.widget-viewed .products-list .product-shop { margin-left:100px; }
+.sidebar .widget-viewed .block { font-size:11px; line-height:1.25; }
+.sidebar .widget-viewed .block-title strong { background:url(http://www.vapealive.com/skin/frontend/base/default/images/widgets/i_block-list.gif) 0 0 no-repeat; padding-left:21px; }
+
+/* Widget: Recently Compared Proructs */
+.widget-compared { display:block;}
+.col-main .widget-compared { margin:7px 0; }
+.widget-compared .products-grid .product-image,
+.widget-compared .products-list .product-image { width:85px; height:85px; }
+.widget-compared .products-list .product-shop { margin-left:100px; }
+.sidebar .widget-compared .block { font-size:11px; line-height:1.25; }
+.sidebar .widget-compared .block-title strong { background:url(http://www.vapealive.com/skin/frontend/base/default/images/widgets/i_block-list.gif) 0 0 no-repeat; padding-left:21px; }
+
+/* Widget: CMS Static Block */
+.widget-static-block {}
+.sidebar .widget-static-block { display:block; margin:0 0 15px; }
+
+/* Widgets: Links Common Styles */
+.top-container .widget a { padding:0 0 0 7px; }
+
+.bottom-container .widget a { padding:0 3px; }
+
+/* Widget: Catalog Product Link */
+.widget-product-link-inline { display:inline; }
+
+.col-main .widget-product-link { display:block; text-align:right; margin:7px 0; }
+.col-main .widget-product-link a { background:url(http://www.vapealive.com/skin/frontend/base/default/images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding-right:15px; }
+
+.sidebar .widget-product-link { display:block; margin:0 0 15px; padding:0 10px; }
+.sidebar .widget-product-link a { background:url(http://www.vapealive.com/skin/frontend/base/default/images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding:0 15px 0 0; }
+
+/* Widget: Catalog Category Link */
+.widget-category-link-inline { display:inline; }
+
+.col-main .widget-category-link { display:block; text-align:right; margin:7px 0; }
+.col-main .widget-category-link a { background:url(http://www.vapealive.com/skin/frontend/base/default/images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding-right:15px; }
+
+.sidebar .widget-category-link { display:block; margin:0 0 15px; padding:0 10px; }
+.sidebar .widget-category-link a { background:url(http://www.vapealive.com/skin/frontend/base/default/images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding:0 15px 0 0; }
+
+/* Widget: CMS Page Link */
+.widget-cms-link-inline { display:inline; }
+
+.col-main .widget-cms-link { display:block; text-align:right; margin:7px 0; }
+.col-main .widget-cms-link a { background:url(http://www.vapealive.com/skin/frontend/base/default/images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding-right:15px; }
+
+.sidebar .widget-cms-link { display:block; margin:0 0 15px; padding:0 10px; }
+.sidebar .widget-cms-link a { background:url(http://www.vapealive.com/skin/frontend/base/default/images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding:0 15px 0 0; }
+/* ======================================================================================= */
+
+#referafriend{
+    display:none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index:9999;
+    width:350px;
+    margin:-300px 0 0 -150px;
+    /*background-color: #fff;*/
+}
+#referafriend[id]{ /* IE6 and below Can't See This */
+    position:fixed;
+}
+/*#referafriend h3 {margin-bottom: 20px;}*/
+#referafriend h4 {padding: 4px 0;}
+#referafriend .group-select {margin: 0;}
+
+#referafriend-overlay{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:5000;   
+    background-color:#000;
+    -moz-opacity: 0.3;
+    opacity:.30;
+    filter: alpha(opacity=30);
+}
+
+#referafriend-overlay[id]{ /* IE6 and below Can't See This */
+    position:fixed;
+}
+
+#referafriend.done #rafLoadMessage{
+    display:none;
+}
+#referafriend.done #rafContent{
+    display:block;
+}
+#referafriend.loading #rafContent{
+    display:none;
+}
+#referafriend.loading #rafLoadMessage{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000;
+    display:block;
+    background-color: #fff;
+    width: 100px;
+    padding: 10px;
+    margin: 250px 0 0 120px;
+}
+
+.referafriend-please-wait {
+    padding-right:7px;
+}
+/*
+#referafriend.done img{
+    width:100%;
+    height:100%;
+}
+*/
+#raf-invite .group-select { 
+    margin:28px 0; 
+    border:1px solid #bbafa0;
+    padding:22px 25px 12px 25px;
+    background:#fbfaf6;
+}
+
+#raf-invite .group-select li .input-box .input-text,#raf-invite .group-select li .input-box textarea { 
+width:275px;
+}
+
+#raf-invite .button-set{ 
+border-top:1px solid #E4E4E4; 
+clear:both; 
+margin-top:4em; 
+padding-top:8px; 
+text-align:right; 
+} 
+ 
+ 
+
+.raf-right{
+    text-align: right;
+}
+
+.form-button-alt#referafriend-button {
+    background-color: #618499;
+    border: 1px solid #406A83;
+}
+
+.form-button-alt#referafriend-button span {
+    background: none;
+    border: none;
+}
+
+#referafriend-form span.required {
+    color: #EB340A;
+}
+.aw-sociable_services_thumbnail{max-width:32px;}
+.aw-sociable_services_link{text-decoration:none;}
+.aw-sociable_services_link img{border:none;}
+.aw-sociable_services{background:#fff;padding:5px;border:0px solid #C4C1BC;text-align:center;margin:0 0 10px;}
+.aw-sociable_services.aw-sociable_services-product-page{border:none; padding-top:20px;}
+.aw-sociable_services-list{}
+.aw-sociable_services .aw-sociable_services-list li{display:inline !important; padding:2px 1px !important;}
+.aw-sociable_services .aw-sociable_services-list li:after{content:none !important;}
+/*fix for Google Button*/
+.aw-sociable_services_link-Google1 div{padding-top:3px !important;}
+.aw-sociable_services div.g-plusone{display:none;}
+
+/**
+ * BelVG LLC.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+ *
+ /***************************************
+ *         MAGENTO EDITION USAGE NOTICE *
+ *****************************************/
+ /* This package designed for Magento COMMUNITY edition
+ * BelVG does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * BelVG does not provide extension support in case of
+ * incorrect edition usage.
+ /***************************************
+ *         DISCLAIMER   *
+ *****************************************/
+ /* Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future.
+ *****************************************************
+ * @category   Belvg
+ * @package    Belvg-FB-Twitter-Connect
+ * @copyright  Copyright (c) 2010 - 2011 BelVG LLC. (http://www.belvg.com)
+ * @license    http://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+ */
+
+
+.fb_button_ps { float: right; margin-left: 5px; padding-top:7px; }
+.welcome-msg img { margin-left: 5px; }
+
+/**
+ * BelVG LLC.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+ *
+ /***************************************
+ *         MAGENTO EDITION USAGE NOTICE *
+ *****************************************/
+ /* This package designed for Magento COMMUNITY edition
+ * BelVG does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * BelVG does not provide extension support in case of
+ * incorrect edition usage.
+ /***************************************
+ *         DISCLAIMER   *
+ *****************************************/
+ /* Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future.
+ *****************************************************
+ * @category   Belvg
+ * @package    Belvg-FB-Twitter-Connect
+ * @copyright  Copyright (c) 2010 - 2011 BelVG LLC. (http://www.belvg.com)
+ * @license    http://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+   */
+.twitter-index-index {}
+.twitter-index-index .main-container .page-title { margin-bottom:0; }
+.twitter-index-index .main-container .product-view { *zoom:1; }
+.twitter-index-index .main-container .product-view:after { content:'.'; clear:both; overflow:hidden; height:0; }
+.twitter-index-index .main-container .product-view { }
+.twitter-index-index .main-container .product-left { float:left; width:150px; text-align:center; }
+.twitter-index-index .main-container .product-right { margin:0 0 0 150px; padding:30px 0 0; }
+.twitter-index-index .main-container .product-right .product-name h1 { font-size:32px; }
+
+.twitter-index-index .main-container .twitterpage-content { zoom:1; }
+.twitter-index-index .main-container .twitterpage-content:after { content:'.'; clear:both; overflow:hidden; height:0; }
+.twitter-index-index .main-container .twitterpage-content-left { float:left; width:500px; }
+.twitter-index-index .main-container .twitterpage-content-right { margin:0 0 0 500px; }
+
+.color-blue {color:#8097B3;}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+	html, body { height:100%; }
+	.ipad-index-index .main-container .twitter-content-left { float:left; width:530px; }
+	.ipad-index-index .main-container .twitter-content-right { margin:0 0 0 540px; }
+}
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	html, body { height:100%; }
+	.ipad-index-index .main-container .twitter-content-left { margin:0 0 10px; }
+	.ipad-index-index .main-container .twitter-content-right {  }
+}
+
+.ipad-index-index { background: #EEF0FD; background:-moz-linear-gradient(top, #EEF0FD 0%, #FFFFFF 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEF0FD), color-stop(100%,#FFFFFF)); }
+.ipad-index-index .page { padding:0; width:auto; }
+.ipad-index-index .main-container { }
+.ipad-index-index .main-container .main { padding:40px 50px 10px; }
+.ipad-index-index .main-container .twitter-content,
+.ipad-index-index .main-container .product-view { *zoom:1; }
+.ipad-index-index .main-container .twitter-content:after,
+.ipad-index-index .main-container .product-view:after { content:'.'; clear:both; overflow:hidden; height:0; }
+.ipad-index-index .main-container .twitter-content-left { float:left; width:530px; }
+.ipad-index-index .main-container .twitter-content-right { margin:0 0 0 540px; }
+.ipad-index-index .main-container .product-view { }
+.ipad-index-index .main-container .product-left { float:left; width:214px; text-align:center; }
+.ipad-index-index .main-container .product-right { margin:0 0 0 240px; padding:30px 0 0; }
+.ipad-index-index .main-container .product-right .product-name h1 { font-size:32px; }
+.ipad-index-index .main-container .product-right .std { font-size:17px; line-height:1.7; }
+.twitter-share-button{  
+    display: block;    
+    padding: 10px;
+    position: relative;   
+    clear:both;
+}
+img { border: none; }
+
+/* image replacement */
+.graphic {
+	display: block;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-indent: -8000px;
+}
+
+/* // image replacement */
+.jm-products-slider-listing {
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 0 80px !important;
+}
+
+#ja-mass-top .jm-products-slider-listing {
+  padding-top: 560px !important;
+}
+
+.jm-products-slider-content { 
+	position: relative; 
+	padding: 0;
+  background: #efefef;
+}
+
+/* Easy Slider */
+.jm-slider { overflow: hidden; width: 0px; float: left;}
+
+.jm-slider ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jm-slider li {
+	overflow: hidden;
+	float: left;
+	margin: 0;
+	display: block;    
+  height: 350px !important;
+  width: 940px !important;
+}
+
+.jm-slider .product-image {
+  float: left;
+  margin: 30px 0;
+}
+
+.jm-slider .item-slider-content {
+  padding: 60px 0;
+}
+
+.jm-slider .item-slider-content .price-box {
+  margin: 15px 0;
+}
+
+.jm-slider .product-title {
+  color: #111;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.jm-slider .product-title:hover,
+.jm-slider .product-title:focus,
+.jm-slider .product-title:active {
+  color: #8CBF26;
+}
+
+.jm-slider .ratings .rating-links { display: none; }
+
+/*.jm-slider a { position: relative; } */
+
+.jm-prev {
+	position: absolute;
+	left: -80px;
+	height: 100%;
+	width: 80px;
+	z-index: 3;
+	background: #efefef;
+}
+
+.jm-next {
+	position: absolute;
+	right: -80px;
+	height: 100%;
+	width: 80px;
+	z-index: 3;
+	background: #efefef;
+}
+
+.jm-slide-left-img,
+.jm-slide-right-img {
+  cursor: pointer;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.jm-slide-right-img {
+  right: 0;
+}
+
+/* scroller */
+.has-hscrollbar {
+	padding-bottom: 30px;
+}
+
+.customScrollerContainer {
+
+}
+.customScrollerContent {
+
+}
+
+/* SCROLLER STYLE */
+/* VERTICAL */
+.divVScrollerBar {
+	width: 18px;
+	margin-left: 1px;
+}
+
+/* ORIZONTAL */
+.divOScrollerBar {
+	height: 18px;
+	margin-top: 1px;
+}
+
+/* AREA UP */
+.divVScrollerBarUp {
+	cursor: pointer;
+	height: 17px;
+}
+/* AREA LEFT */
+.divOScrollerBarLeft {
+	cursor: pointer;
+	width: 17px;
+}
+/* AREA DOWN */
+.divVScrollerBarDown {
+	cursor: pointer;
+	height: 17px;
+}
+/* AREA RIGHT */
+.divOScrollerBarRight {
+	cursor: pointer;
+	width: 17px;
+}
+/* ARROW UP AND DOWN */
+.divVScrollerBarUp span,
+.divVScrollerBarDown span {
+	display: block;
+	border: 1px solid #dae4eb;
+	width: 16px;
+	height: 15px;
+	line-height: 0;
+	font-size: 0;
+}
+.divVScrollerBarUp span {
+	background: #baccda url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmproductsslider/images/vtop.gif) no-repeat center center;
+}
+.divVScrollerBarDown span {
+	background: #baccda url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmproductsslider/images/vbottom.gif) no-repeat center center;
+}
+/* ARROW LEFT AND RIGHT */
+.divOScrollerBarLeft span,
+.divOScrollerBarRight span {
+	display: block;
+	
+	height: 16px;
+	width: 15px;
+	line-height: 0;
+	font-size: 0;
+}
+.divOScrollerBarLeft span {
+	background: #ffffff url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmproductsslider/images/re-left.gif) no-repeat center center;
+}
+.divOScrollerBarRight span {
+	background: #ffffff url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmproductsslider/images/re-right.gif) no-repeat center center;
+}
+
+/* ARROWS HOVER */
+.divVScrollerBarUp span.hover,
+.divOScrollerBarLeft span.hover,
+.divVScrollerBarDown span.hover,
+.divOScrollerBarRight span.hover {
+	
+	background-color: #527fa2;
+}
+
+/* TRACE */
+.divVScrollerBarTrace, .divOScrollerBarTrace {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmproductsslider/images/line.gif) repeat-x left center;
+	line-height: 0;
+	font-size: 0;
+}
+
+/* CURSORS */
+.divVScrollerBarCursor {
+	cursor: pointer;
+}
+
+.divOScrollerBarCursor {
+	cursor: pointer;
+}
+
+.divVScrollerBarCursor span {
+	display: block;
+	border-left: 1px solid #dae4eb;
+	border-right: 1px solid #dae4eb;
+	height: 100%;
+	width: 16px;
+	background: #baccda url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmproductsslider/images/vcursor.gif) no-repeat center center;
+	line-height: 0;
+	font-size: 0;
+}
+
+.divOScrollerBarCursor span {
+	display: block;
+	border-top: 1px solid #dae4eb;
+	border-bottom: 1px solid #dae4eb;
+	height: 10px;
+	width: 100%;
+	background: #cccccc url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmproductsslider/images/ocursor.gif) no-repeat center center;
+	font-size: 0;
+	margin-top:3px;
+}
+
+/* CURSORS HOVER */
+.divVScrollerBarCursor span.hover {
+	border-left: 1px solid #a3bbce;
+	border-right: 1px solid #a3bbce;
+	background-color: #527fa2;
+}
+
+.divOScrollerBarCursor span.hover {
+	border-top: 1px solid #a3bbce;
+	border-bottom: 1px solid #a3bbce;
+	background-color: #cccccc;
+}
+
+/* Hot Products */
+.hotproducts {
+  margin-bottom: 50px;
+}
+
+.hotproducts .jm-slider li {
+  height: 460px !important;
+  width: 460px !important;
+}
+
+.hotproducts .jm-products-slider-listing {
+  padding: 0 !important;
+  width: auto;
+}
+
+.hotproducts .jm-products-slider-content {
+  padding: 0;
+  float: right;
+}
+
+.hotproducts .jm-slider .item-slider-content {
+  padding: 20px 0;
+}
+
+.hotproducts .jm-slider .product-image {
+  float: none;
+  display: block;
+  margin: 0;
+}
+
+.hotproducts .jm-slider .no-rating a {
+  color: #fff;
+  font-size: 92%;
+}
+
+.hotproducts .jm-slider .product-title:hover,
+.hotproducts .jm-slider .product-title:focus,
+.hotproducts .jm-slider .product-title:active,
+.hotproducts .jm-slider .no-rating a:hover,
+.hotproducts .jm-slider .no-rating a:focus,
+.hotproducts .jm-slider .no-rating a:active {
+  color: #000;
+}
+
+.hotproducts .jm-slider {
+  float: left;
+  background: #01abaa;
+  text-align: center;
+}
+
+.hotproducts .jm-slider .jm-slider-desc {
+  margin-bottom: 20px;
+}
+
+.hotproducts .jm-slider .product-title {
+  color: #fff;
+  display: block;
+  font-size: 150%;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 300px;
+  height: 21px;
+  word-wrap: break-word;
+}
+
+.hotproducts .ratings .rating-box {
+  float: none;
+  margin: 0 auto;
+}
+
+.hotproducts .regular-price .price {
+  color: #fff;
+}
+
+.hotproducts .special-price .price {
+  font-size: 24px;
+  color: #fff;
+}
+
+.hotproducts .old-price .price {
+  color: #a3d8d7;
+}
+
+.hotproducts .jm-prev,
+.hotproducts .jm-next {
+  display: block;
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  height: 100%;
+  width: 69px;
+  background: #01ABAA;
+  margin: 0;
+}
+
+.hotproducts .jm-prev img,
+.hotproducts .jm-next img {
+  position: absolute;
+  top: auto;
+  bottom: 60px;
+  right: 20px;
+}
+
+.hotproducts .jm-prev {
+  left: 0;
+}
+
+.hotproducts .jm-prev img {
+  left: 20px;
+}
+.hotproducts {
+  padding-top: 50px;
+}
+
+.block.jm-productspotlight {
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  float: left;
+  margin-top: -55px;
+  margin-bottom: 0;
+}
+
+.block.jm-productspotlight .block-title {}
+
+.block.jm-productspotlight .block-content { padding: 0; }
+
+
+.jm_product_item {
+  background-repeat: no-repeat;
+  background-color: #8cbf26;
+}
+
+.jm-product-slwi {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+.jm-product-slwi ul {
+	position: relative;
+	margin: 0 -10px 20px;
+	padding-right: 240px;
+}
+
+.jm-product-slwi ul:last-child {
+  margin-bottom: 0;
+}
+
+.jm-product-slwi ul:nth-child(2n) .jm_product_item {
+  background-color: #f09609;
+}
+
+.jm-product-slwi ul li {
+	float: left;
+	display: block;
+	padding: 0 10px;
+}
+
+.jm_item_desc {
+	top: 0;
+	right: 10px;
+	height: 30px;
+	position: absolute;
+	overflow: hidden;
+	text-align: left;
+	background: #fff;
+}
+
+.jm_item_desc a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111 !important;
+  margin: -7px 35px 15px 0;
+  display: block;
+}
+
+.jm_item_desc a:hover,
+.jm_item_desc a:focus,
+.jm_item_desc a:active {
+  color: #8cbf26 !important;
+}
+.jm-slideshow {
+  border-bottom: 5px solid #2c2d35;
+  margin: 0;
+  border: 0;
+  z-index: 1;
+ 
+}
+
+.jm-slidewrap {
+	background: white no-repeat left bottom;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	height: auto;
+}
+
+.jm-slide-main-wrap {
+	position: relative;
+	overflow: hidden;
+	z-index: 10;
+	width: 100% !important;
+}
+
+.jm-slide-main {
+	position: absolute;
+	z-index: 1;
+}
+
+.jm-slide-item {
+	display: block;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+.jm-slide-item img {
+	padding-top: 0;
+	cursor: hand; 
+	cursor: pointer; 
+	
+}
+
+.jm-slide-thumbs-wrap {
+	background: none;
+	position: absolute;
+	overflow: hidden;
+	clear: both;
+	bottom: 40px;
+	right: 40px;
+	z-index: 999;
+}
+
+.jm-thumbs-top {
+	margin-top: 10px;
+}
+
+.jm-thumbs-bottom {
+  margin-bottom: 120px;
+  margin-left: -183px;
+}
+
+.jm-thumbs-left {
+	margin-left: 10px;
+}
+
+.jm-thumbs-right {
+	margin-right: 10px;
+}
+
+.jm-slide-thumbs,
+.jm-slide-thumbs-mask,
+.jm-slide-thumbs-handles {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 5000px;
+}
+
+.jm-slide-descs {
+	display: none;
+}
+
+.jm-slide-thumb,
+.jm-slide-thumbs-handles span {
+	display: block;
+	margin: 0;
+	float: left;
+	cursor: pointer;
+	color: #eee;
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/blank.png) left top no-repeat;
+}
+
+.jm-side-number .jm-slide-thumb,
+.jm-side-number .jm-slide-thumbs-handles span {
+	text-indent: -999em;
+}
+
+.jm-side-number .jm-slide-thumb {
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/thumb.png);
+}
+
+.jm-side-number .jm-slide-thumb.active {
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/thumb-active.png);
+}
+
+.jm-slide-thumbs-mask-left,
+.jm-slide-thumbs-mask-right,
+.jm-slide-thumbs-mask-center {
+	float: left;
+}
+
+.jm-slide-thumbs-mask-left, .jm-slide-thumbs-mask-right{
+	background: none;
+}
+
+.jm-mask-desc {
+	display: block;
+	z-index: 100;
+	position: relative;
+	margin-left: -390px;
+	margin-top: 140px;
+}
+
+.jm-mask-desc .jm-slide-desc br { display: none; }
+
+.jm-mask-desc .readmore {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #B5B5B4;
+	font-size: 100%;
+	margin: 30px;
+}
+
+.jm-mask-desc a.readon:hover,
+.jm-mask-desc a.readon:active,
+.jm-mask-desc a.readon:focus { color: #eee; }
+
+.jm-slide-buttons {
+	z-index: 999;
+	position: absolute;
+	margin: -26px 0 0;
+	padding: 0;
+	top: 50%;
+	left: 0;
+	z-index: 101;
+	width: 100%;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s; /* Firefox 4 */
+  -webkit-transition: opacity 0.5s; /* Safari and Chrome */
+  -o-transition: opacity 0.5s; /* Opera */
+}
+
+.jm-slide-main-wrap:hover .jm-slide-buttons {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.jm-slide-controls { position: absolute; z-index: 901; }
+
+.jm-slide-buttons span {
+	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/arrow.png) left top no-repeat;
+	color: #eee;
+	display: block;
+	cursor: pointer;
+	width: 53px;
+	height: 52px;
+	text-indent: -10000em;
+}
+
+.jm-slide-buttons span.jm-slide-prev { float: left; margin-left: 30px; background-position: left bottom; }
+
+.jm-slide-buttons span.jm-slide-next { float: right; margin-right: 30px; background-position: left top; }
+
+.jm-slide-buttons span.jm-slide-prev:hover { background-position: right bottom; }
+
+.jm-slide-buttons span.jm-slide-next:hover { background-position: right top; }
+
+.jm-slide-mask {
+	position: absolute;
+	right:0px;
+	top: 0px;
+	
+	z-index: 99;
+	display: none;
+	filter: none !important; /* IE < 9 */
+	cursor: hand; 
+	cursor: pointer;
+	
+}
+
+.jm-slide-thumb img {
+	overflow: hidden;
+}
+
+.jm-mask-desc .jm-slide-desc {
+	color: #fff;
+	font-size: 100%;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #e671b8;
+	font-weight:500;
+}
+
+.jm-mask-desc .jm-slide-desc h3 {
+	color: #fff;
+	text-transform: none;
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.jm-mask-top {
+	margin-top: 0px;
+}
+
+.jm-mask-bottom {
+	margin-bottom: 0px;
+}
+
+.jm-mask-left {
+	margin-left: 0px;
+}
+
+.jm-mask-right {
+	margin-right: 60px;
+}
+
+.jm-slide-desc {
+	color: #999;
+	font-size: 115%;
+}
+
+.jm-slide-desc h3 {
+	color: #eee;
+	font-size: 200%;
+	font-weight: normal;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jm-slide-desc p {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.jm-slide-desc .price {
+	font-size: 165%;
+	color: #eee;
+	margin-right: 30px;
+	vertical-align: middle;
+}
+
+.jm-slide-desc button span {
+	background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/btn-bg-01-active.png);
+}
+
+.jm-slide-desc button:hover span {
+	background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/btn-bg-01.png);
+}
+
+/* Slideshow layout style ---*/
+.jm-vertical_right {
+	overflow: hidden;
+	position: absolute;
+	right: 80px;
+	top: 40px;
+	z-index: 100;
+}
+
+.jm-vertical_left {
+	left: 80px;
+	overflow: hidden;
+	position: absolute;
+	top: 40px;
+	z-index: 999;
+}
+
+.jm-vertical_right .active {}
+
+.jm-vertical_left .active {}
+
+.jm-slide-right{
+	margin-left: auto;
+	right: 0;
+	top: 0;
+}
+
+.jm-slideshowjm-vertical_left .jm-mask-desc .jm-slide-desc {
+	right: 40px;
+	left: auto;
+}
+
+.jm-slideshowjm-vertical_left .jm-mask-desc a.readon {
+	right: 60px;
+	left: auto;
+}
+
+.jm-vertical_right .jm-slide-thumb,
+.jm-vertical_right .jm-slide-thumbs-handles span {
+	float: none!important; 
+}
+
+.jm-vertical_left .jm-slide-thumb,
+.jm-vertical_left .jm-slide-thumbs-handles span {
+	float: none!important; 
+}
+
+.jm-slide-thumbs-wrap .active .jm-slide-thumb-inner {
+	background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/grad2.gif);
+	color: #eee;
+}
+
+.jm-vertical_right .jm-slide-thumbs-mask-left,
+.jm-vertical_right .jm-slide-thumbs-mask-right,
+.jm-vertical_right .jm-slide-thumbs-mask-center {
+	display: block;
+	float: none;
+}
+
+.jm-vertical_left .jm-slide-thumbs-mask-left,
+.jm-vertical_left .jm-slide-thumbs-mask-right,
+.jm-vertical_left .jm-slide-thumbs-mask-center {
+	display: block;
+	float: none;
+}
+
+.jm-vertical_left .jm-slide-thumb-inner {
+	margin-left: 0px;
+	margin-right: 19px;
+}
+
+.jm-slide-thumb-inner img {
+	background: #fcfcfc;
+	border: 1px solid #ddd;
+	margin: 15px 15px 4px !important;
+	padding: 3px;
+}
+ 
+.jm-slide-thumb-inner h3 {
+	color: #1c1c1c;
+	font-family: "Segoe UI", Verdana, Arial, sans-serif;
+	font-size: 125%;
+	margin-top: 15px;
+}
+
+.jm-slide-thumb-inner .ratings {
+	height: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.jm-slide-thumb-inner .price-box {
+	font-size: 110%;
+	margin: 0;
+}
+
+.active .jm-slide-thumb-inner {
+	border-top: 1px solid #65A7F5;
+}
+
+.active .jm-slide-thumb-inner img {
+	background: #88BBF7;
+	border: 1px solid #5F9DE7;
+}
+
+.active .jm-slide-thumb-inner h3 {
+	color: #eee;
+}
+
+.ja-slideshow .block .block-title {
+	margin-bottom: 20px;
+	margin-top: -10px;
+	padding-top: 0;
+}
+
+.jm-slide-loader {
+	background: #fff url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/ajax-loader.gif);
+	width: 16px;
+	height: 11px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -8px;
+	z-index: 501;
+}
+
+.jm-slide-progress {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 7px;
+	z-index: 500;
+	background: #fff;
+	opacity: 0.7;
+}
+/*------------------------------------------------------------------------
+# JA Mootabs css 1.0 - June, 2008
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+-------------------------------------------------------------------------*/
+
+.jm-tabswrap { margin: 0; padding: 0; }
+
+.jm-tabswrap .container {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+
+.jm-tabswrap .jm-tab-content ul { margin: 0 !important; padding: 0 !important; }
+
+.jm-tabswrap .jm-tab-content li { padding: 4px 10px 6px 10px; }
+
+.jm-tabswrap .jm-tab-content .jm-tab-subcontent { padding: 4px 10px 6px 10px; }
+
+
+/* TAB TOP --------------------------- */
+.jm-tabs-title-top { position: relative; z-index: 10; }
+
+.jm-tabs-title-top ul.jm-tabs-title { margin: 0; padding: 0; position: absolute; }
+
+* html .jm-tabs-title-top ul.jm-tabs-title { bottom: -1px; /*IE 6*/ }
+
+.jm-tabs-title-top ul.jm-tabs-title li {
+	background: none;
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.jm-tab-panels-top {
+	bottom: 0;
+	clear: both;
+	height: 57px;
+	left: 0;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+
+/* TAB LEFT --------------------------- */
+.jm-tabs-title-left { float: left; }
+
+.jm-tabs-title-left ul.jm-tabs-title { left: 0; margin: 0; padding: 0; top: 10px; width: 100%; }
+
+.jm-tabs-title-left ul.jm-tabs-title li {
+	cursor: pointer;
+	display: block;
+	margin: 0 0 0 1px;
+	padding: 0;
+}
+
+.jm-tab-panels-left {
+	height: 98%;
+	left: 10px;
+	overflow: hidden;
+	position: relative;
+	top: 5px;
+}
+
+
+/* TAB RIGHT --------------------------- */
+.jm-tabs-title-right { float: right; height: 100%; position: relative; }
+
+.jm-tabs-title-right ul.jm-tabs-title {
+	margin: 0;
+	padding: 0;
+	right: 0;
+	top: 10px;
+	width: 100%;
+}
+
+.jm-tabs-title-right ul.jm-tabs-title li {
+	cursor: pointer;
+	display: block;
+	margin: 0 0 0 1px;
+	padding: 0;
+}
+
+.jm-tab-panels-right {
+	height: 98%;
+	overflow: hidden;
+	position: relative;
+	top: 5px;
+}
+
+/* TAB BOTTOM --------------------------- */
+.jm-tabs-title-bottom { }
+
+.jm-tabs-title-bottom ul.jm-tabs-title { margin: 0; padding: 0; position: absolute; }
+
+* html .jm-tabs-title-bottom ul.jm-tabs-title { top: -1px; /*IE 6*/ }
+
+.jm-tabs-title-bottom ul.jm-tabs-title li {
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.jm-tab-panels-bottom {
+	clear: both;
+	left: 10px;
+	overflow: hidden;
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 98%;
+	z-index: 1;
+}
+#MB_overlay {
+	position: absolute;
+	margin: auto;
+	top: 0;	left: 0;
+	width: 100%; height: 100%;
+	z-index: 9999;
+	background-color: #000!important;
+}
+#MB_overlay[id] { position: fixed; }
+
+#MB_window {
+	position: absolute;
+	top: 0;
+	border: 0 solid;
+	text-align: left;
+	z-index: 10000;
+}
+#MB_window[id] { position: fixed!important; }
+
+#MB_frame {
+	position: relative;
+	background-color: #FFF;
+	height: 100%;
+}
+
+#MB_header {
+	margin: 0;
+	padding: 0;
+}
+
+#MB_content {
+	padding: 6px 0.75em 2px 0.75em;
+	overflow: auto;
+}
+
+#MB_caption {
+	font: bold 100% "Lucida Grande", Arial, sans-serif;
+	text-shadow: #FFF 0 1px 0;
+	padding: .5em 2em .5em .75em;
+	margin: 0;
+	text-align: left;
+}
+
+#MB_close {
+	display: block;
+	position: absolute;
+	right: 5px; top: 4px;
+	padding: 2px 3px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 13px;
+}
+#MB_close:hover {
+	background: transparent;
+}
+
+#MB_loading {
+	padding: 1.5em;
+	text-indent: -10000px;
+	background: transparent url(http://www.vapealive.com/skin/frontend/default/jm_neros/css/mageworx/spinner.gif) 50% 0 no-repeat;
+}
+
+/* Color scheme */
+#MB_frame {
+	padding-bottom: 7px;
+	-webkit-border-radius: 7px; 
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+#MB_window {
+	background-color: #EFEFEF;
+	color: #000;
+	-webkit-box-shadow: 0 8px 64px #000; 
+	-moz-box-shadow: 0 0 64px #000; 
+	box-shadow: 0 0 64px #000;
+	
+	-webkit-border-radius: 7px; 
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+#MB_content { border-top: 1px solid #F9F9F9; }
+#MB_header {
+  background-color: #DDD;
+  border-bottom: 1px solid #CCC;
+}
+#MB_caption { color: #000 }
+#MB_close { color: #777 }
+#MB_close:hover { color: #000 }
+
+
+/* Alert message */
+.MB_alert {
+	margin: 10px 0;
+	text-align: center;
+}
+.icart-product-view .product-shop { float: none; }
+
+	.icart-product-view .product-img-box {
+	float: left;
+	width: 80px;
+}
+.icart-product-view .product-details {
+    float: left;
+    width: 400px;
+}
+
+.icart-controls { text-align: center; }
+
+.icart-product-view .clearer:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+
+.icart-collaterals {
+	margin: 20px auto;
+    width: 90%;
+}
+
+.icart-collaterals .crosssell h2 {
+	font-size:12px;
+	font-weight:bold;
+}
+
+.icart-collaterals .upsell {
+    background: #FAFAEC none repeat scroll 0 0;
+    border: 1px solid #CEC3B6;
+    padding: 12px 15px;
+}
+
+.icart-collaterals .crosssell {
+	background: #F7F7F7 none repeat scroll 0 0;
+	border: 1px solid #DDDDDD;
+	padding: 10px;
+}
+
+.icart-collaterals .crosssell li.item {
+	border-bottom: 1px solid #DDDDDD;
+	margin: 0 0 8px;
+	padding-bottom: 5px;
+}
+
+.icart-collaterals .upsell .product-image, .icart-collaterals .crosssell .product-image {
+	border: 1px solid #D0CDC9;
+	float: left;
+	width: 75px;
+}
+
+.icart-collaterals .upsell .product-shop, .icart-collaterals .crosssell .product-shop {
+    width: 290px;
+}
+
+.icart-collaterals .crosssell .product-details {
+    margin-left: 85px;
+}
+
+.icart-collaterals .upsell .product-shop h5, .icart-collaterals .crosssell h5 {
+    font-size:1em;
+}
+.jm-megamenu { margin: 0; padding: 0; }
+.jm-megamenu a.over, .jm-megamenu a.active {}
+
+ul.megamenu { margin: 20px 30px; /* menu's gutter */ } 
+
+ul.megamenu li { overflow: visible; }
+
+/* lv - 0
+-----------------------------------*/
+/* Styling ---*/
+.jm-megamenu ul.level0 {
+	margin: 0;
+	padding: 0;
+}
+
+.jm-megamenu ul.level0 li.mega {
+	background: none;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.jm-megamenu ul.level0 > li.mega { }
+
+.jm-megamenu ul.level0 li.mega a.mega {
+  text-decoration: none;
+  padding: 0 30px 0 0;
+  color: #D3EDFA;
+  text-transform: none;
+  font-size: 18px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+	font-weight: 600;
+}
+
+.jm-megamenu ul.level0 li.mega a.mega.active {
+  color: #fff;
+}
+
+.jm-megamenu ul.level0 li.mega a.mega:hover,
+.jm-megamenu ul.level0 li.mega:hover > a.mega { color: #000; }
+
+.jm-megamenu ul.level1 li.mega a.mega:hover,
+.jm-megamenu ul.level1 li.mega:hover > a.mega { color: #ff006f; }
+
+.jm-megamenu ul.level3 li.mega a.mega:hover,
+.jm-megamenu ul.level3 li.mega:hover > a.mega { color: #ff006f; background: #222; }
+
+.jm-megamenu ul.level0 li.mega .has-image {
+	padding-left: 25px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: left top;
+	cursor: pointer;
+}
+
+.jm-megamenu ul.level0 li.mega span.menu-title { display: block; }
+
+.jm-megamenu ul.level0 li.mega span.menu-desc {
+	display: block;
+	font-weight: normal;
+	font-size: 92%;
+}
+
+.jm-megamenu ul.level0 li.mega a img {}
+
+.jm-megamenu ul.level0 li.over, ul.level0 li.haschild-over {}
+
+.jm-megamenu ul.level0 li.haschild a.mega span.menu-title,
+.jm-megamenu ul.level0 li.haschild-over a.mega span.menu-title { }
+
+.jm-megamenu ul.level0 li.haschild a.mega span.menu-desc,
+.jm-megamenu ul.level0 li.haschild-over a.mega span.menu-desc {}
+
+.jm-megamenu ul.level0 li.active {}
+
+/* lv - 1 and below
+-----------------------------------*/
+/* Layout ---*/
+.jm-megamenu ul.level0 > li.mega > .childcontent {
+	top:: 52px;
+	
+}
+
+.jm-megamenu li.mega .childcontent { display: block; height: auto; position: absolute; }
+
+.jm-megamenu li.mega .childcontent,
+.jm-megamenu li.haschild-over li.mega .childcontent,
+.jm-megamenu li.mega li.haschild-over li.mega .childcontent ,
+.jm-megamenu li.mega li.mega li.haschild-over li.mega .childcontent, 
+.jm-megamenu li.mega li.mega li.mega li.haschild-over li.mega .childcontent, 
+.jm-megamenu li.mega li.mega li.mega li.mega li.haschild-over li.mega .childcontent { left: -999em; /*hide the menu*/ }
+
+.jm-megamenu li.haschild-over .childcontent,
+.jm-megamenu li.haschild:hover > .childcontent,
+.jm-megamenu li.mega li.haschild-over .childcontent,
+.jm-megamenu li.mega li.mega li.haschild-over .childcontent,
+.jm-megamenu li.mega li.mega li.mega li.haschild-over .childcontent,
+.jm-megamenu li.mega li.mega li.mega li.mega li.haschild-over .childcontent,
+.jm-megamenu li.mega li.mega li.mega li.mega li.mega li.haschild-over .childcontent { left: auto; /*show on parent:hover*/ }
+
+.jm-megamenu li.mega .right,
+.jm-megamenu li.haschild-over li.mega .right,
+.jm-megamenu li.mega li.haschild-over li.mega .right ,
+.jm-megamenu li.mega li.mega li.haschild-over li.mega .right, 
+.jm-megamenu li.mega li.mega li.mega li.haschild-over li.mega .right, 
+.jm-megamenu li.mega li.mega li.mega li.mega li.haschild-over li.mega .right { right: auto; /*hide the menu*/ }
+
+.jm-megamenu li.haschild-over .right
+{ right: 0; /*show on parent:hover*/ }
+.jm-megamenu li.mega li.haschild-over .right,
+.jm-megamenu li.mega li.mega li.haschild-over .right,
+.jm-megamenu li.mega li.mega li.mega li.haschild-over .right,
+.jm-megamenu li.mega li.mega li.mega li.mega li.haschild-over .right,
+.jm-megamenu li.mega li.mega li.mega li.mega li.mega li.haschild-over .right 
+{ right: 12em; /*show on parent:hover*/ }
+
+.jm-megamenu ul.level1 li.haschild:hover > .childcontent { left: 150px; }
+
+.jm-megamenu ul.level1 li.mega { float: none; }
+
+.jm-megamenu ul.level1 .childcontent { margin: -2em 0 0 0; }
+
+ /* Columns ---*/
+.jm-megamenu .megacol { float: left;}
+
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner > .megacol.column3,
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner > .megacol.column2,
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner > .megacol.column1 {
+  min-height: 320px;
+}
+
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner > .megacol.column2 ,
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner > .megacol.column1 {
+  border-right: 1px solid #222;
+  margin-right: -1px;
+}
+
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner > .megacol.column4 {
+  border-top: 1px solid #222;
+}
+
+/* Styling ---*/
+.jm-megamenu ul.level1 li.mega {}
+
+.jm-megamenu ul.level1 li.first {}
+
+.jm-megamenu ul.level1 li.mega a.mega.active {
+  color: #1ba1e2;
+}
+
+.jm-megamenu ul.level1 li.mega a.mega {
+  background: none;
+  border: 0;
+  padding: 5px 0;
+  line-height: 1.5;
+  height: auto;
+  text-transform: none;
+  color: #999;
+  font-size: 16px;
+}
+
+.jm-megamenu ul.level1 li.mega a.mega span.menu-title { background: none; padding: 0; }
+
+.jm-megamenu ul.level1 li.haschild > a.mega > span.menu-title,
+.jm-megamenu ul.level1 li.haschild-over > a.mega > span.menu-title,
+.jm-megamenu ul.level2 li.haschild > a.mega > span.menu-title,
+.jm-megamenu ul.level2 li.haschild-over > a.mega > span.menu-title  {
+	background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmmegamenu/images/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	padding: 0;
+}
+
+.jm-megamenu ul.level1 li.over, ul.level1 li.haschild-over {}
+
+.jm-megamenu ul.level1 li.group { background: none; }
+
+ /* CHILD CONTENT
+-----------------------------------*/
+.jm-megamenu .childcontent {
+	z-index: 999;
+}
+
+.jm-megamenu .childcontent-inner-wrap {
+  padding-top: 8px;
+  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmmegamenu/images/menu-arrow.png) no-repeat 30px top;
+}
+
+.jm-megamenu .childcontent-inner {
+	background: #000;
+	border-bottom: 5px solid #1BA1E2;
+}
+
+.jm-megamenu .level2 .childcontent-inner { 
+  background: #222;
+}
+
+.jm-megamenu .childcontent .block {
+	line-height: 1.5;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.jm-megamenu .childcontent .block h3 {
+	background: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-indent: 5px;
+	text-transform: none;
+}
+
+.jm-megamenu .childcontent .block .ja-box-ct {
+	padding: 0 5px;
+}
+
+.jm-megamenu .childcontent .block a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.jm-megamenu .childcontent .block a:hover,
+.jm-megamenu .childcontent .block a:focus,
+.jm-megamenu .childcontent .block a:active {
+	text-decoration: none;
+	color: #ff006f;
+}
+
+.jm-megamenu .childcontent .block ul:first-child {
+	margin-top: 0 !important;
+}
+
+.jm-megamenu .childcontent .block li {
+	margin-bottom: 5px;
+}
+
+/* Grouped --- */
+.jm-megamenu .group {}
+
+.jm-megamenu .group-title { overflow: hidden; margin-bottom: 20px; }
+
+.jm-megamenu ul.level1 li.mega div.group-title a.mega {
+  color: #fff;
+  font-weight: bold;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.jm-megamenu .group-title .menu-desc {
+	padding-left: 0 !important;
+}
+
+.jm-megamenu .group-content .block,
+.jm-megamenu .group-content ul.megamenu  {
+	margin: 0; /* Group-content's gutter*/
+}
+
+/* override --- */
+.jm-megamenu .childcontent ul.megamenu .block {
+	padding: 0;
+}
+
+.jm-megamenu .childcontent ul.megamenu .block h3 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.jm-megamenu .category-products { margin: 0; }
+
+.jm-megamenu .products-grid div.item .item-inner { margin: 10px 10px 0; width: auto; min-height: 0; }
+
+.jm-megamenu .products-grid div.item { width: 180px; }
+
+.jm-megamenu .group .group-content .block img { padding: 0; float: none; }
+
+.jm-megamenu .products-grid li.item .item-inner { margin: 0; }
+
+.catalog-category-view .jm-megamenu .products-grid { margin: 0; }
+
+.jm-megamenu .block { background: none; }
+
+.jm-megamenu .product-information h2.product-name { font-size: 14px; }
+
+.jm-megamenu .products-grid .product-image { background: #1ba1e2; }
+
+.jm-megamenu .products-grid li.item .item-inner:hover .product-image {
+  background: #ff006f;
+}
+
+.jm-megamenu .regular-price .price {
+  font-size: 14px;
+  color: #fff;
+}
+
+.jm-megamenu .block .actions { display: none; }
+
+.jm-megamenu .rating-box {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_blank_star_small.png);
+  height: 14px;
+  width: 85px;
+}
+
+.jm-megamenu .rating-box .rating {
+  background-image: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/product_rating_full_star_small.png);
+  height: 14px;
+}
+
+.jm-megamenu .products-grid .price-box {
+  margin-bottom: 0;
+}
+
+.jm-megamenu .mega-banner {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+
+.jm-megamenu .mega-banner .text-color {
+  color: #1ba1e2;
+  font-weight: bold;
+}
+
+.jm-megamenu .mega-banner button {
+  margin-left: 20px;
+  display: inline-block;
+
+}
+
+
+
+.jm-megamenu .category-products .products-grid {
+  margin-bottom: 0;
+}
+.neros .jm-tabswrap {
+}
+.neros .jm-tabswrap div.jm-tab-content {	
+	width: 95%;
+}
+/* JA Tabs top*/
+.neros .jm-tabs-title-top {
+  height: 30px;
+  border-bottom: 3px solid #ddd;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.neros .jm-tabs-title-top ul.jm-tabs-title li {
+	background: none;
+}
+
+.neros .jm-tabs-title-top ul.jm-tabs-title li h3 {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 0 0 20px;
+  background: none;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+.neros .jm-tabs-title-top .tab:hover { color: #1ba1e2 !important; }
+.neros .jm-tabs-title-top ul.jm-tabs-title li.hover, 
+.neros .jm-tabs-title-top ul.jm-tabs-title li.firsthover,
+.neros .jm-tabs-title-top ul.jm-tabs-title li.lasthover { color: #FF006F; }
+
+.neros .jm-tabs-title-top ul.jm-tabs-title li.active,
+.neros .jm-tabs-title-top ul.jm-tabs-title li.firstactive,
+.neros .jm-tabs-title-top ul.jm-tabs-title li.lastactive {
+	background: #FFFFFF;
+}
+
+.neros .jm-tabs-title-top ul li.active h3 ,
+.neros .jm-tabs-title-top ul li.firstactive h3,
+.neros .jm-tabs-title-top ul li.lastactive h3 {
+	color: #FF006F;
+}
+
+/* JA Tabs left*/
+.neros .jm-tabs-title-left {
+	position: relative;
+	float: left;	
+	height: 100%;
+	background: url(http://www.vapealive.com/skin/frontend/default/default/joomlart/jmtabs/themes/neros/17pxblank.gif) repeat-y right #F5F4ED;
+}
+
+.neros .jm-tabs-title-left ul.jm-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.neros .jm-tabs-title-left ul.jm-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.neros .jm-tabs-title-left ul li.active,
+.neros .jm-tabs-title-left ul li.firstactive,
+.neros .jm-tabs-title-left ul li.lastactive {
+	background: url(http://www.vapealive.com/skin/frontend/default/default/joomlart/jmtabs/themes/neros/left-active.gif) no-repeat right #FFFFFF;
+}
+
+.neros .jm-tabs-title-left ul li.active H3 ,
+.neros .jm-tabs-title-left ul li.firstactive H3,
+.neros .jm-tabs-title-left ul li.lastactive H3 {
+	color: #FA6900;
+}
+
+
+/* JA Tabs right*/
+.neros .jm-tab-panels-right .jm-tab-subcontent {
+	padding-left: 15px !important;
+}
+
+.neros .jm-tabs-title-right {
+	background: url(http://www.vapealive.com/skin/frontend/default/default/joomlart/jmtabs/themes/neros/17pxblank2.gif) repeat-y left #F5F4ED;
+}
+
+.neros .jm-tabs-title-right ul.jm-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.neros .jm-tabs-title-right ul.jm-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px 0 25px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.neros .jm-tabs-title-right ul li.active,
+.neros .jm-tabs-title-right ul li.firstactive,
+.neros .jm-tabs-title-right ul li.lastactive {
+	background: url(http://www.vapealive.com/skin/frontend/default/default/joomlart/jmtabs/themes/neros/right-active.gif) no-repeat left #FFFFFF;
+}
+
+.neros .jm-tabs-title-right ul li.active H3 ,
+.neros .jm-tabs-title-right ul li.firstactive H3,
+.neros .jm-tabs-title-right ul li.lastactive H3 {
+	color: #FA6900;
+}
+/* JA Tabs bottom*/
+.neros .jm-tabs-title-bottom {
+	width:100%;
+	bottom:0px;
+	height: 30px;
+	border-top: 1px solid #C9C0B7;
+	background: url(http://www.vapealive.com/skin/frontend/default/default/joomlart/jmtabs/themes/neros/grad1.gif) repeat-x top;
+	z-index: 3;
+}
+
+.neros .jm-tabs-title-bottom ul.jm-tabs-title li {
+	background: none;
+	border: 1px solid #C9C0B7;
+}
+
+.neros .jm-tabs-title-bottom ul.jm-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 20px;
+	margin: 0;
+	padding: 0 10px;
+	border: 1px solid #F5F4ED;
+	border-top: none;
+	background: none;
+	letter-spacing: normal;
+	font-family: "Lucida Grande", Arial, sans-serif;
+}
+
+.neros .jm-tabs-title-bottom ul.jm-tabs-title li.active,
+.neros .jm-tabs-title-bottom ul.jm-tabs-title li.firstactive,
+.neros .jm-tabs-title-bottom ul.jm-tabs-title li.lastactive {
+	background: #FFFFFF;
+	border-top: 1px solid #FFFFFF;	
+}
+
+.neros .jm-tabs-title-bottom ul li.active h3 ,
+.neros .jm-tabs-title-bottom ul li.firstactive h3,
+.neros .jm-tabs-title-bottom ul li.lastactive h3 {
+	color: #FA6900;
+}
+
+.jm-tabswrap .jm-tab-content .jm-tab-subcontent { padding:0}
+.jm-tabswrap .jm-tab-content li { padding:0 }
+

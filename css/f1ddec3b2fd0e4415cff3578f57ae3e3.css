@@ -1,0 +1,293 @@
+/*
+ * ------------------------------------------------------------------------
+ * JM Neros Theme
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* RESPONSIVE FONT SIZES
+--------------------------------------------------------- */
+body {
+  font-size: 14px;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%; /*Fix Mobile Safari Font Scale*/
+}
+
+.wrap { min-width: 0; }
+
+.main { width: 720px; }
+
+.col2-set .col-2,
+.col2-set .col-1 { float: none; width: 100%; }
+
+.ja-lo-2colsl #ja-mainbody,
+.ja-lo-3cols #ja-mainbody,
+.ja-lo-2colsr #ja-mainbody,
+.ja-lo-3cols #ja-main { width: 100%; }
+
+.col3-set .col-1,
+.col3-set .col-2 {
+  width: 48%;
+}
+
+.col3-set .col-3 {
+  width: 100%;
+}
+
+.col4-set .col-1,
+.col4-set .col-2,
+.col4-set .col-3 {
+  width: 33.3%;
+}
+
+.col4-set .col-4 {
+  width: 100%;
+  margin-top: 30px;
+  border-top: 1px solid #222;
+  padding-top: 30px;
+}
+
+#ja-col1 {
+  width: 33.3%;
+}
+
+#ja-col2 {
+  display: none;
+}
+
+#ja-main {
+  width: 66.6%;
+}
+
+.title-buttons h1 {
+  float: none;
+  text-align: left;
+}
+
+/* Form ---*/
+.form-list li .input-box select.address-select {
+  width: 100%;
+}
+
+/* Footer ---*/
+.socail-footer {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.socail-footer .left-content {
+  margin-left: 10px;
+}
+
+.socail-footer .right-content {
+  margin-right: 10px;
+}
+
+#ja-footer ul.links {
+  clear: both;
+  float: left;
+  margin-top: 10px;
+}
+
+#ja-footer .jm-legal {
+  margin-top: 0;
+}
+
+/* TABLE */
+.data-table td, .data-table th { padding: 5px ; text-transform: none; }
+
+colgroup col { width: 0; }
+
+.checkout-progress li { width: 100%; }
+
+#login-form .content { min-height: 0; }
+
+/* Product Detail ---*/
+.product-essential .product-shop,
+.product-view .product-img-box,
+.product-options-wrap {
+  width: 340px;
+}
+
+.product-collateral {
+  margin-right: 0;
+}
+
+.product-view .product-img-box .product-image-zoom {
+  width: 340px;
+  height: 340px;
+}
+
+#product-view-tabs { width: 100%; }
+
+#ja-current-content ol.products-list .product-shop {
+  float: left;
+}
+
+#ja-current-content ol.products-list .product-shop h2.product-name {
+  margin-top: 10px;
+}
+
+/* My Account ---*/
+.box-account { border: 0; }
+
+.box-account .box-head { border: 1px solid #ddd; padding: 5px; }
+
+.box-account .box-head h2 { text-transform: none; }
+
+
+.box-account #my-orders-table { border-left: 1px solid #ddd; }
+
+.box-account #my-orders-table tr th,
+.box-account #my-orders-table tr td,
+#shopping-cart-table tr td {
+  padding: 5px;
+  background: none !important;
+  text-align: left;
+}
+
+#my-orders-table tr th:nth-child(6n),
+#my-orders-table tr td:nth-child(6n) { display: none; }
+#my-orders-table tr th,
+#my-orders-table tr td { width: 20%; }
+
+.box-account .col2-set { margin: 0 0 20px; }
+
+.box-account ol#my_recent_tags, .box-account ol#my_recent_reviews { padding: 0 0 15px; }
+
+/* Login Form ---*/
+#login-form .col-1 {
+  margin-bottom: 40px;
+}
+
+/* Shopping Cart */
+#shopping-cart-table thead tr { border-top: 1px solid #ddd; border-left: 1px solid #ddd; }
+
+#shopping-cart-table th:nth-child(4n),
+#shopping-cart-table td:nth-child(4n),
+#shopping-cart-table th:nth-child(5n),
+#shopping-cart-table td:nth-child(5n) { display: none; }
+
+#shopping-cart-table th:nth-child(4n+8),
+#shopping-cart-table td:nth-child(4n+8) { display: table-cell; padding-left: 5px !important; }
+
+.price { font-size: 120%; }
+
+.cart .cart-collaterals .col2-set,
+.cart-collaterals .totals { width: 100%; }
+.cart .crosssell { display: none; }
+
+/* Wishlist ---*/
+#wishlist-table tr th:first-child,
+#wishlist-table tr td:first-child { display: none; }
+
+/* Checkout ---*/
+.multiple-checkout .col2-set .col-2, 
+.info-set.col2-set .col-2,
+.multiple-checkout .col2-set .col-1, 
+.info-set.col2-set .col-1 {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+.multiple-checkout .col2-set,
+.info-set.col2-set {
+  padding: 15px;
+}
+
+/* JM Product SLider ---*/
+.jm-slider li {
+  width: 560px !important;
+  height: 260px !important;
+}
+
+.hotproducts .jm-slider li {
+  height: 460px !important;
+  width: 460px !important;
+}
+
+.jm-slider .product-image img { width: 250px; padding-top:30px;}
+
+.hotproducts .jm-slider .product-image img { width: auto; }
+
+.jm-slider .item-slider-content .price-box,
+.jm-slider .item-slider-content button { display: none; }
+
+.hotproducts .main.jm-products-slider-listing { width: auto; }
+
+.main.jm-products-slider-listing { width: 560px; }
+
+/* JM Product List ---*/
+.products-grid li.item { width: 50% !important; }
+
+.products-grid li.item.last { display: none; }
+
+.jm-tab-subcontent .products-grid li.item,
+#upsell-product-table .products-grid li.item { width: 33.3% !important; }
+
+#ja-mass-top1:before {
+  margin-right: -330px !important;
+  z-index: 4;
+}
+
+/* JM SLideshow ---*/
+.jm-mask-desc,
+.jm-slide-thumbs-wrap { display: none !important; }
+
+#ja-mass-top { position: relative !important; }
+
+.jm-slide-main-wrap .jm-slide-buttons {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/* JM Main Menu ---*/
+#ja-mainnav { position: relative !important; }
+
+.jm-megamenu { height: auto !important; }
+
+.jm-megamenu li.haschild-over .childcontent,
+.jm-megamenu li.haschild:hover > .childcontent,
+.jm-megamenu li.mega li.haschild-over .childcontent,
+.jm-megamenu li.mega li.mega li.haschild-over .childcontent,
+.jm-megamenu li.mega li.mega li.mega li.haschild-over .childcontent,
+.jm-megamenu li.mega li.mega li.mega li.mega li.haschild-over .childcontent,
+.jm-megamenu li.mega li.mega li.mega li.mega li.mega li.haschild-over .childcontent { left: 0; /*show on parent:hover*/ }
+
+.jm-megamenu ul.level0 > li.mega > .childcontent > .childcontent-inner-wrap > .childcontent-inner,
+.jm-megamenu ul.level0 > li.mega > .childcontent > .childcontent-inner-wrap ,
+.jm-megamenu ul.level0 > li.mega > .childcontent { width: 100% !important; }
+
+.jm-megamenu .products-grid li.item { width: 100% !important; }
+
+.jm-megamenu .megacol.column4 { clear: both; width: 100% !important; }
+
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner > .column1,
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner > .column2,
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner > .column3 { width: 33.3% !important; }
+
+.jm-megamenu .cols4 > .childcontent-inner-wrap > .childcontent-inner .column3 img { max-width: 100%; }
+
+.jm-megamenu .childcontent-inner-wrap { padding-top: 0; background: none; }
+
+.jm-megamenu .level1 .megacol.column1,
+.jm-megamenu .level1 .megacol.column2 {
+  width: 50% !important;
+}
+
+/* JM SpotLight ---*/
+.jm-product-slwi ul { padding-right: 0; }
+
+/* MISC ---*/
+.content-mass-bottom { width: auto; }
+.content-mass-bottom td  { padding-left:12px; padding-right:12px; max-width:100%;  }
+
+
+.content-mass-bottom .right { float: none !important; }
