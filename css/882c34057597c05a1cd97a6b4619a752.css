@@ -68,3 +68,14 @@ body.page-popup .data-table tfoot td { border-bottom:none !important; }
 body.page-popup .data-table td, body.page-popup .data-table th { border-color:#bbb; }
 .page-popup h1#logo {  display:block; margin-bottom:10px; }
 .a-right {text-align: right !important;}
+#pinky_bg{
+	background-color: rgb(219, 207, 226);
+}
+
+/* Custom added */
+.jm-product-slwi ul:nth-child(2n) .jm_product_item {
+background-color: rgb(219, 207, 226);
+}
+#mt55{
+	margin-top: 55px;
+}

@@ -490,7 +490,7 @@ div#logo-text h1 a {
 .quick-access {
 	color: #fff;
 	position: absolute;
-	right: 0;
+	right:0;
 	top: 0;
 	line-height: 40px;
 	font-size: 14px;
@@ -597,7 +597,7 @@ div#logo-text h1 a {
   position: absolute;
   right: 0;
   top: 0;
-  background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_search.png) no-repeat center center;
+  background: url(../img/icon_search.png) no-repeat center center;
   padding: 0;
   height: 38px;
   width: 38px;
@@ -758,7 +758,7 @@ div#logo-text h1 a {
 
 #ja-mass-bottom .main { padding: 0; }
 
-.content-mass-bottom { z-index: 999; height: 228px; margin: 0; padding: 32px 0 20px 0px ;   background-position: right bottom; background-repeat: no-repeat;  }
+.content-mass-bottom { z-index: 999; height: auto; margin: 0; padding: 32px 0 20px 0px ;   background-position: right bottom; background-repeat: no-repeat;  }
 .content-mass-bottom .title-massbottom { padding-top: 25px; font-size: 36px; color: #111; font-weight: 200; display: block; }
 .content-mass-bottom .title-massbottom .text-color { color: #1ba1e2; font-weight: 700; }
 .content-mass-bottom .sub-title-massbottom { font-size: 12px; color: #999; }
@@ -820,7 +820,7 @@ div#logo-text h1 a {
 .socail-footer { background:#111; padding:10px; float:left; width:920px;}
 .socail-footer .left-content {  text-align:left; color:#666; float:left; padding-top:7px}
 .socail-footer .right-content {text-align:right; float:right}
-.socail-footer .right-content a { float:left; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_social.png) no-repeat; width:30px; height:30px;cursor:pointer; margin-right:5px;}
+.socail-footer .right-content a { float:left; background:url(../img/icon_social.png) no-repeat; width:30px; height:30px;cursor:pointer; margin-right:5px;}
 .socail-footer .right-content a.facebook { background-position: 0px 0px}
 .socail-footer .right-content a.facebook:hover { background-position: -34px 0px}
 
@@ -3421,7 +3421,7 @@ ul.ja-tab-navigator li.active a {
 }
 
 #shopping-cart-table th, #shopping-cart-table td { padding:10px 15px}
-#shopping-cart-table .item-options dd { background:url("http://www.vapealive.com/skin/frontend/default/jm_neros/images/arrow.gif") no-repeat 5px 5px; padding-left: 17px}
+#shopping-cart-table .item-options dd { background:url("../../skin/frontend/default/jm_neros/images/arrow.gif") no-repeat 5px 5px; padding-left: 17px}
 
 #shopping-cart-table .btn-update:hover, 
 #shopping-cart-table .btn-continue:hover, 
@@ -5433,22 +5433,22 @@ table.recently-list td {
 #cboxOverlay{background:#000;}
 
 #colorbox{}
-    #cboxTopLeft{width:14px; height:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) 0 0 no-repeat;}
-    #cboxTopCenter{height:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/border.gif) top left repeat-x;}
-    #cboxTopRight{width:14px; height:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) -36px 0 no-repeat;}
-    #cboxBottomLeft{width:14px; height:43px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) 0 -32px no-repeat;}
-    #cboxBottomCenter{height:43px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/border.gif) bottom left repeat-x;}
-    #cboxBottomRight{width:14px; height:43px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) -36px -32px no-repeat;}
-    #cboxMiddleLeft{width:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) -175px 0 repeat-y;}
-    #cboxMiddleRight{width:14px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) -211px 0 repeat-y;}
+    #cboxTopLeft{width:14px; height:14px; background:url(../img/controls.gif) 0 0 no-repeat;}
+    #cboxTopCenter{height:14px; background:url(../img/border.gif) top left repeat-x;}
+    #cboxTopRight{width:14px; height:14px; background:url(..img/controls.gif) -36px 0 no-repeat;}
+    #cboxBottomLeft{width:14px; height:43px; background:url(..img/controls.gif) 0 -32px no-repeat;}
+    #cboxBottomCenter{height:43px; background:url(../img/border.gif) bottom left repeat-x;}
+    #cboxBottomRight{width:14px; height:43px; background:url(../img/controls.gif) -36px -32px no-repeat;}
+    #cboxMiddleLeft{width:14px; background:url(../img/controls.gif) -175px 0 repeat-y;}
+    #cboxMiddleRight{width:14px; background:url(../img/controls.gif) -211px 0 repeat-y;}
     #cboxContent{background:#fff;}
         #cboxLoadedContent{margin-bottom:0;}
-        #cboxLoadingOverlay{background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/loading_background.png) center center no-repeat;}
-        #cboxLoadingGraphic{background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/loading.gif) center center no-repeat;}
+        #cboxLoadingOverlay{background:url(../img/loading_background.png) center center no-repeat;}
+        #cboxLoadingGraphic{background:url(../img/loading.gif) center center no-repeat;}
         #cboxTitle{position:absolute; bottom:-25px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C;}
         #cboxCurrent{position:absolute; bottom:-25px; left:58px; font-weight:bold; color:#7C7C7C;}
         
-        #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{position:absolute; bottom:-29px; background:url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/controls.gif) 0px 0px no-repeat; width:23px; height:23px; text-indent:-9999px;}
+        #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{position:absolute; bottom:-29px; background:url(../img/controls.gif) 0px 0px no-repeat; width:23px; height:23px; text-indent:-9999px;}
         #cboxPrevious{left:0px; background-position: -51px -25px;}
         #cboxPrevious.hover{background-position:-51px 0px;}
         #cboxNext{left:27px; background-position:-75px -25px;}
@@ -6099,7 +6099,7 @@ img { border: none; }
 }
 
 .hotproducts .regular-price .price {
-  color: #fff;
+  color: #FF006F;
 }
 
 .hotproducts .special-price .price {
@@ -6148,7 +6148,6 @@ img { border: none; }
   border-left: 0;
   border-right: 0;
   float: left;
-  margin-top: -55px;
   margin-bottom: 0;
 }
 
@@ -6378,7 +6377,7 @@ img { border: none; }
 .jm-slide-controls { position: absolute; z-index: 901; }
 
 .jm-slide-buttons span {
-	background: url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/arrow.png) left top no-repeat;
+	background: url(../img/arrow.png) left top no-repeat;
 	color: #eee;
 	display: block;
 	cursor: pointer;
@@ -6599,7 +6598,7 @@ img { border: none; }
 }
 
 .jm-slide-loader {
-	background: #fff url(http://www.vapealive.com/skin/frontend/default/jm_neros/joomlart/jmslideshow/images/ajax-loader.gif);
+	background: #fff url(../img/ajax-loader.gif);
 	width: 16px;
 	height: 11px;
 	position: absolute;
@@ -7403,4 +7402,82 @@ ul.megamenu li { overflow: visible; }
 
 .jm-tabswrap .jm-tab-content .jm-tab-subcontent { padding:0}
 .jm-tabswrap .jm-tab-content li { padding:0 }
-
+.fblogin{
+	margin-bottom: 10px;
+}
+/* Custom added */
+#mr40{
+	margin-top: 40px;
+}
+.products-grid > li.item{
+	margin-bottom: 10px;
+}
+.bestsellers .product-information h2.product-name {
+	width: auto;
+}
+.bestsellers .products-grid li.item .item-inner:hover{
+	border-color: yellow;
+}
+.border_box{
+	border: 2px solid #ddd;
+}
+.content-mass-bottom h2, .hotproducts h2,  h2.special_items{
+	border-bottom: 3px solid #ddd;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	width: 100%;
+	height: 30px;
+	padding-bottom: 10px;
+}
+div.newsletter {
+display: table;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+background: rgba(255,255,255,0.4);
+border: 1px solid #b8b8b8;
+padding: 5px;
+}
+div.email-wrapper input[type=text] {
+border: 1px solid #cacaca;
+background: white;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+padding: 10px 15px;
+color: #9f9e9e;
+-moz-box-shadow: inset 0 2px 11px -5px rgba(0,0,0,0.5);
+-webkit-box-shadow: inset 0 2px 11px -5px rgba(0,0,0,0.5);
+box-shadow: inset 0 2px 11px -5px rgba(0,0,0,0.5);
+}
+div.submit-wrapper {
+float: right;
+margin-left: 10px;
+}
+div.email-wrapper {
+float: left;
+}
+div.submit-wrapper input[type=submit] {
+border: 1px solid #59a751;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+padding: 10px 25px;
+text-shadow: 0px 1px 0px rgba(0,0,0,.3);
+color: white;
+background: #66c975;
+background: -moz-linear-gradient(top, #66c975 0%, #52bd5f 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#66c975), color-stop(100%,#52bd5f));
+background: -webkit-linear-gradient(top, #66c975 0%,#52bd5f 100%);
+background: -o-linear-gradient(top, #66c975 0%,#52bd5f 100%);
+background: -ms-linear-gradient(top, #66c975 0%,#52bd5f 100%);
+background: linear-gradient(to bottom, #66c975 0%,#52bd5f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66c975', endColorstr='#52bd5f',GradientType=0 );
+-moz-box-shadow: inset 0 3px -2px -2px rgba(255,255,255,0.4);
+-webkit-box-shadow: inset 0 3px -2px -2px rgba(255,255,255,0.4);
+box-shadow: inset 0 3px -2px -2px rgba(255,255,255,0.4);
+cursor: pointer;
+}
+.ml20{
+	margin-left: 20px;
+}

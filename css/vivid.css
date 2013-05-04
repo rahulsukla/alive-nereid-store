@@ -40,7 +40,7 @@ a:hover, a:active, a:focus {
 
 /*Logo---*/
 h1#logo a {
-  background-image: url(../../images/vivid/logo.png) !important;
+  background-image: url(../img/logo.png) !important;
 }
 
 /*Quick Access---*/
@@ -54,7 +54,7 @@ h1#logo a {
 /* MAIN NAVIGATION
 --------------------------------------------------------- */
 #ja-mainnav {
-  background-image: url(../../images/vivid/mainnav-bg.png);
+  background-image: url(../img/mainnav-bg.png);
 }
 
 
@@ -83,9 +83,9 @@ h1#logo a {
 
 #ja-botsl .block-list ol li a:hover { color: #ff006f; }
 
-.tel-number                     { background-image: url(../../images/vivid/icon_social.png); }
-.fax-number                     { background-image: url(../../images/vivid/icon_social.png); }
-.socail-footer .right-content a { background-image: url(../../images/vivid/icon_social.png); }
+.tel-number                     { background-image: url(../imgvivid/icon_social.png); }
+.fax-number                     { background-image: url(../img/icon_social.png); }
+.socail-footer .right-content a { background-image: url(../img/icon_social.png); }
 
 /* FOOTER
 --------------------------------------------------------- */
@@ -520,11 +520,11 @@ ul.ja-tab-navigator li.active a { color: #ff006f; }
 
 /* JM SpotLight ---*/
 .jm-product-slwi ul:nth-child(2n) .jm_product_item {
-  background-color: #45a3ee;
+  background-color: rgb(201, 179, 216);
 }
 
 .jm_product_item {
-  background-color: #ff7e00;
+  background-color: rgb(201, 179, 216);
 }
 
 .jm_item_desc a:hover,
@@ -566,14 +566,13 @@ ul.ja-tab-navigator li.active a { color: #ff006f; }
 }
 
 .hotproducts .jm-slider {
-  background: #15b190;
+  background: rgb(163, 102, 255);
     padding-top:30px;
 }
 
 .hotproducts .jm-prev,
 .hotproducts .jm-next {
-  background: #15b190;
-
+  background: rgb(163, 102, 255);
 }
 
 /* JM SLideShow ---*/
