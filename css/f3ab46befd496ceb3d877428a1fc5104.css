@@ -1,0 +1,125 @@
+/*
+ * ------------------------------------------------------------------------
+ * JM Neros Theme
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+.main,
+.ja-lo-2colsl #ja-mainbody,
+.ja-lo-2colsr #ja-mainbody,
+.ja-lo-3cols #ja-mainbody,
+.ja-lo-3cols #ja-main {
+  width: 100%;
+}
+
+h1#logo, div#logo-text { margin:0 0 40px 0; width:100%;
+ }
+
+
+#ja-mainnav .inner { top:-30px !important; }
+#ja-search.active, .quick-access.active { top:75px; }
+.menu-toggle {display:block; position:absolute; right:0px; top:115px; }
+.menu-toggle ul { display:block; list-style:none}
+.menu-toggle li { float:left; width:31px; height:31px; background:#1891cc url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_mobile.png) no-repeat; margin-left:8px; cursor:pointer}
+.menu-toggle li:hover { background:#8cbf26 url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_mobile.png) no-repeat}
+.menu-toggle li.active {background:#222 url(http://www.vapealive.com/skin/frontend/default/jm_neros/images/icon_mobile.png) no-repeat}
+
+.menu-toggle li span {float:left; width:41px; height:41px; }
+.menu-toggle li.mobile-menu { background-position: -6px -4px; }
+.menu-toggle li.mobile-cart { background-position: -4px -46px}
+.menu-toggle li.mobile-search { background-position: -6px -95px}
+
+.block .block-title strong { font-size:26px !important; }
+
+.products-grid li.item {width:100% !important; margin:10px 0 20px 0; }
+.jm-tab-content .products-grid li.item {width:100% !important; }
+ul.jm-tabs-title li h3 { padding: 0 0 0 5px!important; font-size:13px !important}
+
+.jm-product-slwi { height: auto !important; }
+.jm-product-slwi ul { padding-right: 0; padding-bottom: 30px; margin-bottom: 30px; }
+.jm-product-slwi li { width:100% !important; }
+.jm_product_item { width:92% !important; background-position: center top   }
+.jm_item_desc { left: 10px; top: auto; bottom: 0; height: 24px !important; overflow: hidden; width:90% !important }
+.jm_item_desc a { margin:0; }
+.jm-slider-desc { display: none; }
+
+ul.ja-tab-navigator li a { font-size:12px !important; padding:0 10px 0 0!important; }
+.form-add button { margin-top:5px; margin-left:0 !important }
+#review-form td, #review-form th { padding:2px !important }
+
+.col4-set .col-1 {width: 100%; }
+.col4-set .col-2,
+.col4-set .col-3,
+.col4-set .col-4 {
+  width: 100%;
+  margin-top: 30px;
+  border-top: 1px solid #222;
+  padding-top: 30px;
+}
+.socail-footer .left-content  {font-size:12px; text-align:center; padding-right:10px; }
+#ja-footer ul.links, #ja-footer ul.links li { float:left; font-size:12px; }
+
+.toolbar-bottom { margin-top:30px}
+
+#shopping-cart-table th:nth-child(3n),
+#shopping-cart-table td:nth-child(3n),
+#shopping-cart-table th:nth-child(4n),
+#shopping-cart-table td:nth-child(4n),
+#shopping-cart-table th:nth-child(5n),
+#shopping-cart-table td:nth-child(5n) { display: none; }
+
+.btn-update { float:right; }
+.btn-continue { margin-right: 0 !important; }
+
+.multiple-checkout .col2-set .col-1, .info-set.col2-set .col-1 { width:92%}
+.multiple-checkout .col2-set .col-2, .info-set.col2-set .col-2 { width:92%;}
+
+.quick-access p { display:none; }
+
+#ja-mainnav .inner { top:-20px}
+
+.data-table td, .data-table th { padding:2px;  }
+
+.ja-lo-2colsl #ja-main { width:100%}
+
+#my-orders-table tr th:nth-child(3n),
+#my-orders-table tr td:nth-child(3n) { display: none; }
+#my-orders-table tr th,
+#my-orders-table tr td { font-size:80%}
+
+.form-list li .input-box .input-text, 
+.form-list li .input-box textarea,
+.form-list li .input-box select { width:82% !important }
+
+#wishlist-view-form .buttons-set .button { margin-bottom:10px !important}
+.pager .amount { display: none; }
+.sales-order-view  #my-orders-table  { position:relative; padding-bottom:200px; }
+.sales-order-view  #my-orders-table tfoot { position: absolute; border:none; bottom:-100px; right:0}
+
+.sales-order-view  #my-orders-table tfoot tr.subtotal { bottom:0; }
+.sales-order-view  #my-orders-table tfoot tr.shipping { bottom:-30px; }
+.sales-order-view  #my-orders-table tfoot tr.grand_total { bottom:-60px; }
+
+.sales-order-view  #my-orders-table tfoot td {  right:40px; border:none !important; }
+.sales-order-view  #my-orders-table tfoot td:first-child { right:150px; width:65% }
+
+.sales-order-view  #my-orders-table .grand_total { border:none; }
+
+.sales-order-view .buttons-set .back-link { margin-top:100px; }
+
+#checkout-review-table-wrapper #checkout-review-table { width:98% !important}
+#checkout-review-table-wrapper #checkout-review-table th,
+#checkout-review-table-wrapper #checkout-review-table td { font-size:80%; }
+
+#product_sendtofriend_form .buttons-set .button{ margin-left:5px !important; }
+#add_recipient_button .button { margin-left:0px !important; }
+
+
+.form-alt .input-box { width:100% !important}
+.form-alt .input-box input { width:95% !important}
