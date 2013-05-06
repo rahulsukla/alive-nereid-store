@@ -1,0 +1,581 @@
+/*
+ * ------------------------------------------------------------------------
+ * JM Neros Theme
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* COMMON ELEMENTS
+-------------------------------------------------------------*/
+/*Normal link---*/
+a:hover, a:active, a:focus {
+	color: #ff006f;
+}
+
+.product-name a:hover,
+.product-name a:focus,
+.product-name a:active {
+  color: #ff006f;
+}
+
+.amount a:hover {
+  color: #ff006f;
+}
+
+/* draw any selected text on background */
+::-moz-selection { background: #45a3ee; }
+::selection      { background: #45a3ee; }
+
+/*Tables--*/
+
+/*Others--*/
+
+/* HEADER
+--------------------------------------------------------- */
+
+/*Logo---*/
+h1#logo a {
+  background-image: url(../img/logo.png) !important;
+}
+
+/*Quick Access---*/
+.shop-access a:hover,
+.shop-access a:active,
+.shop-access a:focus {
+	color: #ff006f;
+}
+/*Mini search---*/
+
+/* MAIN NAVIGATION
+--------------------------------------------------------- */
+#ja-mainnav {
+  background-image: url(../img/mainnav-bg.png);
+}
+
+
+/* CONTAINER
+--------------------------------------------------------- */
+
+/*main content---*/
+
+/*columns---*/
+
+/*breadcrums---*/
+
+#ja-pathway ul li a { color: #ff006f; }
+
+/* Mass */
+.content-mass-bottom .title-massbottom .text-color { color: #ff006f; }
+
+/* Spotlight */
+
+/* Top Spotlight */
+
+/* Bottom Spotlight */
+#ja-botsl { 
+	border-top: 10px solid #ff006f;
+}
+
+#ja-botsl .block-list ol li a:hover { color: #ff006f; }
+
+.tel-number                     { background-image: url(../imgvivid/icon_social.png); }
+.fax-number                     { background-image: url(../img/icon_social.png); }
+.socail-footer .right-content a { background-image: url(../img/icon_social.png); }
+
+/* FOOTER
+--------------------------------------------------------- */
+#ja-footer a:hover { color: #ff006f; }
+
+/*===============================================================
+-----------------------[MAGENTO'S ELEMENTS]----------------------
+=================================================================*/
+
+/* FORMS
+----------------------------------------------------------------*/
+
+button.button, button {
+	background: #ff006f;
+	border: 1px solid #ff006f;
+}
+
+button.button:hover,
+button.button:focus,
+button:hover,
+button:focus {
+	background: #ff006f;
+	border: 1px solid #ff006f;
+	color : #111
+	
+}
+
+.input-text:focus, select:focus, textarea:focus {
+	border-color: #ff006f;
+}
+
+/*Form lists---*/
+
+/*Form Messages---*/
+
+/* HEADINGS
+----------------------------------------------------------------*/
+.head a, .inner-head a,.box-title a,.box-head a {
+	color: #ff006f;
+}
+
+.head a:hover, .inner-head a:hover,.box-title a:hover,.box-head a:hover {
+  color: #ff006f;
+}
+
+/*Page heading---*/
+
+/*Category list heading---*/
+
+/* TABLES
+----------------------------------------------------------------*/
+
+/*Data Table---*/
+
+/*Bundle Products---*/
+
+/* LISTS
+----------------------------------------------------------------*/
+
+/* Bare List */ /* Unstyled list */
+
+/* Pager magento 1.4*/
+.pager .view-mode .grid { background-image: url(../../images/vivid/view-mode_01.png); }
+
+.pager .view-mode .grid:hover, .pager .view-mode strong.grid { background-image: url(../../images/vivid/view-mode_01.png); }
+
+.pager .view-mode .list { background-image: url(../../images/vivid/view-mode_01.png); }
+
+.pager .view-mode .list:hover, .pager .view-mode strong.list { background-image: url(../../images/vivid/view-mode_01.png); }
+
+.amount a { color: #ff006f; }
+
+/* Sorter */
+
+/* Toolbar */
+
+/*RATINGS
+----------------------------------------------------------------*/
+
+/*PRICES
+----------------------------------------------------------------*/
+
+/*Regular price---*/
+
+/*Old price---*/
+
+/*Special price---*/
+
+/*Minimal price (as low as)---*/
+a.minimal-price-link .price {
+	color: #ff006f;
+}
+
+/*Excluding tax---*/
+.price-excluding-tax .price {
+	color: #ff006f;
+}
+
+/*Including tax---*/
+.price-including-tax .price {
+	color: #ff006f;
+}
+
+/*Excl tax (for order tables)---*/
+
+/*Incl tax (for order tables)---*/
+
+/*Price range---*/
+
+/*Price notice next to the options---*/
+
+/*Product Pricing---*/
+
+/*Currency Switcher---*/
+
+/* MIS.
+----------------------------------------------------------------*/
+
+/*Generic Box---*/
+
+/*Generic Product Grid---*/
+
+/*Add To---*/
+.add-to-links a:hover,
+.add-to-links a:focus {
+  color: #ff006f;
+}
+
+/*Tool Tips---*/
+.truncated a.details { border-bottom: 1px dotted #ff006f; }
+
+/*Link highlights---*/
+
+/*===============================================================
+---------------------------[BOX STYLE]---------------------------
+=================================================================*/
+
+/*GENERAL BOX STYLE
+----------------------------------------------------------------*/
+
+/*Block Head---*/
+
+/*reset*/
+
+/*Box Content---*/
+
+/*Box Action---*/
+
+/*Box List---*/
+
+/*MAGENTO'S BOX STYLE
+----------------------------------------------------------------*/
+
+/*Product Tags---*/
+
+/*Newsletter---*/
+#newsletter-validate-detail button.button { background-color: #ff006f; }
+
+#newsletter-validate-detail .button:hover { background-color: #ff006f; }
+
+/*Mini Cart---*/
+
+/*Mini Wishlist---*/
+
+/*Compare Products, Orders---*/
+
+/*Mini Product View---*/
+
+/*Poll---*/
+
+/*Relate Products----*/
+.block-related .rating-box {
+  background-image: url(../../images/vivid/product_rating_blank_star_small.png);
+}
+
+.block-related .rating-box .rating {
+  background-image: url(../../images/vivid/product_rating_full_star_small.png);
+}
+
+/* Block Paypal */
+
+/*Layered Navigation---*/
+.block-layered-nav .currently .value {
+  color: #ff006f;
+}
+/* My Orders */
+
+/* Block List */
+
+/*===============================================================
+--------------------[MAGENTO'S SHOP PAGES]--------------------
+=================================================================*/
+
+/*CATALOG LISTING
+----------------------------------------------------------------*/
+
+/*List Type---*/
+#ja-current-content ol.products-list .item:hover .product-image { border-color: #ff006f; }
+#ja-current-content ol.products-list .item:hover .product-name a { color: #ff006f; }
+#ja-current-content ol.products-list .item:hover button { background-color: #ff006f; border-color: #ff006f; }
+
+.Hot-item:hover { border-color: #ff7e00; }
+
+.Sale-item:hover { border-color: #15b190; }
+
+.Sale-item .Sale-label { background-color: #15b190; }
+
+.Hot-item .Hot-label { background-color: #ff7e00; }
+
+.products-grid .item-inner:hover .product-image { border-color: #ff006f; }
+
+.products-grid .Hot-item:hover .product-image { border-color: #ff7e00; }
+
+.products-grid .Sale-item:hover .product-image { border-color: #15b190; }
+
+.products-grid .item-inner:hover .product-name a { color: #ff006f; }
+
+.products-grid .Hot-item:hover .product-name a { color: #ff7e00; }
+
+.products-grid .Sale-item:hover .product-name a { color: #15b190; }
+
+.products-grid .item-inner:hover button { background-color: #ff006f; border-color: #ff006f; color: #111111 }
+
+.products-grid .Hot-item:hover button { background-color: #ff7e00; border-color: #ff7e00; }
+
+.products-grid .Sale-item:hover button { background-color: #15b190; border-color: #15b190; }
+
+/*Bestsellers---*/
+.bestsellers .products-grid li.item .item-inner:hover  { border-color: #ff006f; }
+.bestsellers .products-grid li.item .Hot-item:hover { border-color: #ff006f; }
+.bestsellers .products-grid li.item .Sale-item:hover { border-color: #15b190; }
+
+.bestsellers .rating-box {
+  background-image: url(../../images/vivid/product_rating_blank_star_small.png);
+}
+
+.bestsellers .rating-box .rating {
+  background-image: url(../../images/vivid/product_rating_full_star_small.png);
+}
+
+/*Grid Type---*/
+.products-grid .product-image:hover { border-color: #ff006f; }
+
+/*PRODUCT DETAIL
+----------------------------------------------------------------*/
+
+/*PRODUCT TABS */
+ul.ja-tab-navigator li a:hover,
+ul.ja-tab-navigator li a:focus,
+ul.ja-tab-navigator li a:active { color: #ff006f; }
+
+ul.ja-tab-navigator li.active a,
+ul.ja-tab-navigator li.active a { color: #ff006f; }
+
+/*Product Images---*/
+
+/*Product Info---*/
+
+/*Product Options---*/
+.product-essential .email-friend a:hover,
+.product-essential .email-friend a:focus,
+.product-essential .email-friend a:active {
+  color: #ff006f;
+}
+/*Product Collateral---*/
+
+/*Product Description*/
+
+/*Additional Information*/
+
+/*related product*/
+
+/*reviews*/
+
+/* Product Tags */
+
+/*Gift Messages----*/
+.giftmessages .gift-header { color: #ff006f; }
+
+/* upsell */
+
+/* Product Review Detail */
+
+
+/*CHECKOUT
+----------------------------------------------------------------*/ 
+
+/*Shopping Cart---*/
+#shopping-cart-table .btn-update, 
+#shopping-cart-table .btn-continue, 
+#shopping-cart-table .btn-empty { color: #ff006f; }
+
+#shopping-cart-table .btn-update:hover, 
+#shopping-cart-table .btn-continue:hover, 
+#shopping-cart-table .btn-empty:hover { color: #ff006f; }
+
+/*Tax details---*/
+
+/*Collaterals---*/
+
+/*One-Page checkout---*/
+
+/*Allow box*/
+
+/*Active box*/
+
+/*Checkout Step Review*/
+
+/*Checkout Progress---*/
+
+/*Side Box*/
+
+/*Table*/
+.checkout-progress li.active { background: #ff006f; }
+
+/*Multiple Addresses checkout---*/
+.shipment-count { background: #ff006f; }
+
+.place-order-box .grand-total .price { color: #ff006f; }
+
+/* Checkout Agreements */
+
+/*CUSTOMER
+----------------------------------------------------------------*/ 
+
+/*Login---*/ 
+
+/*Customer Name---*/
+
+/*My Account navigation---*/
+.block-account li a:hover { color: #ff006f; }
+
+.block-account li a:active,
+.block-account li a:focus { color: #ff006f; }
+
+.block-account li.current { color: #ff006f; }
+
+/*Dashboard---*/
+.box-account ol .number { background: #ff006f; }
+
+.box-reviews .rating-box,
+#my-reviews-table .rating-box,
+#my-tags-table .rating-box, 
+#crosssell-products-list .rating-box {
+  background-image: url(../../images/vivid/product_rating_blank_star_small.png);
+}
+
+.box-reviews .rating-box .rating,
+#my-reviews-table .rating-box .rating,
+#my-tags-table .rating-box .rating,
+#crosssell-products-list .rating-box .rating {
+  background-image: url(../../images/vivid/product_rating_full_star_small.png);
+}
+
+/*Account Addressbook---*/
+
+/*Account Order History---*/
+
+/*Compare Products---*/
+
+/*Reviews---*/
+
+/*Tags ---*/
+
+/*Gift Messages---*/
+
+/*Wishlist---*/
+
+/*===============================================================
+--------------------[MAGENTO'S VARIOUS PAGES]--------------------
+=================================================================*/
+
+/*ADVANCED SEARCH
+----------------------------------------------------------------*/ 
+
+/*RETURNS PAGE
+----------------------------------------------------------------*/ 
+
+/*PRINT
+----------------------------------------------------------------*/
+
+/*POP UP
+----------------------------------------------------------------*/
+
+/*DEFAULT HOME
+----------------------------------------------------------------*/
+
+/*Best Selling---*/
+
+/*Recently---*/
+
+/* Site Map */
+
+/* Mass head */
+
+/* Error page */
+#jm-error { background-image: url(../../images/vivid/error.png); }
+
+/* Mega Menu ---*/
+.jm-megamenu ul.level0 li.mega a.mega { 
+  color: #fff;
+}
+
+.jm-megamenu ul.level1 li.mega a.mega {
+  color: #999;
+}
+
+.jm-megamenu ul.level1 li.mega a.mega.active {
+  color: #ff006f;
+}
+
+.jm-megamenu .childcontent-inner {
+	border-bottom: 5px solid #ff006f;
+	
+}
+
+.jm-megamenu .products-grid .product-image {
+  background: #fff; 
+}
+
+
+
+.jm-megamenu ul.level1 li.mega a.mega:hover,
+.jm-megamenu ul.level1 li.mega:hover > a.mega { color: #ff006f; }
+
+.jm-megamenu ul.level3 li.mega a.mega:hover,
+.jm-megamenu ul.level3 li.mega:hover > a.mega { color: #ff006f; }
+
+.jm-megamenu .products-grid li.item .item-inner:hover .product-image { background: #ff006f;}
+
+.jm-megamenu .mega-banner .text-color { color: #ff006f; }
+
+/* JM SpotLight ---*/
+.jm-product-slwi ul:nth-child(2n) .jm_product_item {
+  background-color: rgb(201, 179, 216);
+}
+
+.jm_product_item {
+  background-color: rgb(201, 179, 216);
+}
+
+.jm_item_desc a:hover,
+.jm_item_desc a:focus,
+.jm_item_desc a:active {
+  color: #ff006f !important;
+}
+
+/* JM Tabs ---*/
+.meros .jm-tabs-title-top .tab:hover { color: #ff006f !important; }
+.meros .jm-tabs-title-top ul.jm-tabs-title li.hover, 
+.meros .jm-tabs-title-top ul.jm-tabs-title li.firsthover,
+.meros .jm-tabs-title-top ul.jm-tabs-title li.lasthover { color: #ff006f; }
+
+.meros .jm-tabs-title-top ul li.active h3 ,
+.meros .jm-tabs-title-top ul li.firstactive h3,
+.meros .jm-tabs-title-top ul li.lastactive h3 {
+	color: #ff006f;
+}
+
+.meros .jm-tabs-title-left ul li.active H3 ,
+.meros .jm-tabs-title-left ul li.firstactive H3,
+.meros .jm-tabs-title-left ul li.lastactive H3,
+.meros .jm-tabs-title-right ul li.active H3 ,
+.meros .jm-tabs-title-right ul li.firstactive H3,
+.meros .jm-tabs-title-right ul li.lastactive H3,
+.meros .jm-tabs-title-bottom ul li.active h3 ,
+.meros .jm-tabs-title-bottom ul li.firstactive h3,
+.meros .jm-tabs-title-bottom ul li.lastactive h3 {
+	color: #ff006f;
+}
+
+/* JM Product Slider ---*/
+.jm-slider .product-title:hover,
+.jm-slider .product-title:focus,
+.jm-slider .product-title:active {
+  color: #ff006f;
+  
+}
+
+.hotproducts .jm-slider {
+  background: rgb(163, 102, 255);
+    padding-top:30px;
+}
+
+.hotproducts .jm-prev,
+.hotproducts .jm-next {
+  background: rgb(163, 102, 255);
+}
+
+/* JM SLideShow ---*/
+.jm-mask-desc .jm-slide-desc {
+	background: none;
+}
