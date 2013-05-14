@@ -7606,6 +7606,9 @@ div.email-wrapper input[type=text]:hover{
 		margin-left: 5px;
 		padding: 20px;
 	}
+	#no-border{
+		border-right: none;
+	}
 	}
 	.items{
 		border-bottom: 1px solid #eee;
